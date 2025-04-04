@@ -1,0 +1,55 @@
+(* ::Package:: *)
+
+(******************************************************************************
+ * 1) Model Information
+ ******************************************************************************)
+
+M$ModelName = "Phi4Theory";
+
+M$Information = {
+   Authors       -> {"Juan Diego Haro"},
+   Version       -> "1.0",
+   Date          -> "April 2025",
+   Institutions  -> {"Universidad San Francisco de Quito"},
+   Description   -> "A simple real scalar phi^4 theory"
+};
+
+(******************************************************************************
+ * 2) Declaration of parameters
+ ******************************************************************************)
+
+M$Parameters = {
+
+  m2 == {
+    ParameterType     -> External,
+    Value             -> 1.0,
+    BlockName         -> MASS,
+    OrderBlock        -> 1,
+    Description       -> "Mass squared of the scalar field"
+  },
+
+  lam == {
+    ParameterType     -> External,
+    Value             -> 0.1,
+    BlockName         -> FRBlock,
+    OrderBlock        -> 2,
+    InteractionOrder  -> {PHI4,1},
+    Description       -> "Quartic coupling lambda"
+  }
+
+};
+
+(******************************************************************************
+ * 3) Declaration of the scalar field
+ ******************************************************************************)
+
+M$ClassesDescription = {
+
+  S[1] == {
+    ClassName       -> phi,
+    SelfConjugate   -> True,
+    Mass            -> {m2},
+    Width           -> 0     (* Set to zero for a stable or non-decaying scalar *)
+  }
+
+};
