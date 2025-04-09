@@ -1,0 +1,48 @@
+(******************************************************************************
+ *  HIGGS PORTAL  *
+ ******************************************************************************)
+
+M$ModelName = "HiggsPortal";
+M$Information = {
+Authors        -> {"Juan Diego Haro"},
+  Date         -> "2025-04-07",
+  Version      -> 1.0,
+  Institutions -> {"Universidad San Francisco de Quito"},
+  Description        -> "Modelo de portal de Higgs con un escalar real S como materia oscura."
+};
+
+
+M$Parameters = {
+
+  mS2 == {
+    ParameterType     -> External,
+    ComplexParameter  -> False,
+    Value             -> 1.0,
+    Description       -> "Mass squared of the scalar field"
+  },
+
+  lamS == {
+    ParameterType     -> External,
+    ComplexParameter  -> False,
+    Value             -> 0.1,
+    Description       -> "Acoplamiento de S S"
+  },
+
+  lamHS == {
+    ParameterType     -> External,
+    ComplexParameter  -> False,
+    Value             -> 0.1,
+    Description       -> "Acoplamiento portal S^2 H^dager H"
+  }
+
+};
+
+M$ClassesDescription = {
+
+  S[1] == {
+    ClassName       -> S,
+    SelfConjugate   -> True,
+    Mass            -> {mS2}
+  }
+};
+
