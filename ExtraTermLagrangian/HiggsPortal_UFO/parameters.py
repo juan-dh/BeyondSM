@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 14.2.0 for Mac OS X ARM (64-bit) (December 26, 2024)
-# Date: Tue 8 Apr 2025 20:30:32
+# Date: Wed 9 Apr 2025 20:52:32
 
 
 
@@ -121,11 +121,11 @@ ymtau = Parameter(name = 'ymtau',
                   lhablock = 'YUKAWA',
                   lhacode = [ 15 ])
 
-mS2 = Parameter(name = 'mS2',
+msc = Parameter(name = 'msc',
                 nature = 'external',
                 type = 'real',
                 value = 1.,
-                texname = '\\text{mS2}',
+                texname = '\\text{msc}',
                 lhablock = 'FRBlock',
                 lhacode = [ 1 ])
 
@@ -209,6 +209,14 @@ MD = Parameter(name = 'MD',
                lhablock = 'MASS',
                lhacode = [ 1 ])
 
+MS = Parameter(name = 'MS',
+               nature = 'external',
+               type = 'real',
+               value = 0.101,
+               texname = '\\text{MS}',
+               lhablock = 'MASS',
+               lhacode = [ 3 ])
+
 MB = Parameter(name = 'MB',
                nature = 'external',
                type = 'real',
@@ -217,13 +225,21 @@ MB = Parameter(name = 'MB',
                lhablock = 'MASS',
                lhacode = [ 5 ])
 
-MS = Parameter(name = 'MS',
+MH = Parameter(name = 'MH',
                nature = 'external',
                type = 'real',
-               value = 1,
-               texname = '\\text{MS}',
+               value = 125,
+               texname = '\\text{MH}',
                lhablock = 'MASS',
-               lhacode = [ 9000006 ])
+               lhacode = [ 25 ])
+
+MSc = Parameter(name = 'MSc',
+                nature = 'external',
+                type = 'real',
+                value = 1,
+                texname = '\\text{MSc}',
+                lhablock = 'MASS',
+                lhacode = [ 9000005 ])
 
 WZ = Parameter(name = 'WZ',
                nature = 'external',
@@ -249,13 +265,21 @@ WT = Parameter(name = 'WT',
                lhablock = 'DECAY',
                lhacode = [ 6 ])
 
-WS = Parameter(name = 'WS',
+WH = Parameter(name = 'WH',
                nature = 'external',
                type = 'real',
-               value = 1,
-               texname = '\\text{WS}',
+               value = 0.00407,
+               texname = '\\text{WH}',
                lhablock = 'DECAY',
-               lhacode = [ 9000005 ])
+               lhacode = [ 25 ])
+
+WSc = Parameter(name = 'WSc',
+                nature = 'external',
+                type = 'real',
+                value = 1,
+                texname = '\\text{WSc}',
+                lhablock = 'DECAY',
+                lhacode = [ 9000005 ])
 
 aEW = Parameter(name = 'aEW',
                 nature = 'internal',

@@ -14,7 +14,7 @@ Authors        -> {"Juan Diego Haro"},
 
 M$Parameters = {
 
-  mS2 == {
+  msc =={ 
     ParameterType     -> External,
     ComplexParameter  -> False,
     Value             -> 1.0,
@@ -24,6 +24,7 @@ M$Parameters = {
   lamS == {
     ParameterType     -> External,
     ComplexParameter  -> False,
+    IteractionOrder   -> {QED,2},
     Value             -> 0.1,
     Description       -> "Acoplamiento de S S"
   },
@@ -31,6 +32,7 @@ M$Parameters = {
   lamHS == {
     ParameterType     -> External,
     ComplexParameter  -> False,
+    InteractionOrder  -> {QED,2},
     Value             -> 0.1,
     Description       -> "Acoplamiento portal S^2 H^dager H"
   }
@@ -39,10 +41,11 @@ M$Parameters = {
 
 M$ClassesDescription = {
 
-  S[1] == {
-    ClassName       -> S,
+  S[5] == {
+    ClassName       -> Sc,
     SelfConjugate   -> True,
-    Mass            -> {mS2}
+    Mass            -> {msc,External},
+    ParticleName    -> "~sc"
   }
 };
 

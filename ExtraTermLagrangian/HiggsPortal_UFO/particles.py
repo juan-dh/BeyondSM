@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 14.2.0 for Mac OS X ARM (64-bit) (December 26, 2024)
-# Date: Tue 8 Apr 2025 20:30:32
+# Date: Wed 9 Apr 2025 20:52:32
 
 
 from __future__ import division
@@ -339,29 +339,15 @@ b = Particle(pdg_code = 5,
 
 b__tilde__ = b.anti()
 
-S = Particle(pdg_code = 9000005,
-             name = 'S',
-             antiname = 'S',
+H = Particle(pdg_code = 25,
+             name = 'H',
+             antiname = 'H',
              spin = 1,
              color = 1,
-             mass = Param.MS,
-             width = Param.ZERO,
-             texname = 'S',
-             antitexname = 'S',
-             charge = 0,
-             GhostNumber = 0,
-             LeptonNumber = 0,
-             Y = 0)
-
-S = Particle(pdg_code = 9000006,
-             name = 'S',
-             antiname = 'S',
-             spin = 1,
-             color = 1,
-             mass = Param.MS,
-             width = Param.ZERO,
-             texname = 'S',
-             antitexname = 'S',
+             mass = Param.MH,
+             width = Param.WH,
+             texname = 'H',
+             antitexname = 'H',
              charge = 0,
              GhostNumber = 0,
              LeptonNumber = 0,
@@ -398,4 +384,18 @@ G__plus__ = Particle(pdg_code = 251,
                      Y = 0)
 
 G__minus__ = G__plus__.anti()
+
+P__tilde__sc = Particle(pdg_code = 9000005,
+                        name = '~sc',
+                        antiname = '~sc',
+                        spin = 1,
+                        color = 1,
+                        mass = Param.MSc,
+                        width = Param.ZERO,
+                        texname = '~sc',
+                        antitexname = '~sc',
+                        charge = 0,
+                        GhostNumber = 0,
+                        LeptonNumber = 0,
+                        Y = 0)
 

@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 14.2.0 for Mac OS X ARM (64-bit) (December 26, 2024)
-# Date: Tue 8 Apr 2025 20:30:26
+# Date: Wed 9 Apr 2025 20:52:19
 
 
 # 
@@ -22,8 +22,7 @@
    * Assigned PDG number 9000002 to particle ghZ
    * Assigned PDG number 9000003 to particle ghWp
    * Assigned PDG number 9000004 to particle ghWm
-   * Assigned PDG number 9000005 to particle S
-   * Assigned PDG number 9000006 to particle S
+   * Assigned PDG number 9000005 to particle ~sc
 
 
 # Compulsory PDG codes:
@@ -35,16 +34,13 @@
 # Parameter definitions
 #
 
-   * Parameter WS has no value. Default value 1 assigned.
-   * Parameter WS has no value. Default value 1 assigned.
-   * Parameter lam has no value. Default value 1 assigned.
-   * Parameter muH has no value. Default value 1 assigned.
+   * Parameter WSc has no value. Default value 1 assigned.
 
 
 # Vertices
    * Calling FeynmanRules for 1 Lagrangians.
-   * Number of classes vertices: 75
-   * Number of flavored vertices: 139
+   * Number of classes vertices: 95
+   * Number of flavored vertices: 165
    * Saved vertices in InterfaceRun[ 1 ].
    * Checked QNumber conservation.
       - Quantum number GhostNumber conserved in all vertices.
@@ -57,19 +53,19 @@
 # Vertex definitions
 #
 
-   * 4 vertices written.
+   * 165 vertices written.
    * vertices.py written.
 #
 # Lorentz structure definitions
 #
 
-   * 2 lorentz structures written.
+   * 20 lorentz structures written.
    * lorentz.py written.
 #
 # Coupling definitions
 #
 
-   * 0 couplings written.
+   * 141 couplings written.
    * couplings.py written.
 #
 # Coupling order definitions
@@ -81,7 +77,7 @@
 # Decay definitions
 #
 
-   * 11 decays written.
+   * 12 decays written.
    * decay.py not written
 #
 # CTCoupling definitions
