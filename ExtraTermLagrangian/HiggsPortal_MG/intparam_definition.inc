@@ -1,6 +1,6 @@
 c This file has been generated automatically by FeynRules
 
-c Version: 2.3.49   Date: 9. 4. 2025,    0:20
+c Version: 2.3.49   Date: 10. 4. 2025,    1:38
 
 c Internal parameters definition :
 

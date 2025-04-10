@@ -24,7 +24,7 @@ M$Parameters = {
   lamS == {
     ParameterType     -> External,
     ComplexParameter  -> False,
-    IteractionOrder   -> {QED,2},
+    InteractionOrder   -> {QED,2},
     Value             -> 0.1,
     Description       -> "Acoplamiento de S S"
   },

@@ -1,7 +1,7 @@
 c This file has been generated automatically by FeynRules
 
 
-c Version: 2.3.49   Date: 9. 4. 2025,    0:20
+c Version: 2.3.49   Date: 10. 4. 2025,    1:38
       write(1,11) 'MGVX10',MGVX10
       write(1,11) 'MGVX14',MGVX14
       write(1,11) 'MGVX42',MGVX42
