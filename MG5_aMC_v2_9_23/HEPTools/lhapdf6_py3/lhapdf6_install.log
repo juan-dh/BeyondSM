@@ -1,0 +1,836 @@
+ Set environment variables
+ Unpack LHAPDF
+x LHAPDF-6.5.4/
+x LHAPDF-6.5.4/wrappers/
+x LHAPDF-6.5.4/wrappers/Makefile.in
+x LHAPDF-6.5.4/wrappers/Makefile.am
+x LHAPDF-6.5.4/wrappers/python/
+x LHAPDF-6.5.4/wrappers/python/Makefile.in
+x LHAPDF-6.5.4/wrappers/python/__init__.py
+x LHAPDF-6.5.4/wrappers/python/build.py.in
+x LHAPDF-6.5.4/wrappers/python/Makefile.am
+x LHAPDF-6.5.4/wrappers/python/clhapdf.pxd
+x LHAPDF-6.5.4/wrappers/python/lhapdf.cpp
+x LHAPDF-6.5.4/wrappers/python/lhapdf.pyx
+x LHAPDF-6.5.4/plotpdfs
+x LHAPDF-6.5.4/CONFIGFLAGS
+x LHAPDF-6.5.4/lhapdf.conf
+x LHAPDF-6.5.4/INSTALL
+x LHAPDF-6.5.4/Makefile.in
+x LHAPDF-6.5.4/TODO
+x LHAPDF-6.5.4/configure.ac
+x LHAPDF-6.5.4/configure
+x LHAPDF-6.5.4/DATARELEASE
+x LHAPDF-6.5.4/testlhapdf
+x LHAPDF-6.5.4/m4/
+x LHAPDF-6.5.4/m4/ltoptions.m4
+x LHAPDF-6.5.4/m4/ltversion.m4
+x LHAPDF-6.5.4/m4/cython.m4
+x LHAPDF-6.5.4/m4/ax_python_devel.m4
+x LHAPDF-6.5.4/m4/libtool.m4
+x LHAPDF-6.5.4/m4/ax_prog_cxx_mpi.m4
+x LHAPDF-6.5.4/m4/lt~obsolete.m4
+x LHAPDF-6.5.4/m4/compilerflags.m4
+x LHAPDF-6.5.4/m4/ltsugar.m4
+x LHAPDF-6.5.4/m4/ax_cxx_compile_stdcxx.m4
+x LHAPDF-6.5.4/aclocal.m4
+x LHAPDF-6.5.4/Makefile.am
+x LHAPDF-6.5.4/examples/
+x LHAPDF-6.5.4/examples/testpdfunc.cc
+x LHAPDF-6.5.4/examples/hessian2replicas.cc
+x LHAPDF-6.5.4/examples/testpdfset.cc
+x LHAPDF-6.5.4/examples/reweight.cc
+x LHAPDF-6.5.4/examples/hessian2replicas
+x LHAPDF-6.5.4/examples/compatibility.cc
+x LHAPDF-6.5.4/examples/pythonexample.py
+x LHAPDF-6.5.4/examples/Makefile.in
+x LHAPDF-6.5.4/examples/compatibility
+x LHAPDF-6.5.4/examples/reweight
+x LHAPDF-6.5.4/examples/testpdfset
+x LHAPDF-6.5.4/examples/fexample2.f90
+x LHAPDF-6.5.4/examples/analyticpdf.cc
+x LHAPDF-6.5.4/examples/Makefile.am
+x LHAPDF-6.5.4/examples/fexample1.f90
+x LHAPDF-6.5.4/examples/testpdfunc.py
+x LHAPDF-6.5.4/examples/analyticpdf
+x LHAPDF-6.5.4/examples/testpdf
+x LHAPDF-6.5.4/examples/testpdf.cc
+x LHAPDF-6.5.4/examples/testpdfunc
+x LHAPDF-6.5.4/AUTHORS
+x LHAPDF-6.5.4/DESIGN
+x LHAPDF-6.5.4/README
+x LHAPDF-6.5.4/doc/
+x LHAPDF-6.5.4/doc/Doxyfile.in
+x LHAPDF-6.5.4/doc/Makefile.in
+x LHAPDF-6.5.4/doc/Makefile.am
+x LHAPDF-6.5.4/doc/mkpdflist
+x LHAPDF-6.5.4/doc/pdfsets.dox
+x LHAPDF-6.5.4/config/
+x LHAPDF-6.5.4/config/config.sub
+x LHAPDF-6.5.4/config/depcomp
+x LHAPDF-6.5.4/config/install-sh
+x LHAPDF-6.5.4/config/compile
+x LHAPDF-6.5.4/config/ltmain.sh
+x LHAPDF-6.5.4/config/config.h.in
+x LHAPDF-6.5.4/config/config.guess
+x LHAPDF-6.5.4/config/missing
+x LHAPDF-6.5.4/config/test-driver
+x LHAPDF-6.5.4/bin/
+x LHAPDF-6.5.4/bin/Makefile.in
+x LHAPDF-6.5.4/bin/lhapdf-config.in
+x LHAPDF-6.5.4/bin/lhapdf
+x LHAPDF-6.5.4/bin/Makefile.am
+x LHAPDF-6.5.4/mkindex
+x LHAPDF-6.5.4/NEWS
+x LHAPDF-6.5.4/testpdfs
+x LHAPDF-6.5.4/lhapdf.pc.in
+x LHAPDF-6.5.4/src/
+x LHAPDF-6.5.4/src/PDF.cc
+x LHAPDF-6.5.4/src/GridPDF.cc
+x LHAPDF-6.5.4/src/PDFInfo.cc
+x LHAPDF-6.5.4/src/LogBicubicInterpolator.cc
+x LHAPDF-6.5.4/src/Config.cc
+x LHAPDF-6.5.4/src/BicubicInterpolator.cc
+x LHAPDF-6.5.4/src/Interpolator.cc
+x LHAPDF-6.5.4/src/ErrExtrapolator.cc
+x LHAPDF-6.5.4/src/AlphaS_Ipol.cc
+x LHAPDF-6.5.4/src/Makefile.in
+x LHAPDF-6.5.4/src/BilinearInterpolator.cc
+x LHAPDF-6.5.4/src/AlphaS.cc
+x LHAPDF-6.5.4/src/LogBilinearInterpolator.cc
+x LHAPDF-6.5.4/src/Info.cc
+x LHAPDF-6.5.4/src/AlphaS_ODE.cc
+x LHAPDF-6.5.4/src/KnotArray.cc
+x LHAPDF-6.5.4/src/Makefile.am
+x LHAPDF-6.5.4/src/AlphaS_Analytic.cc
+x LHAPDF-6.5.4/src/LHAGlue.cc
+x LHAPDF-6.5.4/src/Paths.cc
+x LHAPDF-6.5.4/src/PDFSet.cc
+x LHAPDF-6.5.4/src/PDFIndex.cc
+x LHAPDF-6.5.4/src/Factories.cc
+x LHAPDF-6.5.4/src/NearestPointExtrapolator.cc
+x LHAPDF-6.5.4/src/FileIO.cc
+x LHAPDF-6.5.4/src/yamlcpp/
+x LHAPDF-6.5.4/src/yamlcpp/emitterstate.cpp
+x LHAPDF-6.5.4/src/yamlcpp/emitterstate.h
+x LHAPDF-6.5.4/src/yamlcpp/ptr_vector.h
+x LHAPDF-6.5.4/src/yamlcpp/regex_yaml.h
+x LHAPDF-6.5.4/src/yamlcpp/streamcharsource.h
+x LHAPDF-6.5.4/src/yamlcpp/scantoken.cpp
+x LHAPDF-6.5.4/src/yamlcpp/emit.cpp
+x LHAPDF-6.5.4/src/yamlcpp/singledocparser.h
+x LHAPDF-6.5.4/src/yamlcpp/collectionstack.h
+x LHAPDF-6.5.4/src/yamlcpp/indentation.h
+x LHAPDF-6.5.4/src/yamlcpp/singledocparser.cpp
+x LHAPDF-6.5.4/src/yamlcpp/stringsource.h
+x LHAPDF-6.5.4/src/yamlcpp/scanscalar.h
+x LHAPDF-6.5.4/src/yamlcpp/scanner.cpp
+x LHAPDF-6.5.4/src/yamlcpp/ostream_wrapper.cpp
+x LHAPDF-6.5.4/src/yamlcpp/null.cpp
+x LHAPDF-6.5.4/src/yamlcpp/Makefile.in
+x LHAPDF-6.5.4/src/yamlcpp/setting.h
+x LHAPDF-6.5.4/src/yamlcpp/convert.cpp
+x LHAPDF-6.5.4/src/yamlcpp/stream.h
+x LHAPDF-6.5.4/src/yamlcpp/emitterutils.cpp
+x LHAPDF-6.5.4/src/yamlcpp/emitterutils.h
+x LHAPDF-6.5.4/src/yamlcpp/exp.cpp
+x LHAPDF-6.5.4/src/yamlcpp/scanscalar.cpp
+x LHAPDF-6.5.4/src/yamlcpp/parser.cpp
+x LHAPDF-6.5.4/src/yamlcpp/scantag.h
+x LHAPDF-6.5.4/src/yamlcpp/scantag.cpp
+x LHAPDF-6.5.4/src/yamlcpp/nodeevents.cpp
+x LHAPDF-6.5.4/src/yamlcpp/emitfromevents.cpp
+x LHAPDF-6.5.4/src/yamlcpp/Makefile.am
+x LHAPDF-6.5.4/src/yamlcpp/tag.h
+x LHAPDF-6.5.4/src/yamlcpp/regeximpl.h
+x LHAPDF-6.5.4/src/yamlcpp/directives.h
+x LHAPDF-6.5.4/src/yamlcpp/stream.cpp
+x LHAPDF-6.5.4/src/yamlcpp/depthguard.cpp
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/eventhandler.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/anchor.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/exceptions.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/contrib/
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/contrib/anchordict.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/contrib/graphbuilder.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/depthguard.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/parser.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/emitterdef.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/mark.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/yaml.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/emittermanip.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/dll.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/emitterstyle.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/emitfromevents.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/ostream_wrapper.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/traits.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/node/
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/node/type.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/node/ptr.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/node/emit.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/node/impl.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/node/iterator.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/node/parse.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/node/detail/
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/node/detail/iterator_fwd.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/node/detail/memory.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/node/detail/bool_type.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/node/detail/impl.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/node/detail/iterator.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/node/detail/node_iterator.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/node/detail/node_ref.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/node/detail/node.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/node/detail/node_data.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/node/convert.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/node/node.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/stlemitter.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/emitter.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/null.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/binary.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/noexcept.h
+x LHAPDF-6.5.4/src/yamlcpp/yaml-cpp/noncopyable.h
+x LHAPDF-6.5.4/src/yamlcpp/binary.cpp
+x LHAPDF-6.5.4/src/yamlcpp/nodeevents.h
+x LHAPDF-6.5.4/src/yamlcpp/scanner.h
+x LHAPDF-6.5.4/src/yamlcpp/node.cpp
+x LHAPDF-6.5.4/src/yamlcpp/memory.cpp
+x LHAPDF-6.5.4/src/yamlcpp/token.h
+x LHAPDF-6.5.4/src/yamlcpp/nodebuilder.h
+x LHAPDF-6.5.4/src/yamlcpp/emitter.cpp
+x LHAPDF-6.5.4/src/yamlcpp/regex_yaml.cpp
+x LHAPDF-6.5.4/src/yamlcpp/simplekey.cpp
+x LHAPDF-6.5.4/src/yamlcpp/directives.cpp
+x LHAPDF-6.5.4/src/yamlcpp/parse.cpp
+x LHAPDF-6.5.4/src/yamlcpp/nodebuilder.cpp
+x LHAPDF-6.5.4/src/yamlcpp/exp.h
+x LHAPDF-6.5.4/src/yamlcpp/tag.cpp
+x LHAPDF-6.5.4/src/yamlcpp/node_data.cpp
+x LHAPDF-6.5.4/src/yamlcpp/exceptions.cpp
+x LHAPDF-6.5.4/src/ContinuationExtrapolator.cc
+x LHAPDF-6.5.4/src/Utils.cc
+x LHAPDF-6.5.4/COPYING
+x LHAPDF-6.5.4/include/
+x LHAPDF-6.5.4/include/Makefile.in
+x LHAPDF-6.5.4/include/LHAPDF/
+x LHAPDF-6.5.4/include/LHAPDF/LHAGlue.h
+x LHAPDF-6.5.4/include/LHAPDF/Info.h
+x LHAPDF-6.5.4/include/LHAPDF/Version.h
+x LHAPDF-6.5.4/include/LHAPDF/BicubicInterpolator.h
+x LHAPDF-6.5.4/include/LHAPDF/Makefile.in
+x LHAPDF-6.5.4/include/LHAPDF/AlphaS.h
+x LHAPDF-6.5.4/include/LHAPDF/BilinearInterpolator.h
+x LHAPDF-6.5.4/include/LHAPDF/FileIO.h
+x LHAPDF-6.5.4/include/LHAPDF/PDFInfo.h
+x LHAPDF-6.5.4/include/LHAPDF/LHAPDF.h
+x LHAPDF-6.5.4/include/LHAPDF/Config.h
+x LHAPDF-6.5.4/include/LHAPDF/Paths.h
+x LHAPDF-6.5.4/include/LHAPDF/PDF.h
+x LHAPDF-6.5.4/include/LHAPDF/PDFSet.h
+x LHAPDF-6.5.4/include/LHAPDF/GridPDF.h
+x LHAPDF-6.5.4/include/LHAPDF/Makefile.am
+x LHAPDF-6.5.4/include/LHAPDF/Factories.h
+x LHAPDF-6.5.4/include/LHAPDF/Exceptions.h
+x LHAPDF-6.5.4/include/LHAPDF/Utils.h
+x LHAPDF-6.5.4/include/LHAPDF/LogBicubicInterpolator.h
+x LHAPDF-6.5.4/include/LHAPDF/ContinuationExtrapolator.h
+x LHAPDF-6.5.4/include/LHAPDF/Extrapolator.h
+x LHAPDF-6.5.4/include/LHAPDF/Version.h.in
+x LHAPDF-6.5.4/include/LHAPDF/ErrExtrapolator.h
+x LHAPDF-6.5.4/include/LHAPDF/Interpolator.h
+x LHAPDF-6.5.4/include/LHAPDF/KnotArray.h
+x LHAPDF-6.5.4/include/LHAPDF/NearestPointExtrapolator.h
+x LHAPDF-6.5.4/include/LHAPDF/PDFIndex.h
+x LHAPDF-6.5.4/include/LHAPDF/Reweighting.h
+x LHAPDF-6.5.4/include/LHAPDF/LogBilinearInterpolator.h
+x LHAPDF-6.5.4/include/Makefile.am
+x LHAPDF-6.5.4/tests/
+x LHAPDF-6.5.4/tests/testpaths.cc
+x LHAPDF-6.5.4/tests/Makefile.in
+x LHAPDF-6.5.4/tests/testinfo.cc
+x LHAPDF-6.5.4/tests/testsetperf.cc
+x LHAPDF-6.5.4/tests/testindex.cc
+x LHAPDF-6.5.4/tests/Makefile.am
+x LHAPDF-6.5.4/tests/testperf.cc
+x LHAPDF-6.5.4/tests/testgrid.cc
+x LHAPDF-6.5.4/tests/testnsetperf.cc
+x LHAPDF-6.5.4/tests/testalphas.cc
+x LHAPDF-6.5.4/ChangeLog
+x LHAPDF-6.5.4/lhapdf.pc
+x LHAPDF-6.5.4/pdfsets.index
+x LHAPDF-6.5.4/CODINGSTYLE
+running on Mac
+ Enter LHAPDF6 directory
+18487c18487
+< 			print (conf('LINKFORSHARED'))"`
+---
+> 			print (conf('PY_LDFLAGS'))"`
+ Configure LHAPDF: -O2 -std=c++11  for PYTHON 3.10
+/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/HEPToolsInstallers/installLHAPDF6.sh: line 61: //: is a directory
+/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/HEPToolsInstallers/installLHAPDF6.sh: line 62: //: is a directory
+module= cython
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'cython'
+use pip to install: pip install cython  --target=/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//python3.10
+install: target directory `--upgrade' does not exist
+usage: install [-bCcpSsUv] [-f flags] [-g group] [-m mode] [-o owner]
+               [-M log] [-D dest] [-h hash] [-T tags]
+               [-B suffix] [-l linkflags] [-N dbdir]
+               file1 file2
+       install [-bCcpSsUv] [-f flags] [-g group] [-m mode] [-o owner]
+               [-M log] [-D dest] [-h hash] [-T tags]
+               [-B suffix] [-l linkflags] [-N dbdir]
+               file1 ... fileN directory
+       install -dU [-vU] [-g group] [-m mode] [-N dbdir] [-o owner]
+               [-M log] [-D dest] [-h hash] [-T tags]
+               directory ...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... ./config/install-sh -c -d
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for sw_vers... sw_vers
+./configure: line 3805: test: -O2: binary operator expected
+checking whether make supports the include directive... yes (GNU style)
+checking whether to compile using MPI... no
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking dependency style of g++... gcc3
+checking whether g++ supports C++11 features by default... yes
+checking for gcc... gcc
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking whether ln -s works... yes
+checking build system type... arm-apple-darwin24.4.0
+checking host system type... arm-apple-darwin24.4.0
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /Library/Developer/CommandLineTools/usr/bin/ld
+checking if the linker (/Library/Developer/CommandLineTools/usr/bin/ld) is GNU ld... no
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 786432
+checking how to convert arm-apple-darwin24.4.0 file names to arm-apple-darwin24.4.0 format... func_convert_file_noop
+checking how to convert arm-apple-darwin24.4.0 file names to toolchain format... func_convert_file_noop
+checking for /Library/Developer/CommandLineTools/usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... no
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dsymutil... dsymutil
+checking for nmedit... nmedit
+checking for lipo... lipo
+checking for otool... otool
+checking for otool64... no
+checking for -single_module linker flag... ld: warning: -single_module is obsolete
+no
+checking for -exported_symbols_list linker flag... yes
+checking for -force_load linker flag... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fno-common -DPIC
+checking if gcc PIC flag -fno-common -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin24.4.0 dyld
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for ld used by g++... /Library/Developer/CommandLineTools/usr/bin/ld
+checking if the linker (/Library/Developer/CommandLineTools/usr/bin/ld) is GNU ld... no
+checking whether the g++ linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fno-common -DPIC
+checking if g++ PIC flag -fno-common -DPIC works... yes
+checking if g++ static flag -static works... no
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin24.4.0 dyld
+checking how to hardcode library paths into programs... immediate
+configure: building LHAGLUE Fortran wrappers
+configure: building LHAGLUE C++ wrappers
+checking for doxygen... no
+checking for python... /Users/juandiegoharo/miniconda3/bin/python3
+checking for a version of Python >= '2.1.0'... yes
+checking for a version of Python >= '2.7.3'... yes
+checking for the sysconfig Python package... yes
+checking for Python include path... -I/Users/juandiegoharo/miniconda3/include/python3.10
+checking for Python library path... -L/Users/juandiegoharo/miniconda3/lib -lpython3.10
+checking for Python site-packages path... /Users/juandiegoharo/miniconda3/lib/python3.10/site-packages
+checking for Python platform specific site-packages path... 
+checking python extra libraries... -ldl   -framework CoreFoundation 
+checking python extra linking flags... -Wl,-rpath,/Users/juandiegoharo/miniconda3/lib -L/Users/juandiegoharo/miniconda3/lib -Wl,-rpath,/Users/juandiegoharo/miniconda3/lib -L/Users/juandiegoharo/miniconda3/lib
+checking consistency of all components of python development environment... yes
+configure: LHAPDF Python library to be installed to /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/lib/python3.10/site-packages
+checking for python version... 3.10
+checking for python platform... darwin
+checking for GNU default python prefix... ${prefix}
+checking for GNU default python exec_prefix... ${exec_prefix}
+checking for python script directory (pythondir)... ${PYTHON_PREFIX}/lib/python3.10/site-packages
+checking for python extension module directory (pyexecdir)... ${PYTHON_EXEC_PREFIX}/lib/python3.10/site-packages
+checking for Cython >= 0.24... no
+checking if the g++ compiler accepts the -pedantic flag... yes
+checking if the g++ compiler accepts the -Wall flag... yes
+checking if the g++ compiler accepts the -Wno-long-long flag... yes
+checking if the g++ compiler accepts the -Qunused-arguments flag... yes
+checking if the g++ compiler accepts the -Wshadow flag... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/yamlcpp/Makefile
+config.status: creating include/Makefile
+config.status: creating include/LHAPDF/Makefile
+config.status: creating bin/Makefile
+config.status: creating bin/lhapdf-config
+config.status: creating examples/Makefile
+config.status: creating tests/Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/Doxyfile
+config.status: creating lhapdf.pc
+config.status: creating wrappers/Makefile
+config.status: creating wrappers/python/Makefile
+config.status: creating wrappers/python/build.py
+config.status: creating config/config.h
+config.status: creating include/LHAPDF/Version.h
+config.status: include/LHAPDF/Version.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+****************************************************************
+IMPORTANT INFORMATION ABOUT PDF SETS
+
+LHAPDF no longer bundles PDF set data in the package tarball.
+The sets are instead all stored online at
+  http://lhapdfsets.web.cern.ch/lhapdfsets/current/
+and you should install those that you wish to use into
+  /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/share/LHAPDF
+
+The downloadable PDF sets are packaged as tarballs, which
+must be expanded to be used. The simplest way to do this is with
+the 'lhapdf' script, e.g. to install the CT10nlo PDF set:
+  lhapdf install CT10nlo
+The same effect can be achieved manually with, e.g.:
+  wget http://lhapdfsets.web.cern.ch/lhapdfsets/current/CT10nlo.tar.gz -O- | tar xz -C /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/share/LHAPDF
+
+****************************************************************
+
+ Compile LHAPDF6
+Making all in src
+Making all in yamlcpp
+  CXX      liblhapdf_yaml_cpp_la-binary.lo
+  CXX      liblhapdf_yaml_cpp_la-emitterstate.lo
+In file included from emitterstate.cpp:3:
+./emitterstate.h:28:24: warning: declaration shadows a variable in namespace 'LHAPDF_YAML' [-Wshadow]
+   28 |   enum value { NoType, Flow, Block };
+      |                        ^
+./yaml-cpp/emittermanip.h:58:3: note: previous declaration is here
+   58 |   Flow,
+      |   ^
+In file included from emitterstate.cpp:3:
+./emitterstate.h:28:30: warning: declaration shadows a variable in namespace 'LHAPDF_YAML' [-Wshadow]
+   28 |   enum value { NoType, Flow, Block };
+      |                              ^
+./yaml-cpp/emittermanip.h:59:3: note: previous declaration is here
+   59 |   Block,
+      |   ^
+2 warnings generated.
+  CXX      liblhapdf_yaml_cpp_la-node.lo
+  CXX      liblhapdf_yaml_cpp_la-parser.lo
+  CXX      liblhapdf_yaml_cpp_la-simplekey.lo
+  CXX      liblhapdf_yaml_cpp_la-convert.lo
+  CXX      liblhapdf_yaml_cpp_la-emitterutils.lo
+In file included from emitterutils.cpp:5:
+In file included from ./emitterutils.h:12:
+./emitterstate.h:28:24: warning: declaration shadows a variable in namespace 'LHAPDF_YAML' [-Wshadow]
+   28 |   enum value { NoType, Flow, Block };
+      |                        ^
+./yaml-cpp/emittermanip.h:58:3: note: previous declaration is here
+   58 |   Flow,
+      |   ^
+In file included from emitterutils.cpp:5:
+In file included from ./emitterutils.h:12:
+./emitterstate.h:28:30: warning: declaration shadows a variable in namespace 'LHAPDF_YAML' [-Wshadow]
+   28 |   enum value { NoType, Flow, Block };
+      |                              ^
+./yaml-cpp/emittermanip.h:59:3: note: previous declaration is here
+   59 |   Block,
+      |   ^
+In file included from emitterutils.cpp:5:
+./emitterutils.h:24:23: warning: declaration shadows a variable in namespace 'LHAPDF_YAML' [-Wshadow]
+   24 |   enum value { Plain, SingleQuoted, DoubleQuoted, Literal };
+      |                       ^
+./yaml-cpp/emittermanip.h:26:3: note: previous declaration is here
+   26 |   SingleQuoted,
+      |   ^
+In file included from emitterutils.cpp:5:
+./emitterutils.h:24:37: warning: declaration shadows a variable in namespace 'LHAPDF_YAML' [-Wshadow]
+   24 |   enum value { Plain, SingleQuoted, DoubleQuoted, Literal };
+      |                                     ^
+./yaml-cpp/emittermanip.h:27:3: note: previous declaration is here
+   27 |   DoubleQuoted,
+      |   ^
+In file included from emitterutils.cpp:5:
+./emitterutils.h:24:51: warning: declaration shadows a variable in namespace 'LHAPDF_YAML' [-Wshadow]
+   24 |   enum value { Plain, SingleQuoted, DoubleQuoted, Literal };
+      |                                                   ^
+./yaml-cpp/emittermanip.h:28:3: note: previous declaration is here
+   28 |   Literal,
+      |   ^
+5 warnings generated.
+  CXX      liblhapdf_yaml_cpp_la-node_data.lo
+  CXX      liblhapdf_yaml_cpp_la-regex_yaml.lo
+  CXX      liblhapdf_yaml_cpp_la-singledocparser.lo
+  CXX      liblhapdf_yaml_cpp_la-directives.lo
+  CXX      liblhapdf_yaml_cpp_la-exceptions.lo
+  CXX      liblhapdf_yaml_cpp_la-nodeevents.lo
+  CXX      liblhapdf_yaml_cpp_la-scanner.lo
+  CXX      liblhapdf_yaml_cpp_la-stream.lo
+  CXX      liblhapdf_yaml_cpp_la-emit.lo
+  CXX      liblhapdf_yaml_cpp_la-exp.lo
+  CXX      liblhapdf_yaml_cpp_la-null.lo
+  CXX      liblhapdf_yaml_cpp_la-scanscalar.lo
+  CXX      liblhapdf_yaml_cpp_la-tag.lo
+  CXX      liblhapdf_yaml_cpp_la-emitfromevents.lo
+  CXX      liblhapdf_yaml_cpp_la-memory.lo
+  CXX      liblhapdf_yaml_cpp_la-ostream_wrapper.lo
+  CXX      liblhapdf_yaml_cpp_la-scantag.lo
+  CXX      liblhapdf_yaml_cpp_la-depthguard.lo
+  CXX      liblhapdf_yaml_cpp_la-emitter.lo
+In file included from emitter.cpp:3:
+In file included from ./emitterutils.h:12:
+./emitterstate.h:28:24: warning: declaration shadows a variable in namespace 'LHAPDF_YAML' [-Wshadow]
+   28 |   enum value { NoType, Flow, Block };
+      |                        ^
+./yaml-cpp/emittermanip.h:58:3: note: previous declaration is here
+   58 |   Flow,
+      |   ^
+In file included from emitter.cpp:3:
+In file included from ./emitterutils.h:12:
+./emitterstate.h:28:30: warning: declaration shadows a variable in namespace 'LHAPDF_YAML' [-Wshadow]
+   28 |   enum value { NoType, Flow, Block };
+      |                              ^
+./yaml-cpp/emittermanip.h:59:3: note: previous declaration is here
+   59 |   Block,
+      |   ^
+In file included from emitter.cpp:3:
+./emitterutils.h:24:23: warning: declaration shadows a variable in namespace 'LHAPDF_YAML' [-Wshadow]
+   24 |   enum value { Plain, SingleQuoted, DoubleQuoted, Literal };
+      |                       ^
+./yaml-cpp/emittermanip.h:26:3: note: previous declaration is here
+   26 |   SingleQuoted,
+      |   ^
+In file included from emitter.cpp:3:
+./emitterutils.h:24:37: warning: declaration shadows a variable in namespace 'LHAPDF_YAML' [-Wshadow]
+   24 |   enum value { Plain, SingleQuoted, DoubleQuoted, Literal };
+      |                                     ^
+./yaml-cpp/emittermanip.h:27:3: note: previous declaration is here
+   27 |   DoubleQuoted,
+      |   ^
+In file included from emitter.cpp:3:
+./emitterutils.h:24:51: warning: declaration shadows a variable in namespace 'LHAPDF_YAML' [-Wshadow]
+   24 |   enum value { Plain, SingleQuoted, DoubleQuoted, Literal };
+      |                                                   ^
+./yaml-cpp/emittermanip.h:28:3: note: previous declaration is here
+   28 |   Literal,
+      |   ^
+5 warnings generated.
+  CXX      liblhapdf_yaml_cpp_la-nodebuilder.lo
+  CXX      liblhapdf_yaml_cpp_la-parse.lo
+  CXX      liblhapdf_yaml_cpp_la-scantoken.lo
+  CXXLD    liblhapdf-yaml-cpp.la
+  CXX      PDF.lo
+  CXX      PDFSet.lo
+  CXX      PDFInfo.lo
+  CXX      GridPDF.lo
+  CXX      KnotArray.lo
+  CXX      Interpolator.lo
+  CXX      BilinearInterpolator.lo
+  CXX      BicubicInterpolator.lo
+  CXX      LogBilinearInterpolator.lo
+  CXX      LogBicubicInterpolator.lo
+  CXX      ErrExtrapolator.lo
+  CXX      NearestPointExtrapolator.lo
+  CXX      ContinuationExtrapolator.lo
+  CXX      AlphaS.lo
+  CXX      AlphaS_Analytic.lo
+  CXX      AlphaS_ODE.lo
+  CXX      AlphaS_Ipol.lo
+  CXX      Config.lo
+  CXX      Factories.lo
+  CXX      PDFIndex.lo
+  CXX      Utils.lo
+  CXX      FileIO.lo
+  CXX      libLHAPDFInfo_la-Info.lo
+In file included from Info.cc:10:
+In file included from ./yamlcpp/yaml-cpp/yaml.h:12:
+./yamlcpp/yaml-cpp/emitterstyle.h:12:25: warning: declaration shadows a variable in namespace 'LHAPDF_YAML' [-Wshadow]
+   12 |   enum value { Default, Block, Flow };
+      |                         ^
+./yamlcpp/yaml-cpp/emittermanip.h:59:3: note: previous declaration is here
+   59 |   Block,
+      |   ^
+In file included from Info.cc:10:
+In file included from ./yamlcpp/yaml-cpp/yaml.h:12:
+./yamlcpp/yaml-cpp/emitterstyle.h:12:32: warning: declaration shadows a variable in namespace 'LHAPDF_YAML' [-Wshadow]
+   12 |   enum value { Default, Block, Flow };
+      |                                ^
+./yamlcpp/yaml-cpp/emittermanip.h:58:3: note: previous declaration is here
+   58 |   Flow,
+      |   ^
+In file included from Info.cc:10:
+In file included from ./yamlcpp/yaml-cpp/yaml.h:16:
+In file included from ./yamlcpp/yaml-cpp/node/node.h:18:
+./yamlcpp/yaml-cpp/node/type.h:12:27: warning: declaration shadows a variable in namespace 'LHAPDF_YAML' [-Wshadow]
+   12 |   enum value { Undefined, Null, Scalar, Sequence, Map };
+      |                           ^
+./yamlcpp/yaml-cpp/null.h:23:27: note: previous declaration is here
+   23 | extern YAML_CPP_API _Null Null;
+      |                           ^
+3 warnings generated.
+  CXXLD    libLHAPDFInfo.la
+  CXX      libLHAPDFPaths_la-Paths.lo
+  CXXLD    libLHAPDFPaths.la
+  CXX      libLHAPDFGlue_la-LHAGlue.lo
+  CXXLD    libLHAPDFGlue.la
+  CXXLD    libLHAPDF.la
+ld: warning: double slash removed from -dylib_install_name (/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//lib/libLHAPDF.dylib)
+ld: warning: search path '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/lib' not found
+Making all in include
+Making all in LHAPDF
+/Library/Developer/CommandLineTools/usr/bin/make  all-am
+make[2]: Nothing to be done for `all-am'.
+Making all in wrappers
+Making all in python
+for i in lhapdf.cpp lhapdf.pyx clhapdf.pxd __init__.py; do \
+	  orig="$i"; \
+	  build="$(basename $i)"; \
+	  if [ ! -e ${build} ]; then cp ${orig} ${build}; \
+	  echo ${build} >> fix-out-of-source; fi; \
+	done
+touch fix-out-of-source
+CC="g++" CXX="g++" CFLAGS="-g -O2" CXXFLAGS="-O2 -std=c++11 " CPPFLAGS="-I/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/include -I." LHAPDF_LOCAL=1 /Users/juandiegoharo/miniconda3/bin/python3 build.py
+ld: warning: ignoring duplicate libraries: '-lc++'
+ld: warning: search path '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/lib' not found
+Build command = g++  -shared -fPIC  -o  lhapdf.so  /private/var/folders/jl/024dtmhn4j32r4bw7hz8z_vc0000gn/T/tmpvrjq4gvf/LHAPDF-6.5.4/wrappers/python/lhapdf.cpp  -I/private/var/folders/jl/024dtmhn4j32r4bw7hz8z_vc0000gn/T/tmpvrjq4gvf/LHAPDF-6.5.4/include -I/private/var/folders/jl/024dtmhn4j32r4bw7hz8z_vc0000gn/T/tmpvrjq4gvf/LHAPDF-6.5.4/include -I/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/include  -I/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/include   -O2 -std=c++11    -L/private/var/folders/jl/024dtmhn4j32r4bw7hz8z_vc0000gn/T/tmpvrjq4gvf/LHAPDF-6.5.4/src/.libs  -L/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/lib  -lstdc++ -lLHAPDF  -I/Users/juandiegoharo/miniconda3/include/python3.10 /Users/juandiegoharo/miniconda3/lib/libpython3.10.dylib -ldl   -framework CoreFoundation 
+make[2]: Nothing to be done for `all-am'.
+Making all in tests
+make[1]: Nothing to be done for `all'.
+Making all in bin
+make[1]: Nothing to be done for `all'.
+Making all in examples
+  CXX      testpdf.o
+  CXXLD    testpdf
+ld: warning: -bind_at_load is deprecated on macOS
+ld: warning: search path '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/lib' not found
+  CXX      testpdfset.o
+  CXXLD    testpdfset
+ld: warning: -bind_at_load is deprecated on macOS
+ld: warning: search path '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/lib' not found
+  CXX      analyticpdf.o
+  CXXLD    analyticpdf
+ld: warning: -bind_at_load is deprecated on macOS
+ld: warning: search path '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/lib' not found
+  CXX      compatibility.o
+  CXXLD    compatibility
+ld: warning: -bind_at_load is deprecated on macOS
+ld: warning: search path '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/lib' not found
+  CXX      testpdfunc.o
+  CXXLD    testpdfunc
+ld: warning: -bind_at_load is deprecated on macOS
+ld: warning: search path '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/lib' not found
+  CXX      hessian2replicas.o
+hessian2replicas.cc:224:35: warning: variable 'iline' set but not used [-Wunused-but-set-variable]
+  224 |     int iblock(0), iblockline(0), iline(0);
+      |                                   ^
+hessian2replicas.cc:389:11: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  389 |           sprintf(buffer, "AlphaS_MZ: %g", alphasMZrand);
+      |           ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+  218 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+hessian2replicas.cc:392:11: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  392 |           sprintf(buffer, "AlphaS_MZ: %g", alphasMZmean);
+      |           ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+  218 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+hessian2replicas.cc:416:13: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  416 |             sprintf(buffer, "%2.6e", alphasValsRand[iq]);
+      |             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+  218 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+hessian2replicas.cc:419:13: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  419 |             sprintf(buffer, "%2.6e", alphasValsMean[iq]);
+      |             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+  218 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+hessian2replicas.cc:436:9: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  436 |         sprintf(buffer, "%2.6e", xs[isub][ix]);
+      |         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+  218 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+hessian2replicas.cc:443:9: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  443 |         sprintf(buffer, "%2.6e", qs[isub][iq]);
+      |         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+  218 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+hessian2replicas.cc:476:15: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  476 |               sprintf(buffer, "%2.8e", xfrand);
+      |               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+  218 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+hessian2replicas.cc:484:15: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  484 |               sprintf(buffer,"%2.8e",xfmean[isub][ix][iq][iflavor]);
+      |               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+  218 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+9 warnings generated.
+  CXXLD    hessian2replicas
+ld: warning: -bind_at_load is deprecated on macOS
+ld: warning: search path '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/lib' not found
+  CXX      reweight.o
+  CXXLD    reweight
+ld: warning: -bind_at_load is deprecated on macOS
+ld: warning: search path '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/lib' not found
+Making all in doc
+make[1]: Nothing to be done for `all'.
+make[1]: Nothing to be done for `all-am'.
+ Install LHAPDF6
+Making install in src
+Making install in yamlcpp
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+ .././config/install-sh -c -d '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libLHAPDF.la '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//lib'
+libtool: install: /usr/bin/install -c .libs/libLHAPDF.dylib /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//lib/libLHAPDF.dylib
+libtool: install: /usr/bin/install -c .libs/libLHAPDF.lai /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//lib/libLHAPDF.la
+libtool: install: /usr/bin/install -c .libs/libLHAPDF.a /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//lib/libLHAPDF.a
+libtool: install: chmod 644 /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//lib/libLHAPDF.a
+libtool: install: ranlib /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//lib/libLHAPDF.a
+make[3]: Nothing to be done for `install-data-am'.
+Making install in include
+Making install in LHAPDF
+make[3]: Nothing to be done for `install-exec-am'.
+ ../.././config/install-sh -c -d '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/include/LHAPDF'
+ /usr/bin/install -c -m 644 LHAPDF.h Version.h Info.h Config.h PDFSet.h PDFInfo.h PDF.h GridPDF.h KnotArray.h Utils.h FileIO.h Paths.h Exceptions.h Factories.h PDFIndex.h Reweighting.h Interpolator.h BilinearInterpolator.h BicubicInterpolator.h LogBilinearInterpolator.h LogBicubicInterpolator.h Extrapolator.h ErrExtrapolator.h NearestPointExtrapolator.h ContinuationExtrapolator.h AlphaS.h LHAGlue.h '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/include/LHAPDF'
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in wrappers
+Making install in python
+CC="g++" CXX="g++" CFLAGS="-g -O2" CXXFLAGS="-O2 -std=c++11 " CPPFLAGS="-I/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/include -I." LHAPDF_LOCAL=1 /Users/juandiegoharo/miniconda3/bin/python3 build.py
+ld: warning: ignoring duplicate libraries: '-lc++'
+Build command = g++  -shared -fPIC  -o  lhapdf.so  /private/var/folders/jl/024dtmhn4j32r4bw7hz8z_vc0000gn/T/tmpvrjq4gvf/LHAPDF-6.5.4/wrappers/python/lhapdf.cpp  -I/private/var/folders/jl/024dtmhn4j32r4bw7hz8z_vc0000gn/T/tmpvrjq4gvf/LHAPDF-6.5.4/include -I/private/var/folders/jl/024dtmhn4j32r4bw7hz8z_vc0000gn/T/tmpvrjq4gvf/LHAPDF-6.5.4/include -I/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/include  -I/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/include   -O2 -std=c++11    -L/private/var/folders/jl/024dtmhn4j32r4bw7hz8z_vc0000gn/T/tmpvrjq4gvf/LHAPDF-6.5.4/src/.libs  -L/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/lib  -lstdc++ -lLHAPDF  -I/Users/juandiegoharo/miniconda3/include/python3.10 /Users/juandiegoharo/miniconda3/lib/libpython3.10.dylib -ldl   -framework CoreFoundation 
+../.././config/install-sh -c -d /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/lib/python3.10/site-packages/ && \
+	cp -r /private/var/folders/jl/024dtmhn4j32r4bw7hz8z_vc0000gn/T/tmpvrjq4gvf/LHAPDF-6.5.4/wrappers/python/build/lhapdf /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/lib/python3.10/site-packages/
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in tests
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+Making install in bin
+ .././config/install-sh -c -d '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//bin'
+ /usr/bin/install -c lhapdf-config '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//bin'
+ .././config/install-sh -c -d '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//bin'
+ /usr/bin/install -c lhapdf '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//bin'
+make[2]: Nothing to be done for `install-data-am'.
+Making install in examples
+make[2]: Nothing to be done for `install-exec-am'.
+ .././config/install-sh -c -d '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/share/doc/LHAPDF/examples'
+ /usr/bin/install -c -m 644 testpdf testpdfset analyticpdf compatibility testpdfunc hessian2replicas reweight testpdf.cc testpdfset.cc analyticpdf.cc compatibility.cc testpdfunc.cc hessian2replicas.cc reweight.cc pythonexample.py testpdfunc.py fexample1.f90 fexample2.f90 '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/share/doc/LHAPDF/examples'
+Making install in doc
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Nothing to be done for `install-exec-am'.
+ ./config/install-sh -c -d '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//lib/pkgconfig'
+ /usr/bin/install -c -m 644 lhapdf.pc '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//lib/pkgconfig'
+ ./config/install-sh -c -d '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//share/LHAPDF'
+ /usr/bin/install -c -m 644 lhapdf.conf pdfsets.index '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//share/LHAPDF'
+/Library/Developer/CommandLineTools/usr/bin/make  install-data-hook
+test -e /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//share/LHAPDF/sets && rmdir /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//share/LHAPDF/sets || true
+copy index and conf file
+cp: /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//share/LHAPDF/pdfsets.index and ./share/LHAPDF/pdfsets.index are identical (not copied).
+cp: /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//share/LHAPDF/lhapdf.conf and ./share/LHAPDF/lhapdf.conf are identical (not copied).
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ Finished LHAPDF6 installation
+lhapdf
+lhapdf-config

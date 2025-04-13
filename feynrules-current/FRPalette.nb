@@ -1,0 +1,247 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      7277,        239]
+NotebookOptionsPosition[      6345,        205]
+NotebookOutlinePosition[      7252,        239]
+CellTagsIndexPosition[      7209,        236]
+WindowTitle->FeynRules Palette
+WindowFrame->Palette*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\" \"\>"},
+    {
+     StyleBox["\<\"   Gamma Matrices   \"\>",
+      StripOnInput->False,
+      FontSize->12,
+      FontWeight->Bold]},
+    {
+     ButtonBox[
+      TagBox[
+       SuperscriptBox[
+        TagBox["\[Gamma]",
+         Power,
+         Editable->True,
+         Selectable->True], 
+        TagBox["\[Placeholder]",
+         Power,
+         Editable->True,
+         Selectable->True]],
+       InterpretTemplate[Superscript[#, #2]& ],
+       Editable->False,
+       Selectable->False],
+      BaseStyle->"Paste",
+      ButtonData->RowBox[{
+         InterpretationBox[
+          StyleBox["Ga", ShowStringCharacters -> True, NumberMarks -> True], 
+          InputForm[FeynRules`Ga], Editable -> True, AutoDelete -> True], "[",
+          "\[Placeholder]", "]"}]]},
+    {
+     ButtonBox[
+      SubscriptBox[
+       TagBox[
+        SuperscriptBox[
+         TagBox["\[Gamma]",
+          Power,
+          Editable->True,
+          Selectable->True], 
+         TagBox["\[Placeholder]",
+          Power,
+          Editable->True,
+          Selectable->True]],
+        InterpretTemplate[Superscript[#, #2]& ],
+        Editable->False,
+        Selectable->False], 
+       RowBox[{"\[Placeholder]", ",", "\[Placeholder]"}]],
+      BaseStyle->"Paste",
+      ButtonData->RowBox[{
+         InterpretationBox[
+          StyleBox["Ga", ShowStringCharacters -> True, NumberMarks -> True], 
+          InputForm[FeynRules`Ga], Editable -> True, AutoDelete -> True], "[", 
+         RowBox[{
+          "\[Placeholder]", ",", "\[Placeholder]", ",", "\[Placeholder]"}], 
+         "]"}]]},
+    {
+     ButtonBox[
+      SubscriptBox["P", "\<\"+\"\>"],
+      BaseStyle->"Paste",
+      ButtonData->SubscriptBox["P", "\"+\""]]},
+    {
+     ButtonBox[
+      SubscriptBox["P", "\<\"-\"\>"],
+      BaseStyle->"Paste",
+      ButtonData->InterpretationBox[
+        StyleBox["ProjM", ShowStringCharacters -> True, NumberMarks -> True], 
+        
+        InputForm[FeynRules`ProjM], Editable -> True, AutoDelete -> True]]},
+    {
+     ButtonBox[
+      SubscriptBox[
+       RowBox[{"(", 
+        SubscriptBox["P", "\<\"+\"\>"], ")"}], 
+       RowBox[{"\[Placeholder]", ",", "\[Placeholder]"}]],
+      BaseStyle->"Paste",
+      ButtonData->RowBox[{
+         InterpretationBox[
+          StyleBox[
+          "ProjP", ShowStringCharacters -> True, NumberMarks -> True], 
+          InputForm[FeynRules`ProjP], Editable -> True, AutoDelete -> True], 
+         "[", 
+         RowBox[{"\[Placeholder]", ",", "\[Placeholder]"}], "]"}]]},
+    {
+     ButtonBox[
+      SubscriptBox[
+       RowBox[{"(", 
+        SubscriptBox["P", "\<\"-\"\>"], ")"}], 
+       RowBox[{"\[Placeholder]", ",", "\[Placeholder]"}]],
+      BaseStyle->"Paste",
+      ButtonData->RowBox[{
+         InterpretationBox[
+          StyleBox[
+          "ProjM", ShowStringCharacters -> True, NumberMarks -> True], 
+          InputForm[FeynRules`ProjM], Editable -> True, AutoDelete -> True], 
+         "[", 
+         RowBox[{"\[Placeholder]", ",", "\[Placeholder]"}], "]"}]]},
+    {
+     StyleBox["\<\"Derivative\"\>",
+      StripOnInput->False,
+      FontSize->12,
+      FontWeight->Bold]},
+    {
+     ButtonBox[
+      RowBox[{"\<\"\[PartialD]\"\>", "[", 
+       RowBox[{"\[Placeholder]", ",", "\[Placeholder]"}], "]"}],
+      BaseStyle->"Paste",
+      ButtonData->RowBox[{
+         InterpretationBox[
+          StyleBox["del", ShowStringCharacters -> True, NumberMarks -> True], 
+          
+          InputForm[FeynRules`del], Editable -> True, AutoDelete -> True], 
+         "[", 
+         RowBox[{"\[Placeholder]", ",", "\[Placeholder]"}], "]"}]]},
+    {
+     StyleBox["\<\"  Hermitian Conjugate  \"\>",
+      StripOnInput->False,
+      FontSize->12,
+      FontWeight->Bold]},
+    {
+     ButtonBox[
+      TagBox[
+       SuperscriptBox[
+        TagBox["\[Placeholder]",
+         Power,
+         Editable->True,
+         Selectable->True], 
+        TagBox["\[Dagger]",
+         Power,
+         Editable->True,
+         Selectable->True]],
+       InterpretTemplate[Superscript[#, #2]& ],
+       Editable->False,
+       Selectable->False],
+      BaseStyle->"Paste",
+      ButtonData->RowBox[{
+         InterpretationBox[
+          StyleBox["HC", ShowStringCharacters -> True, NumberMarks -> True], 
+          InputForm[FeynRules`HC], Editable -> True, AutoDelete -> True], "[",
+          "\[Placeholder]", "]"}]]},
+    {
+     StyleBox["\<\"  Charge Conjugate  \"\>",
+      StripOnInput->False,
+      FontSize->12,
+      FontWeight->Bold]},
+    {
+     ButtonBox[
+      TagBox[
+       SuperscriptBox[
+        TagBox["\[Placeholder]",
+         Power,
+         Editable->True,
+         Selectable->True], 
+        TagBox["C",
+         Power,
+         Editable->True,
+         Selectable->True]],
+       InterpretTemplate[Superscript[#, #2]& ],
+       Editable->False,
+       Selectable->False],
+      BaseStyle->"Paste",
+      ButtonData->RowBox[{
+         InterpretationBox[
+          StyleBox["CC", ShowStringCharacters -> True, NumberMarks -> True], 
+          InputForm[FeynRules`CC], Editable -> True, AutoDelete -> True], "[",
+          "\[Placeholder]", "]"}]]}
+   },
+   ColumnsEqual->False,
+   GridBoxAlignment->{"Columns" -> {{Center}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+   RowsEqual->False],
+  "Column"]],
+ CellMargins->{{0, 0}, {0, 0}},
+ CellBracketOptions->{"Color"->RGBColor[0.269993, 0.308507, 0.6]},
+ CellHorizontalScrolling->True,
+ PageBreakAbove->True,
+ PageBreakWithin->False,
+ ShowAutoStyles->True,
+ LineSpacing->{1.25, 0},
+ AutoItalicWords->{},
+ ScriptMinSize->9,
+ ShowStringCharacters->False,
+ FontFamily:>CurrentValue["PanelFontFamily"],
+ FontSize:>CurrentValue[
+  "PanelFontSize"],ExpressionUUID->"b58fbdaa-603d-4dfc-a480-31fe30768ce9"]
+},
+ClosingAutoSave->True,
+WindowToolbars->{},
+WindowSize->{Fit, 350},
+WindowMargins->{{651, Automatic}, {Automatic, 253}},
+WindowFrame->"Palette",
+WindowElements->{},
+WindowFrameElements->"CloseBox",
+WindowFloating->True,
+WindowClickSelect->False,
+WindowTitle->"FeynRules Palette",
+ScrollingOptions->{"VerticalScrollRange"->Fit},
+PrivateNotebookOptions->{"VersionedStylesheet"->{"Default.nb"[8.] -> True}},
+ShowCellBracket->False,
+CellMargins->{{0, 0}, {0, 0}},
+Deployed->True,
+CellOpen->True,
+ShowCellLabel->False,
+ShowCellTags->False,
+ImageMargins->{{0, 0}, {0, 0}},
+Magnification->1.,
+FrontEndVersion->"14.2 for Mac OS X ARM (64-bit) (December 26, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"2b4a70bf-717a-4dce-b3e6-3309716c150f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[577, 21, 5764, 182, 323, InheritFromParent,ExpressionUUID->"b58fbdaa-603d-4dfc-a480-31fe30768ce9",
+ PageBreakAbove->True,
+ PageBreakWithin->False]
+}
+]
+*)
+

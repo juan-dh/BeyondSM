@@ -1,0 +1,90 @@
+      write(*,*)  ' External Params            '
+      write(*,*)  ' ---------------------------'
+      write(*,1) 'cabi=',cabi
+      write(*,1) 'aEWM1=',aEWM1
+      write(*,1) 'Gf=',Gf
+      write(*,1) 'aS=',aS
+      write(*,1) 'ymdo=',ymdo
+      write(*,1) 'ymup=',ymup
+      write(*,1) 'yms=',yms
+      write(*,1) 'ymc=',ymc
+      write(*,1) 'ymb=',ymb
+      write(*,1) 'ymt=',ymt
+      write(*,1) 'yme=',yme
+      write(*,1) 'ymm=',ymm
+      write(*,1) 'ymtau=',ymtau
+      write(*,1) 'msc=',msc
+      write(*,1) 'lamS=',lamS
+      write(*,1) 'lamHS=',lamHS
+      write(*,*)  ''
+      write(*,*)  ' Internal Params            '
+      write(*,*)  ' ---------------------------'
+      write(*,1) 'FRPi=',FRPi
+      write(*,1) 'aEW=',aEW
+      write(*,1) 'sw2=',sw2
+      write(*,1) 'ee=',ee
+      write(*,1) 'cw=',cw
+      write(*,1) 'sw=',sw
+      write(*,1) 'gw=',gw
+      write(*,1) 'g1=',g1
+      write(*,1) 'G=',G
+      write(*,1) 'vev=',vev
+      write(*,1) 'lam=',lam
+      write(*,1) 'muH=',muH
+      write(*,1) 'ye=',ye
+      write(*,1) 'ym=',ym
+      write(*,1) 'ytau=',ytau
+      write(*,1) 'yup=',yup
+      write(*,1) 'yc=',yc
+      write(*,1) 'yt=',yt
+      write(*,1) 'ydo=',ydo
+      write(*,1) 'ys=',ys
+      write(*,1) 'yb=',yb
+      write(*,2) 'CKM1x1=',CKM1x1
+      write(*,2) 'CKM1x2=',CKM1x2
+      write(*,2) 'CKM1x3=',CKM1x3
+      write(*,2) 'CKM2x1=',CKM2x1
+      write(*,2) 'CKM2x2=',CKM2x2
+      write(*,2) 'CKM2x3=',CKM2x3
+      write(*,2) 'CKM3x1=',CKM3x1
+      write(*,2) 'CKM3x2=',CKM3x2
+      write(*,2) 'CKM3x3=',CKM3x3
+      write(*,1) 'Sqrt2=',Sqrt2
+      write(*,1) 'SqrtPi=',SqrtPi
+      write(*,1) 'Psw2=',Psw2
+      write(*,1) 'Pcw2=',Pcw2
+      write(*,2) 'CONJCKM2x3=',CONJCKM2x3
+      write(*,2) 'CONJCKM3x3=',CONJCKM3x3
+      write(*,2) 'CONJCKM1x3=',CONJCKM1x3
+      write(*,2) 'CONJCKM2x1=',CONJCKM2x1
+      write(*,2) 'CONJCKM3x1=',CONJCKM3x1
+      write(*,2) 'CONJCKM1x1=',CONJCKM1x1
+      write(*,2) 'CONJCKM2x2=',CONJCKM2x2
+      write(*,2) 'CONJCKM3x2=',CONJCKM3x2
+      write(*,2) 'CONJCKM1x2=',CONJCKM1x2
+      write(*,1) 'ggT1=',ggT1
+      write(*,*)  ''
+      write(*,*)  ' Masses                     '
+      write(*,*)  ' ---------------------------'
+      write(*,3) 'MD=',MD
+      write(*,3) 'MU=',MU
+      write(*,3) 'MS=',MS
+      write(*,3) 'MC=',MC
+      write(*,3) 'MB=',MB
+      write(*,3) 'MT=',MT
+      write(*,3) 'Me=',Me
+      write(*,3) 'MMU=',MMU
+      write(*,3) 'MTA=',MTA
+      write(*,3) 'MZ=',MZ
+      write(*,3) 'MW=',MW
+      write(*,3) 'MH=',MH
+      write(*,3) 'MSc=',MSc
+      write(*,*)  ''
+      write(*,*)  ' Widths                     '
+      write(*,*)  ' ---------------------------'
+      write(*,3) 'WT=',WT
+      write(*,3) 'WZ=',WZ
+      write(*,3) 'WW=',WW
+      write(*,3) 'WH=',WH
+      write(*,3) 'WSc=',WSc
+      write(*,*)  ''

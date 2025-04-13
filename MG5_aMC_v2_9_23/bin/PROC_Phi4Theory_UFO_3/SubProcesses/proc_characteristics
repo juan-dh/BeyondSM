@@ -1,0 +1,19 @@
+#    Information about the process      #
+#########################################
+ loop_induced = False 
+ has_isr = False 
+ has_fsr = False 
+ nb_channel = 1 
+ nexternal = 4 
+ ninitial = 2 
+ grouped_matrix = True 
+ has_loops = False 
+ bias_module = dummy 
+ max_n_matched_jets = 0 
+ colored_pdgs = [] 
+ complex_mass_scheme = False 
+ pdg_initial1 = [9000001] 
+ pdg_initial2 = [9000001] 
+ limitations = [] 
+ hel_recycling = True 
+ single_color = True 

@@ -48,6 +48,7 @@ M$ClassesDescription = {
     ClassName       -> Sc,
     SelfConjugate   -> True,
     Mass            -> {mSc,External},
+    Width           -> {wSc, 0},
     ParticleName    -> "Sc"
   }
 };

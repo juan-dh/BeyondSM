@@ -1,0 +1,832 @@
+ Set environment variables
+ Unpack zlib
+x zlib-1.2.10/
+x zlib-1.2.10/adler32.c
+x zlib-1.2.10/amiga/
+x zlib-1.2.10/ChangeLog
+x zlib-1.2.10/CMakeLists.txt
+x zlib-1.2.10/compress.c
+x zlib-1.2.10/configure
+x zlib-1.2.10/contrib/
+x zlib-1.2.10/crc32.c
+x zlib-1.2.10/crc32.h
+x zlib-1.2.10/deflate.c
+x zlib-1.2.10/deflate.h
+x zlib-1.2.10/doc/
+x zlib-1.2.10/examples/
+x zlib-1.2.10/FAQ
+x zlib-1.2.10/gzclose.c
+x zlib-1.2.10/gzguts.h
+x zlib-1.2.10/gzlib.c
+x zlib-1.2.10/gzread.c
+x zlib-1.2.10/gzwrite.c
+x zlib-1.2.10/INDEX
+x zlib-1.2.10/infback.c
+x zlib-1.2.10/inffast.c
+x zlib-1.2.10/inffast.h
+x zlib-1.2.10/inffixed.h
+x zlib-1.2.10/inflate.c
+x zlib-1.2.10/inflate.h
+x zlib-1.2.10/inftrees.c
+x zlib-1.2.10/inftrees.h
+x zlib-1.2.10/make_vms.com
+x zlib-1.2.10/Makefile
+x zlib-1.2.10/Makefile.in
+x zlib-1.2.10/msdos/
+x zlib-1.2.10/nintendods/
+x zlib-1.2.10/old/
+x zlib-1.2.10/os400/
+x zlib-1.2.10/qnx/
+x zlib-1.2.10/README
+x zlib-1.2.10/test/
+x zlib-1.2.10/treebuild.xml
+x zlib-1.2.10/trees.c
+x zlib-1.2.10/trees.h
+x zlib-1.2.10/uncompr.c
+x zlib-1.2.10/watcom/
+x zlib-1.2.10/win32/
+x zlib-1.2.10/zconf.h
+x zlib-1.2.10/zconf.h.cmakein
+x zlib-1.2.10/zconf.h.in
+x zlib-1.2.10/zlib.3
+x zlib-1.2.10/zlib.3.pdf
+x zlib-1.2.10/zlib.h
+x zlib-1.2.10/zlib.map
+x zlib-1.2.10/zlib.pc.cmakein
+x zlib-1.2.10/zlib.pc.in
+x zlib-1.2.10/zlib2ansi
+x zlib-1.2.10/zutil.c
+x zlib-1.2.10/zutil.h
+x zlib-1.2.10/win32/DLL_FAQ.txt
+x zlib-1.2.10/win32/Makefile.bor
+x zlib-1.2.10/win32/Makefile.gcc
+x zlib-1.2.10/win32/Makefile.msc
+x zlib-1.2.10/win32/README-WIN32.txt
+x zlib-1.2.10/win32/VisualC.txt
+x zlib-1.2.10/win32/zlib.def
+x zlib-1.2.10/win32/zlib1.rc
+x zlib-1.2.10/watcom/watcom_f.mak
+x zlib-1.2.10/watcom/watcom_l.mak
+x zlib-1.2.10/test/example.c
+x zlib-1.2.10/test/infcover.c
+x zlib-1.2.10/test/minigzip.c
+x zlib-1.2.10/qnx/package.qpg
+x zlib-1.2.10/os400/bndsrc
+x zlib-1.2.10/os400/make.sh
+x zlib-1.2.10/os400/README400
+x zlib-1.2.10/os400/zlib.inc
+x zlib-1.2.10/old/descrip.mms
+x zlib-1.2.10/old/Makefile.emx
+x zlib-1.2.10/old/Makefile.riscos
+x zlib-1.2.10/old/os2/
+x zlib-1.2.10/old/README
+x zlib-1.2.10/old/visual-basic.txt
+x zlib-1.2.10/old/os2/Makefile.os2
+x zlib-1.2.10/old/os2/zlib.def
+x zlib-1.2.10/nintendods/Makefile
+x zlib-1.2.10/nintendods/README
+x zlib-1.2.10/msdos/Makefile.bor
+x zlib-1.2.10/msdos/Makefile.dj2
+x zlib-1.2.10/msdos/Makefile.emx
+x zlib-1.2.10/msdos/Makefile.msc
+x zlib-1.2.10/msdos/Makefile.tc
+x zlib-1.2.10/examples/enough.c
+x zlib-1.2.10/examples/fitblk.c
+x zlib-1.2.10/examples/gun.c
+x zlib-1.2.10/examples/gzappend.c
+x zlib-1.2.10/examples/gzjoin.c
+x zlib-1.2.10/examples/gzlog.c
+x zlib-1.2.10/examples/gzlog.h
+x zlib-1.2.10/examples/README.examples
+x zlib-1.2.10/examples/zlib_how.html
+x zlib-1.2.10/examples/zpipe.c
+x zlib-1.2.10/examples/zran.c
+x zlib-1.2.10/doc/algorithm.txt
+x zlib-1.2.10/doc/rfc1950.txt
+x zlib-1.2.10/doc/rfc1951.txt
+x zlib-1.2.10/doc/rfc1952.txt
+x zlib-1.2.10/doc/txtvsbin.txt
+x zlib-1.2.10/contrib/ada/
+x zlib-1.2.10/contrib/amd64/
+x zlib-1.2.10/contrib/asm686/
+x zlib-1.2.10/contrib/blast/
+x zlib-1.2.10/contrib/delphi/
+x zlib-1.2.10/contrib/dotzlib/
+x zlib-1.2.10/contrib/gcc_gvmat64/
+x zlib-1.2.10/contrib/infback9/
+x zlib-1.2.10/contrib/inflate86/
+x zlib-1.2.10/contrib/iostream/
+x zlib-1.2.10/contrib/iostream2/
+x zlib-1.2.10/contrib/iostream3/
+x zlib-1.2.10/contrib/masmx64/
+x zlib-1.2.10/contrib/masmx86/
+x zlib-1.2.10/contrib/minizip/
+x zlib-1.2.10/contrib/pascal/
+x zlib-1.2.10/contrib/puff/
+x zlib-1.2.10/contrib/README.contrib
+x zlib-1.2.10/contrib/testzlib/
+x zlib-1.2.10/contrib/untgz/
+x zlib-1.2.10/contrib/vstudio/
+x zlib-1.2.10/contrib/vstudio/readme.txt
+x zlib-1.2.10/contrib/vstudio/vc10/
+x zlib-1.2.10/contrib/vstudio/vc11/
+x zlib-1.2.10/contrib/vstudio/vc12/
+x zlib-1.2.10/contrib/vstudio/vc14/
+x zlib-1.2.10/contrib/vstudio/vc9/
+x zlib-1.2.10/contrib/vstudio/vc9/miniunz.vcproj
+x zlib-1.2.10/contrib/vstudio/vc9/minizip.vcproj
+x zlib-1.2.10/contrib/vstudio/vc9/testzlib.vcproj
+x zlib-1.2.10/contrib/vstudio/vc9/testzlibdll.vcproj
+x zlib-1.2.10/contrib/vstudio/vc9/zlib.rc
+x zlib-1.2.10/contrib/vstudio/vc9/zlibstat.vcproj
+x zlib-1.2.10/contrib/vstudio/vc9/zlibvc.def
+x zlib-1.2.10/contrib/vstudio/vc9/zlibvc.sln
+x zlib-1.2.10/contrib/vstudio/vc9/zlibvc.vcproj
+x zlib-1.2.10/contrib/vstudio/vc14/miniunz.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc14/miniunz.vcxproj.user
+x zlib-1.2.10/contrib/vstudio/vc14/minizip.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc14/minizip.vcxproj.user
+x zlib-1.2.10/contrib/vstudio/vc14/testzlib.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc14/testzlib.vcxproj.user
+x zlib-1.2.10/contrib/vstudio/vc14/testzlibdll.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc14/testzlibdll.vcxproj.user
+x zlib-1.2.10/contrib/vstudio/vc14/zlib.rc
+x zlib-1.2.10/contrib/vstudio/vc14/zlibstat.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc14/zlibstat.vcxproj.user
+x zlib-1.2.10/contrib/vstudio/vc14/zlibvc.def
+x zlib-1.2.10/contrib/vstudio/vc14/zlibvc.sln
+x zlib-1.2.10/contrib/vstudio/vc14/zlibvc.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc14/zlibvc.vcxproj.user
+x zlib-1.2.10/contrib/vstudio/vc12/miniunz.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc12/minizip.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc12/testzlib.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc12/testzlibdll.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc12/zlib.rc
+x zlib-1.2.10/contrib/vstudio/vc12/zlibstat.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc12/zlibvc.def
+x zlib-1.2.10/contrib/vstudio/vc12/zlibvc.sln
+x zlib-1.2.10/contrib/vstudio/vc12/zlibvc.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc11/miniunz.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc11/minizip.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc11/testzlib.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc11/testzlibdll.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc11/zlib.rc
+x zlib-1.2.10/contrib/vstudio/vc11/zlibstat.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc11/zlibvc.def
+x zlib-1.2.10/contrib/vstudio/vc11/zlibvc.sln
+x zlib-1.2.10/contrib/vstudio/vc11/zlibvc.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc10/miniunz.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc10/miniunz.vcxproj.filters
+x zlib-1.2.10/contrib/vstudio/vc10/minizip.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc10/minizip.vcxproj.filters
+x zlib-1.2.10/contrib/vstudio/vc10/testzlib.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc10/testzlib.vcxproj.filters
+x zlib-1.2.10/contrib/vstudio/vc10/testzlibdll.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc10/testzlibdll.vcxproj.filters
+x zlib-1.2.10/contrib/vstudio/vc10/zlib.rc
+x zlib-1.2.10/contrib/vstudio/vc10/zlibstat.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc10/zlibstat.vcxproj.filters
+x zlib-1.2.10/contrib/vstudio/vc10/zlibvc.def
+x zlib-1.2.10/contrib/vstudio/vc10/zlibvc.sln
+x zlib-1.2.10/contrib/vstudio/vc10/zlibvc.vcxproj
+x zlib-1.2.10/contrib/vstudio/vc10/zlibvc.vcxproj.filters
+x zlib-1.2.10/contrib/untgz/Makefile
+x zlib-1.2.10/contrib/untgz/Makefile.msc
+x zlib-1.2.10/contrib/untgz/untgz.c
+x zlib-1.2.10/contrib/testzlib/testzlib.c
+x zlib-1.2.10/contrib/testzlib/testzlib.txt
+x zlib-1.2.10/contrib/puff/Makefile
+x zlib-1.2.10/contrib/puff/puff.c
+x zlib-1.2.10/contrib/puff/puff.h
+x zlib-1.2.10/contrib/puff/pufftest.c
+x zlib-1.2.10/contrib/puff/README
+x zlib-1.2.10/contrib/puff/zeros.raw
+x zlib-1.2.10/contrib/pascal/example.pas
+x zlib-1.2.10/contrib/pascal/readme.txt
+x zlib-1.2.10/contrib/pascal/zlibd32.mak
+x zlib-1.2.10/contrib/pascal/zlibpas.pas
+x zlib-1.2.10/contrib/minizip/configure.ac
+x zlib-1.2.10/contrib/minizip/crypt.h
+x zlib-1.2.10/contrib/minizip/ioapi.c
+x zlib-1.2.10/contrib/minizip/ioapi.h
+x zlib-1.2.10/contrib/minizip/iowin32.c
+x zlib-1.2.10/contrib/minizip/iowin32.h
+x zlib-1.2.10/contrib/minizip/make_vms.com
+x zlib-1.2.10/contrib/minizip/Makefile
+x zlib-1.2.10/contrib/minizip/Makefile.am
+x zlib-1.2.10/contrib/minizip/miniunz.c
+x zlib-1.2.10/contrib/minizip/miniunzip.1
+x zlib-1.2.10/contrib/minizip/minizip.1
+x zlib-1.2.10/contrib/minizip/minizip.c
+x zlib-1.2.10/contrib/minizip/minizip.pc.in
+x zlib-1.2.10/contrib/minizip/MiniZip64_Changes.txt
+x zlib-1.2.10/contrib/minizip/MiniZip64_info.txt
+x zlib-1.2.10/contrib/minizip/mztools.c
+x zlib-1.2.10/contrib/minizip/mztools.h
+x zlib-1.2.10/contrib/minizip/unzip.c
+x zlib-1.2.10/contrib/minizip/unzip.h
+x zlib-1.2.10/contrib/minizip/zip.c
+x zlib-1.2.10/contrib/minizip/zip.h
+x zlib-1.2.10/contrib/masmx86/bld_ml32.bat
+x zlib-1.2.10/contrib/masmx86/inffas32.asm
+x zlib-1.2.10/contrib/masmx86/match686.asm
+x zlib-1.2.10/contrib/masmx86/readme.txt
+x zlib-1.2.10/contrib/masmx64/bld_ml64.bat
+x zlib-1.2.10/contrib/masmx64/gvmat64.asm
+x zlib-1.2.10/contrib/masmx64/inffas8664.c
+x zlib-1.2.10/contrib/masmx64/inffasx64.asm
+x zlib-1.2.10/contrib/masmx64/readme.txt
+x zlib-1.2.10/contrib/iostream3/README
+x zlib-1.2.10/contrib/iostream3/test.cc
+x zlib-1.2.10/contrib/iostream3/TODO
+x zlib-1.2.10/contrib/iostream3/zfstream.cc
+x zlib-1.2.10/contrib/iostream3/zfstream.h
+x zlib-1.2.10/contrib/iostream2/zstream.h
+x zlib-1.2.10/contrib/iostream2/zstream_test.cpp
+x zlib-1.2.10/contrib/iostream/test.cpp
+x zlib-1.2.10/contrib/iostream/zfstream.cpp
+x zlib-1.2.10/contrib/iostream/zfstream.h
+x zlib-1.2.10/contrib/inflate86/inffas86.c
+x zlib-1.2.10/contrib/inflate86/inffast.S
+x zlib-1.2.10/contrib/infback9/infback9.c
+x zlib-1.2.10/contrib/infback9/infback9.h
+x zlib-1.2.10/contrib/infback9/inffix9.h
+x zlib-1.2.10/contrib/infback9/inflate9.h
+x zlib-1.2.10/contrib/infback9/inftree9.c
+x zlib-1.2.10/contrib/infback9/inftree9.h
+x zlib-1.2.10/contrib/infback9/README
+x zlib-1.2.10/contrib/gcc_gvmat64/gvmat64.S
+x zlib-1.2.10/contrib/dotzlib/DotZLib/
+x zlib-1.2.10/contrib/dotzlib/DotZLib.build
+x zlib-1.2.10/contrib/dotzlib/DotZLib.chm
+x zlib-1.2.10/contrib/dotzlib/DotZLib.sln
+x zlib-1.2.10/contrib/dotzlib/LICENSE_1_0.txt
+x zlib-1.2.10/contrib/dotzlib/readme.txt
+x zlib-1.2.10/contrib/dotzlib/DotZLib/AssemblyInfo.cs
+x zlib-1.2.10/contrib/dotzlib/DotZLib/ChecksumImpl.cs
+x zlib-1.2.10/contrib/dotzlib/DotZLib/CircularBuffer.cs
+x zlib-1.2.10/contrib/dotzlib/DotZLib/CodecBase.cs
+x zlib-1.2.10/contrib/dotzlib/DotZLib/Deflater.cs
+x zlib-1.2.10/contrib/dotzlib/DotZLib/DotZLib.cs
+x zlib-1.2.10/contrib/dotzlib/DotZLib/DotZLib.csproj
+x zlib-1.2.10/contrib/dotzlib/DotZLib/GZipStream.cs
+x zlib-1.2.10/contrib/dotzlib/DotZLib/Inflater.cs
+x zlib-1.2.10/contrib/dotzlib/DotZLib/UnitTests.cs
+x zlib-1.2.10/contrib/delphi/readme.txt
+x zlib-1.2.10/contrib/delphi/ZLib.pas
+x zlib-1.2.10/contrib/delphi/ZLibConst.pas
+x zlib-1.2.10/contrib/delphi/zlibd32.mak
+x zlib-1.2.10/contrib/blast/blast.c
+x zlib-1.2.10/contrib/blast/blast.h
+x zlib-1.2.10/contrib/blast/Makefile
+x zlib-1.2.10/contrib/blast/README
+x zlib-1.2.10/contrib/blast/test.pk
+x zlib-1.2.10/contrib/blast/test.txt
+x zlib-1.2.10/contrib/asm686/match.S
+x zlib-1.2.10/contrib/asm686/README.686
+x zlib-1.2.10/contrib/amd64/amd64-match.S
+x zlib-1.2.10/contrib/ada/buffer_demo.adb
+x zlib-1.2.10/contrib/ada/mtest.adb
+x zlib-1.2.10/contrib/ada/read.adb
+x zlib-1.2.10/contrib/ada/readme.txt
+x zlib-1.2.10/contrib/ada/test.adb
+x zlib-1.2.10/contrib/ada/zlib-streams.adb
+x zlib-1.2.10/contrib/ada/zlib-streams.ads
+x zlib-1.2.10/contrib/ada/zlib-thin.adb
+x zlib-1.2.10/contrib/ada/zlib-thin.ads
+x zlib-1.2.10/contrib/ada/zlib.adb
+x zlib-1.2.10/contrib/ada/zlib.ads
+x zlib-1.2.10/contrib/ada/zlib.gpr
+x zlib-1.2.10/amiga/Makefile.pup
+x zlib-1.2.10/amiga/Makefile.sas
+ Enter zlib directory
+ Configure zlib
+Checking for gcc...
+Checking for shared library support...
+Building shared library libz.1.2.10.dylib with gcc.
+Checking for size_t... Yes.
+Checking for off64_t... No.
+Checking for fseeko... Yes.
+Checking for strerror... Yes.
+Checking for unistd.h... Yes.
+Checking for stdarg.h... Yes.
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+Checking for vsnprintf() in stdio.h... Yes.
+Checking for return value of vsnprintf()... Yes.
+Checking for attribute(visibility) support... Yes.
+ Compile zlib
+gcc -O3 -DHAVE_HIDDEN -I. -c -o example.o test/example.c
+test/example.c:88:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   88 | void test_compress(compr, comprLen, uncompr, uncomprLen)
+      |      ^
+test/example.c:114:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  114 | void test_gzio(fname, uncompr, uncomprLen)
+      |      ^
+test/example.c:200:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  200 | void test_deflate(compr, comprLen)
+      |      ^
+test/example.c:238:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  238 | void test_inflate(compr, comprLen, uncompr, uncomprLen)
+      |      ^
+test/example.c:279:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  279 | void test_large_deflate(compr, comprLen, uncompr, uncomprLen)
+      |      ^
+test/example.c:334:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  334 | void test_large_inflate(compr, comprLen, uncompr, uncomprLen)
+      |      ^
+test/example.c:375:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  375 | void test_flush(compr, comprLen)
+      |      ^
+test/example.c:413:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  413 | void test_sync(compr, comprLen, uncompr, uncomprLen)
+      |      ^
+test/example.c:457:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  457 | void test_dict_deflate(compr, comprLen)
+      |      ^
+test/example.c:494:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  494 | void test_dict_inflate(compr, comprLen, uncompr, uncomprLen)
+      |      ^
+test/example.c:545:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  545 | int main(argc, argv)
+      |     ^
+11 warnings generated.
+gcc -O3 -DHAVE_HIDDEN  -c -o adler32.o adler32.c
+In file included from adler32.c:8:
+./zutil.h:163:11: warning: 'OS_CODE' macro redefined [-Wmacro-redefined]
+  163 | #  define OS_CODE 19
+      |           ^
+./zutil.h:134:11: note: previous definition is here
+  134 | #  define OS_CODE  7
+      |           ^
+adler32.c:63:15: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   63 | uLong ZEXPORT adler32_z(adler, buf, len)
+      |               ^
+adler32.c:134:15: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  134 | uLong ZEXPORT adler32(adler, buf, len)
+      |               ^
+adler32.c:143:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  143 | local uLong adler32_combine_(adler1, adler2, len2)
+      |             ^
+adler32.c:172:15: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  172 | uLong ZEXPORT adler32_combine(adler1, adler2, len2)
+      |               ^
+adler32.c:180:15: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  180 | uLong ZEXPORT adler32_combine64(adler1, adler2, len2)
+      |               ^
+6 warnings generated.
+gcc -O3 -DHAVE_HIDDEN  -c -o crc32.o crc32.c
+In file included from crc32.c:31:
+./zutil.h:163:11: warning: 'OS_CODE' macro redefined [-Wmacro-redefined]
+  163 | #  define OS_CODE 19
+      |           ^
+./zutil.h:134:11: note: previous definition is here
+  134 | #  define OS_CODE  7
+      |           ^
+crc32.c:202:23: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  202 | unsigned long ZEXPORT crc32_z(crc, buf, len)
+      |                       ^
+crc32.c:237:23: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  237 | unsigned long ZEXPORT crc32(crc, buf, len)
+      |                       ^
+crc32.c:266:21: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  266 | local unsigned long crc32_little(crc, buf, len)
+      |                     ^
+crc32.c:306:21: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  306 | local unsigned long crc32_big(crc, buf, len)
+      |                     ^
+crc32.c:344:21: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  344 | local unsigned long gf2_matrix_times(mat, vec)
+      |                     ^
+crc32.c:361:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  361 | local void gf2_matrix_square(square, mat)
+      |            ^
+crc32.c:372:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  372 | local uLong crc32_combine_(crc1, crc2, len2)
+      |             ^
+crc32.c:428:15: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  428 | uLong ZEXPORT crc32_combine(crc1, crc2, len2)
+      |               ^
+crc32.c:436:15: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  436 | uLong ZEXPORT crc32_combine64(crc1, crc2, len2)
+      |               ^
+10 warnings generated.
+gcc -O3 -DHAVE_HIDDEN  -c -o deflate.o deflate.c
+In file included from deflate.c:52:
+In file included from ./deflate.h:16:
+./zutil.h:163:11: warning: 'OS_CODE' macro redefined [-Wmacro-redefined]
+  163 | #  define OS_CODE 19
+      |           ^
+./zutil.h:134:11: note: previous definition is here
+  134 | #  define OS_CODE  7
+      |           ^
+deflate.c:201:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  201 | local void slide_hash(s)
+      |            ^
+deflate.c:228:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  228 | int ZEXPORT deflateInit_(strm, level, version, stream_size)
+      |             ^
+deflate.c:240:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  240 | int ZEXPORT deflateInit2_(strm, level, method, windowBits, memLevel, strategy,
+      |             ^
+deflate.c:353:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  353 | local int deflateStateCheck (strm)
+      |           ^
+deflate.c:376:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  376 | int ZEXPORT deflateSetDictionary (strm, dictionary, dictLength)
+      |             ^
+deflate.c:445:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  445 | int ZEXPORT deflateGetDictionary (strm, dictionary, dictLength)
+      |             ^
+deflate.c:467:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  467 | int ZEXPORT deflateResetKeep (strm)
+      |             ^
+deflate.c:505:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  505 | int ZEXPORT deflateReset (strm)
+      |             ^
+deflate.c:517:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  517 | int ZEXPORT deflateSetHeader (strm, head)
+      |             ^
+deflate.c:528:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  528 | int ZEXPORT deflatePending (strm, pending, bits)
+      |             ^
+deflate.c:542:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  542 | int ZEXPORT deflatePrime (strm, bits, value)
+      |             ^
+deflate.c:568:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  568 | int ZEXPORT deflateParams(strm, level, strategy)
+      |             ^
+deflate.c:616:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  616 | int ZEXPORT deflateTune(strm, good_length, max_lazy, nice_length, max_chain)
+      |             ^
+deflate.c:651:15: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  651 | uLong ZEXPORT deflateBound(strm, sourceLen)
+      |               ^
+deflate.c:715:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  715 | local void putShortMSB (s, b)
+      |            ^
+deflate.c:729:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  729 | local void flush_pending(strm)
+      |            ^
+deflate.c:762:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  762 | int ZEXPORT deflate (strm, flush)
+      |             ^
+deflate.c:1075:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1075 | int ZEXPORT deflateEnd (strm)
+      |             ^
+deflate.c:1101:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1101 | int ZEXPORT deflateCopy (dest, source)
+      |             ^
+deflate.c:1163:16: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1163 | local unsigned read_buf(strm, buf, size)
+      |                ^
+deflate.c:1193:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1193 | local void lm_init (s)
+      |            ^
+deflate.c:1235:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1235 | local uInt longest_match(s, cur_match)
+      |            ^
+deflate.c:1481:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1481 | local void fill_window(s)
+      |            ^
+deflate.c:1642:19: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1642 | local block_state deflate_stored(s, flush)
+      |                   ^
+deflate.c:1819:19: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1819 | local block_state deflate_fast(s, flush)
+      |                   ^
+deflate.c:1921:19: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1921 | local block_state deflate_slow(s, flush)
+      |                   ^
+deflate.c:2052:19: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2052 | local block_state deflate_rle(s, flush)
+      |                   ^
+deflate.c:2125:19: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2125 | local block_state deflate_huff(s, flush)
+      |                   ^
+29 warnings generated.
+gcc -O3 -DHAVE_HIDDEN  -c -o infback.o infback.c
+In file included from infback.c:13:
+./zutil.h:163:11: warning: 'OS_CODE' macro redefined [-Wmacro-redefined]
+  163 | #  define OS_CODE 19
+      |           ^
+./zutil.h:134:11: note: previous definition is here
+  134 | #  define OS_CODE  7
+      |           ^
+infback.c:28:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   28 | int ZEXPORT inflateBackInit_(strm, windowBits, window, version, stream_size)
+      |             ^
+infback.c:82:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   82 | local void fixedtables(state)
+      |            ^
+infback.c:250:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  250 | int ZEXPORT inflateBack(strm, in, in_desc, out, out_desc)
+      |             ^
+infback.c:631:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  631 | int ZEXPORT inflateBackEnd(strm)
+      |             ^
+5 warnings generated.
+gcc -O3 -DHAVE_HIDDEN  -c -o inffast.o inffast.c
+In file included from inffast.c:6:
+./zutil.h:163:11: warning: 'OS_CODE' macro redefined [-Wmacro-redefined]
+  163 | #  define OS_CODE 19
+      |           ^
+./zutil.h:134:11: note: previous definition is here
+  134 | #  define OS_CODE  7
+      |           ^
+inffast.c:50:20: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   50 | void ZLIB_INTERNAL inflate_fast(strm, start)
+      |                    ^
+2 warnings generated.
+gcc -O3 -DHAVE_HIDDEN  -c -o inflate.o inflate.c
+In file included from inflate.c:83:
+./zutil.h:163:11: warning: 'OS_CODE' macro redefined [-Wmacro-redefined]
+  163 | #  define OS_CODE 19
+      |           ^
+./zutil.h:134:11: note: previous definition is here
+  134 | #  define OS_CODE  7
+      |           ^
+inflate.c:105:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  105 | local int inflateStateCheck(strm)
+      |           ^
+inflate.c:119:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  119 | int ZEXPORT inflateResetKeep(strm)
+      |             ^
+inflate.c:144:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  144 | int ZEXPORT inflateReset(strm)
+      |             ^
+inflate.c:157:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  157 | int ZEXPORT inflateReset2(strm, windowBits)
+      |             ^
+inflate.c:195:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  195 | int ZEXPORT inflateInit2_(strm, windowBits, version, stream_size)
+      |             ^
+inflate.c:239:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  239 | int ZEXPORT inflateInit_(strm, version, stream_size)
+      |             ^
+inflate.c:247:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  247 | int ZEXPORT inflatePrime(strm, bits, value)
+      |             ^
+inflate.c:278:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  278 | local void fixedtables(state)
+      |            ^
+inflate.c:396:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  396 | local int updatewindow(strm, end, copy)
+      |           ^
+inflate.c:622:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  622 | int ZEXPORT inflate(strm, flush)
+      |             ^
+inflate.c:1277:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1277 | int ZEXPORT inflateEnd(strm)
+      |             ^
+inflate.c:1291:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1291 | int ZEXPORT inflateGetDictionary(strm, dictionary, dictLength)
+      |             ^
+inflate.c:1314:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1314 | int ZEXPORT inflateSetDictionary(strm, dictionary, dictLength)
+      |             ^
+inflate.c:1349:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1349 | int ZEXPORT inflateGetHeader(strm, head)
+      |             ^
+inflate.c:1377:16: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1377 | local unsigned syncsearch(have, buf, len)
+      |                ^
+inflate.c:1400:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1400 | int ZEXPORT inflateSync(strm)
+      |             ^
+inflate.c:1451:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1451 | int ZEXPORT inflateSyncPoint(strm)
+      |             ^
+inflate.c:1461:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1461 | int ZEXPORT inflateCopy(dest, source)
+      |             ^
+inflate.c:1508:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1508 | int ZEXPORT inflateUndermine(strm, subvert)
+      |             ^
+inflate.c:1526:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1526 | int ZEXPORT inflateValidate(strm, check)
+      |             ^
+inflate.c:1541:14: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1541 | long ZEXPORT inflateMark(strm)
+      |              ^
+inflate.c:1554:23: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1554 | unsigned long ZEXPORT inflateCodesUsed(strm)
+      |                       ^
+23 warnings generated.
+gcc -O3 -DHAVE_HIDDEN  -c -o inftrees.o inftrees.c
+In file included from inftrees.c:6:
+./zutil.h:163:11: warning: 'OS_CODE' macro redefined [-Wmacro-redefined]
+  163 | #  define OS_CODE 19
+      |           ^
+./zutil.h:134:11: note: previous definition is here
+  134 | #  define OS_CODE  7
+      |           ^
+inftrees.c:32:19: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   32 | int ZLIB_INTERNAL inflate_table(type, lens, codes, table, bits, work)
+      |                   ^
+2 warnings generated.
+gcc -O3 -DHAVE_HIDDEN  -c -o trees.o trees.c
+In file included from trees.c:37:
+In file included from ./deflate.h:16:
+./zutil.h:163:11: warning: 'OS_CODE' macro redefined [-Wmacro-redefined]
+  163 | #  define OS_CODE 19
+      |           ^
+./zutil.h:134:11: note: previous definition is here
+  134 | #  define OS_CODE  7
+      |           ^
+trees.c:379:20: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  379 | void ZLIB_INTERNAL _tr_init(s)
+      |                    ^
+trees.c:407:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  407 | local void init_block(s)
+      |            ^
+trees.c:451:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  451 | local void pqdownheap(s, tree, k)
+      |            ^
+trees.c:486:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  486 | local void gen_bitlen(s, desc)
+      |            ^
+trees.c:572:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  572 | local void gen_codes (tree, max_code, bl_count)
+      |            ^
+trees.c:615:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  615 | local void build_tree(s, desc)
+      |            ^
+trees.c:703:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  703 | local void scan_tree (s, tree, max_code)
+      |            ^
+trees.c:748:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  748 | local void send_tree (s, tree, max_code)
+      |            ^
+trees.c:799:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  799 | local int build_bl_tree(s)
+      |           ^
+trees.c:834:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  834 | local void send_all_trees(s, lcodes, dcodes, blcodes)
+      |            ^
+trees.c:863:20: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  863 | void ZLIB_INTERNAL _tr_stored_block(s, buf, stored_len, last)
+      |                    ^
+trees.c:886:20: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  886 | void ZLIB_INTERNAL _tr_flush_bits(s)
+      |                    ^
+trees.c:896:20: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  896 | void ZLIB_INTERNAL _tr_align(s)
+      |                    ^
+trees.c:911:20: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  911 | void ZLIB_INTERNAL _tr_flush_block(s, buf, stored_len, last)
+      |                    ^
+trees.c:1014:19: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1014 | int ZLIB_INTERNAL _tr_tally (s, dist, lc)
+      |                   ^
+trees.c:1064:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1064 | local void compress_block(s, ltree, dtree)
+      |            ^
+trees.c:1124:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1124 | local int detect_data_type(s)
+      |           ^
+trees.c:1158:16: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1158 | local unsigned bi_reverse(code, len)
+      |                ^
+trees.c:1173:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1173 | local void bi_flush(s)
+      |            ^
+trees.c:1190:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1190 | local void bi_windup(s)
+      |            ^
+21 warnings generated.
+gcc -O3 -DHAVE_HIDDEN  -c -o zutil.o zutil.c
+In file included from zutil.c:8:
+./zutil.h:163:11: warning: 'OS_CODE' macro redefined [-Wmacro-redefined]
+  163 | #  define OS_CODE 19
+      |           ^
+./zutil.h:134:11: note: previous definition is here
+  134 | #  define OS_CODE  7
+      |           ^
+In file included from zutil.c:10:
+In file included from ./gzguts.h:21:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h:61:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:318:7: error: expected identifier or '('
+  318 | FILE    *fdopen(int, const char *) __DARWIN_ALIAS_STARTING(__MAC_10_6, __IPHONE_2_0, __DARWIN_ALIAS(fdopen));
+      |          ^
+./zutil.h:140:33: note: expanded from macro 'fdopen'
+  140 | #        define fdopen(fd,mode) NULL /* No fdopen() */
+      |                                 ^
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_null.h:26:16: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                ^
+In file included from zutil.c:10:
+In file included from ./gzguts.h:21:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h:61:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:318:7: error: expected ')'
+./zutil.h:140:33: note: expanded from macro 'fdopen'
+  140 | #        define fdopen(fd,mode) NULL /* No fdopen() */
+      |                                 ^
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_null.h:26:16: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:318:7: note: to match this '('
+./zutil.h:140:33: note: expanded from macro 'fdopen'
+  140 | #        define fdopen(fd,mode) NULL /* No fdopen() */
+      |                                 ^
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_null.h:26:15: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |               ^
+In file included from zutil.c:10:
+In file included from ./gzguts.h:21:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h:61:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:318:7: error: expected ')'
+  318 | FILE    *fdopen(int, const char *) __DARWIN_ALIAS_STARTING(__MAC_10_6, __IPHONE_2_0, __DARWIN_ALIAS(fdopen));
+      |          ^
+./zutil.h:140:33: note: expanded from macro 'fdopen'
+  140 | #        define fdopen(fd,mode) NULL /* No fdopen() */
+      |                                 ^
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:318:7: note: to match this '('
+./zutil.h:140:33: note: expanded from macro 'fdopen'
+  140 | #        define fdopen(fd,mode) NULL /* No fdopen() */
+      |                                 ^
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_null.h:26:14: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |              ^
+zutil.c:133:22: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  133 | const char * ZEXPORT zError(err)
+      |                      ^
+zutil.c:305:22: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  305 | voidpf ZLIB_INTERNAL zcalloc (opaque, items, size)
+      |                      ^
+zutil.c:315:20: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  315 | void ZLIB_INTERNAL zcfree (opaque, ptr)
+      |                    ^
+4 warnings and 3 errors generated.
+make: *** [zutil.o] Error 1
+ Install zlib
+gcc -O3 -DHAVE_HIDDEN  -c -o zutil.o zutil.c
+In file included from zutil.c:8:
+./zutil.h:163:11: warning: 'OS_CODE' macro redefined [-Wmacro-redefined]
+  163 | #  define OS_CODE 19
+      |           ^
+./zutil.h:134:11: note: previous definition is here
+  134 | #  define OS_CODE  7
+      |           ^
+In file included from zutil.c:10:
+In file included from ./gzguts.h:21:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h:61:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:318:7: error: expected identifier or '('
+  318 | FILE    *fdopen(int, const char *) __DARWIN_ALIAS_STARTING(__MAC_10_6, __IPHONE_2_0, __DARWIN_ALIAS(fdopen));
+      |          ^
+./zutil.h:140:33: note: expanded from macro 'fdopen'
+  140 | #        define fdopen(fd,mode) NULL /* No fdopen() */
+      |                                 ^
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_null.h:26:16: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                ^
+In file included from zutil.c:10:
+In file included from ./gzguts.h:21:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h:61:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:318:7: error: expected ')'
+./zutil.h:140:33: note: expanded from macro 'fdopen'
+  140 | #        define fdopen(fd,mode) NULL /* No fdopen() */
+      |                                 ^
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_null.h:26:16: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:318:7: note: to match this '('
+./zutil.h:140:33: note: expanded from macro 'fdopen'
+  140 | #        define fdopen(fd,mode) NULL /* No fdopen() */
+      |                                 ^
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_null.h:26:15: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |               ^
+In file included from zutil.c:10:
+In file included from ./gzguts.h:21:
+In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h:61:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:318:7: error: expected ')'
+  318 | FILE    *fdopen(int, const char *) __DARWIN_ALIAS_STARTING(__MAC_10_6, __IPHONE_2_0, __DARWIN_ALIAS(fdopen));
+      |          ^
+./zutil.h:140:33: note: expanded from macro 'fdopen'
+  140 | #        define fdopen(fd,mode) NULL /* No fdopen() */
+      |                                 ^
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_null.h:26:22: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |                      ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:318:7: note: to match this '('
+./zutil.h:140:33: note: expanded from macro 'fdopen'
+  140 | #        define fdopen(fd,mode) NULL /* No fdopen() */
+      |                                 ^
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_null.h:26:14: note: expanded from macro 'NULL'
+   26 | #define NULL ((void*)0)
+      |              ^
+zutil.c:133:22: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  133 | const char * ZEXPORT zError(err)
+      |                      ^
+zutil.c:305:22: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  305 | voidpf ZLIB_INTERNAL zcalloc (opaque, items, size)
+      |                      ^
+zutil.c:315:20: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  315 | void ZLIB_INTERNAL zcfree (opaque, ptr)
+      |                    ^
+4 warnings and 3 errors generated.
+make: *** [zutil.o] Error 1
+ Finished zlib installation

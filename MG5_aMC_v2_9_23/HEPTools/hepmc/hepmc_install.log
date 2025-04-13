@@ -1,0 +1,621 @@
+ Set environment variables
+ Unpack HEPMC
+x hepmc2.06.09/
+x hepmc2.06.09/.cvsignore
+x hepmc2.06.09/AUTHORS
+x hepmc2.06.09/CMakeLists.txt
+x hepmc2.06.09/COPYING
+x hepmc2.06.09/ChangeLog
+x hepmc2.06.09/HepMC/
+x hepmc2.06.09/HepMC/.cvsignore
+x hepmc2.06.09/HepMC/CMakeLists.txt
+x hepmc2.06.09/HepMC/CompareGenEvent.h
+x hepmc2.06.09/HepMC/Flow.h
+x hepmc2.06.09/HepMC/GenCrossSection.h
+x hepmc2.06.09/HepMC/GenEvent.h
+x hepmc2.06.09/HepMC/GenParticle.h
+x hepmc2.06.09/HepMC/GenRanges.h
+x hepmc2.06.09/HepMC/GenVertex.h
+x hepmc2.06.09/HepMC/HEPEVT_Wrapper.h
+x hepmc2.06.09/HepMC/HeavyIon.h
+x hepmc2.06.09/HepMC/HepMCDefs.h
+x hepmc2.06.09/HepMC/HerwigWrapper.h
+x hepmc2.06.09/HepMC/IO_AsciiParticles.h
+x hepmc2.06.09/HepMC/IO_BaseClass.h
+x hepmc2.06.09/HepMC/IO_Exception.h
+x hepmc2.06.09/HepMC/IO_GenEvent.h
+x hepmc2.06.09/HepMC/IO_HEPEVT.h
+x hepmc2.06.09/HepMC/IO_HERWIG.h
+x hepmc2.06.09/HepMC/IteratorRange.h
+x hepmc2.06.09/HepMC/Makefile.am
+x hepmc2.06.09/HepMC/PdfInfo.h
+x hepmc2.06.09/HepMC/Polarization.h
+x hepmc2.06.09/HepMC/PythiaWrapper.h
+x hepmc2.06.09/HepMC/PythiaWrapper6_4.h
+x hepmc2.06.09/HepMC/PythiaWrapper6_4_WIN32.h
+x hepmc2.06.09/HepMC/SearchVector.h
+x hepmc2.06.09/HepMC/SimpleVector.h
+x hepmc2.06.09/HepMC/SimpleVector.icc
+x hepmc2.06.09/HepMC/StreamHelpers.h
+x hepmc2.06.09/HepMC/StreamInfo.h
+x hepmc2.06.09/HepMC/TempParticleMap.h
+x hepmc2.06.09/HepMC/Units.h
+x hepmc2.06.09/HepMC/Version.h
+x hepmc2.06.09/HepMC/WeightContainer.h
+x hepmc2.06.09/HepMC/enable_if.h
+x hepmc2.06.09/HepMC/is_arithmetic.h
+x hepmc2.06.09/HepMC/defs.h.in
+x hepmc2.06.09/HepMC/Makefile.in
+x hepmc2.06.09/INSTALL
+x hepmc2.06.09/INSTALL.autoconf
+x hepmc2.06.09/INSTALL.cmake
+x hepmc2.06.09/Makefile.am
+x hepmc2.06.09/NEWS
+x hepmc2.06.09/README
+x hepmc2.06.09/ReadMe.cygwin
+x hepmc2.06.09/bootstrap
+x hepmc2.06.09/cmake/
+x hepmc2.06.09/cmake/Modules/
+x hepmc2.06.09/cmake/Modules/HepMCUseCpack.cmake
+x hepmc2.06.09/cmake/Modules/HepMCVariables.cmake
+x hepmc2.06.09/configure.ac
+x hepmc2.06.09/doc/
+x hepmc2.06.09/doc/.cvsignore
+x hepmc2.06.09/doc/CMakeLists.txt
+x hepmc2.06.09/doc/HepMC2_user_manual.tex
+x hepmc2.06.09/doc/HepMC_basic_properties.eps
+x hepmc2.06.09/doc/Makefile.am
+x hepmc2.06.09/doc/buildDoc.sh
+x hepmc2.06.09/doc/buildDoxygen.sh
+x hepmc2.06.09/doc/doxygen-template
+x hepmc2.06.09/doc/doxygen.conf
+x hepmc2.06.09/doc/graph_interpretation.eps
+x hepmc2.06.09/doc/html.sty
+x hepmc2.06.09/doc/physicist_visualization.eps
+x hepmc2.06.09/doc/Makefile.in
+x hepmc2.06.09/examples/
+x hepmc2.06.09/examples/.cvsignore
+x hepmc2.06.09/examples/CMakeLists.txt
+x hepmc2.06.09/examples/GNUmakefile.example.in
+x hepmc2.06.09/examples/Makefile.am
+x hepmc2.06.09/examples/VectorConversion.h
+x hepmc2.06.09/examples/example_BuildEventFromScratch.cc
+x hepmc2.06.09/examples/example_EventSelection.cc
+x hepmc2.06.09/examples/example_UsingIterators.cc
+x hepmc2.06.09/examples/example_UsingIterators.txt
+x hepmc2.06.09/examples/example_VectorConversion.cc
+x hepmc2.06.09/examples/fio/
+x hepmc2.06.09/examples/fio/CMakeLists.txt
+x hepmc2.06.09/examples/fio/GNUmakefile.example.in
+x hepmc2.06.09/examples/fio/Makefile.am
+x hepmc2.06.09/examples/fio/PythiaHelper.h
+x hepmc2.06.09/examples/fio/example_MyHerwig.cc
+x hepmc2.06.09/examples/fio/example_MyPythia.cc
+x hepmc2.06.09/examples/fio/example_MyPythiaOnlyToHepMC.cc
+x hepmc2.06.09/examples/fio/example_PythiaStreamIO.cc
+x hepmc2.06.09/examples/fio/initPythia.cc
+x hepmc2.06.09/examples/fio/initpydata.f
+x hepmc2.06.09/examples/fio/testHerwigCopies.cc
+x hepmc2.06.09/examples/fio/testPythiaCopies.cc
+x hepmc2.06.09/examples/fio/Makefile.in
+x hepmc2.06.09/examples/list_of_examples.cc
+x hepmc2.06.09/examples/pythia8/
+x hepmc2.06.09/examples/pythia8/CMakeLists.txt
+x hepmc2.06.09/examples/pythia8/GNUmakefile.example.in
+x hepmc2.06.09/examples/pythia8/Makefile.am
+x hepmc2.06.09/examples/pythia8/README
+x hepmc2.06.09/examples/pythia8/config.csh.in
+x hepmc2.06.09/examples/pythia8/config.sh.in
+x hepmc2.06.09/examples/pythia8/main31.cc
+x hepmc2.06.09/examples/pythia8/main32.cc
+x hepmc2.06.09/examples/pythia8/main32.cmnd
+x hepmc2.06.09/examples/pythia8/Makefile.in
+x hepmc2.06.09/examples/Makefile.in
+x hepmc2.06.09/fio/
+x hepmc2.06.09/fio/.cvsignore
+x hepmc2.06.09/fio/CMakeLists.txt
+x hepmc2.06.09/fio/HEPEVT_Wrapper.cc
+x hepmc2.06.09/fio/HerwigWrapper.cc
+x hepmc2.06.09/fio/IO_HEPEVT.cc
+x hepmc2.06.09/fio/IO_HERWIG.cc
+x hepmc2.06.09/fio/Makefile.am
+x hepmc2.06.09/fio/Makefile.in
+x hepmc2.06.09/src/
+x hepmc2.06.09/src/.cvsignore
+x hepmc2.06.09/src/CMakeLists.txt
+x hepmc2.06.09/src/CompareGenEvent.cc
+x hepmc2.06.09/src/Flow.cc
+x hepmc2.06.09/src/GenCrossSection.cc
+x hepmc2.06.09/src/GenEvent.cc
+x hepmc2.06.09/src/GenEventStreamIO.cc
+x hepmc2.06.09/src/GenParticle.cc
+x hepmc2.06.09/src/GenRanges.cc
+x hepmc2.06.09/src/GenVertex.cc
+x hepmc2.06.09/src/HeavyIon.cc
+x hepmc2.06.09/src/IO_AsciiParticles.cc
+x hepmc2.06.09/src/IO_GenEvent.cc
+x hepmc2.06.09/src/Makefile.am
+x hepmc2.06.09/src/PdfInfo.cc
+x hepmc2.06.09/src/Polarization.cc
+x hepmc2.06.09/src/SearchVector.cc
+x hepmc2.06.09/src/StreamHelpers.cc
+x hepmc2.06.09/src/StreamInfo.cc
+x hepmc2.06.09/src/Units.cc.in
+x hepmc2.06.09/src/WeightContainer.cc
+x hepmc2.06.09/src/filterEvent.cc
+x hepmc2.06.09/src/Makefile.in
+x hepmc2.06.09/test/
+x hepmc2.06.09/test/.cvsignore
+x hepmc2.06.09/test/CMakeLists.txt
+x hepmc2.06.09/test/IsGoodEvent.h
+x hepmc2.06.09/test/Makefile.am
+x hepmc2.06.09/test/list_of_examples.cc
+x hepmc2.06.09/test/testCrossSection.dat
+x hepmc2.06.09/test/testCrossSection.output
+x hepmc2.06.09/test/testFlow.cc
+x hepmc2.06.09/test/testFlow.output
+x hepmc2.06.09/test/testFlow.sh.in
+x hepmc2.06.09/test/testHepMC.cc.in
+x hepmc2.06.09/test/testHepMC.dat
+x hepmc2.06.09/test/testHepMC.output
+x hepmc2.06.09/test/testHepMC.sh.in
+x hepmc2.06.09/test/testHepMCIteration.cc.in
+x hepmc2.06.09/test/testHepMCIteration.dat
+x hepmc2.06.09/test/testHepMCIteration.h
+x hepmc2.06.09/test/testHepMCIteration.sh.in
+x hepmc2.06.09/test/testHepMCMethods.cc
+x hepmc2.06.09/test/testHepMCMethods.h
+x hepmc2.06.09/test/testHepMCParticle.output
+x hepmc2.06.09/test/testHepMCVarious.input
+x hepmc2.06.09/test/testHepMCVarious.output
+x hepmc2.06.09/test/testIOGenEvent.input
+x hepmc2.06.09/test/testMass.cc.in
+x hepmc2.06.09/test/testMass.sh.in
+x hepmc2.06.09/test/testMass1.dat
+x hepmc2.06.09/test/testMultipleCopies.cc.in
+x hepmc2.06.09/test/testPolarization.cc
+x hepmc2.06.09/test/testPolarization.sh.in
+x hepmc2.06.09/test/testPrintBug.cc
+x hepmc2.06.09/test/testUnits.cc
+x hepmc2.06.09/test/testPrintBug.output
+x hepmc2.06.09/test/testPrintBug.sh.in
+x hepmc2.06.09/test/testSimpleVector.cc
+x hepmc2.06.09/test/testStreamIO.cc.in
+x hepmc2.06.09/test/testStreamIO.output
+x hepmc2.06.09/test/testStreamIO.sh.in
+x hepmc2.06.09/test/testStreamIOVarious.dat
+x hepmc2.06.09/test/testStreamIOVarious.output
+x hepmc2.06.09/test/testWeights.cc
+x hepmc2.06.09/test/testWithWeight.dat
+x hepmc2.06.09/test/testWithWeight.output
+x hepmc2.06.09/test/Makefile.in
+x hepmc2.06.09/autom4te.cache/
+x hepmc2.06.09/autom4te.cache/requests
+x hepmc2.06.09/autom4te.cache/output.0
+x hepmc2.06.09/autom4te.cache/traces.0
+x hepmc2.06.09/autom4te.cache/output.1
+x hepmc2.06.09/autom4te.cache/traces.1
+x hepmc2.06.09/autom4te.cache/output.2
+x hepmc2.06.09/autom4te.cache/traces.2
+x hepmc2.06.09/aclocal.m4
+x hepmc2.06.09/ltmain.sh
+x hepmc2.06.09/configure
+x hepmc2.06.09/config.guess
+x hepmc2.06.09/config.sub
+x hepmc2.06.09/install-sh
+x hepmc2.06.09/missing
+x hepmc2.06.09/depcomp
+x hepmc2.06.09/Makefile.in
+ Enter HEPMC directory
+ Copying the hacked files 'WeightContainer.cc' and 'WeightContainer.h' to be capable of writing named weights in HepMC.
+ The autotools configure script already present; there is no need to run autoreconf manually.
+ Configure HEPMC
+./configure --prefix=/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc --with-momentum=GEV --with-length=MM
+checking build system type... arm-apple-darwin24.4.0
+checking host system type... arm-apple-darwin24.4.0
+checking target system type... arm-apple-darwin24.4.0
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... ./install-sh -c -d
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking whether make sets $(MAKE)... yes
+checking for C++ compiler default output file name... a.out
+checking whether the C++ compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for style of include used by make... GNU
+checking dependency style of g++... gcc3
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking whether make sets $(MAKE)... (cached) yes
+checking for gfortran... gfortran
+checking whether we are using the GNU Fortran 77 compiler... yes
+checking whether gfortran accepts -g... yes
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /Library/Developer/CommandLineTools/usr/bin/ld
+checking if the linker (/Library/Developer/CommandLineTools/usr/bin/ld) is GNU ld... no
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 786432
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /Library/Developer/CommandLineTools/usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for dsymutil... dsymutil
+checking for nmedit... nmedit
+checking for lipo... lipo
+checking for otool... otool
+checking for otool64... no
+checking for -single_module linker flag... no
+checking for -exported_symbols_list linker flag... yes
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether g++ accepts -g... (cached) yes
+checking dependency style of g++... (cached) gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking whether we are using the GNU Fortran 77 compiler... (cached) yes
+checking whether gfortran accepts -g... (cached) yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fno-common -DPIC
+checking if gcc PIC flag -fno-common -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin24.4.0 dyld
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for ld used by g++... /Library/Developer/CommandLineTools/usr/bin/ld
+checking if the linker (/Library/Developer/CommandLineTools/usr/bin/ld) is GNU ld... no
+checking whether the g++ linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries... yes
+checking for g++ option to produce PIC... -fno-common -DPIC
+checking if g++ PIC flag -fno-common -DPIC works... yes
+checking if g++ static flag -static works... no
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin24.4.0 dyld
+checking how to hardcode library paths into programs... immediate
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for gfortran option to produce PIC... -fno-common
+checking if gfortran PIC flag -fno-common works... yes
+checking if gfortran static flag -static works... no
+checking if gfortran supports -c -o file.o... yes
+checking if gfortran supports -c -o file.o... (cached) yes
+checking whether the gfortran linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin24.4.0 dyld
+checking how to hardcode library paths into programs... immediate
+checking for stdint.h... (cached) yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for ptrdiff_t... yes
+checking for ANSI C header files... (cached) yes
+configure: WARNING: we recommend using cmake instead of configure on MacOSX
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating HepMC/Makefile
+config.status: creating doc/Makefile
+config.status: creating examples/Makefile
+config.status: creating examples/fio/Makefile
+config.status: creating examples/pythia8/Makefile
+config.status: creating fio/Makefile
+config.status: creating src/Makefile
+config.status: creating src/Units.cc
+config.status: creating test/Makefile
+config.status: creating test/testHepMC.cc
+config.status: creating test/testMass.cc
+config.status: creating test/testHepMCIteration.cc
+config.status: creating test/testMultipleCopies.cc
+config.status: creating test/testStreamIO.cc
+config.status: creating examples/GNUmakefile.example
+config.status: creating examples/fio/GNUmakefile.example
+config.status: creating examples/pythia8/config.csh
+config.status: creating examples/pythia8/config.sh
+config.status: creating examples/pythia8/GNUmakefile.example
+config.status: creating test/testHepMC.sh
+config.status: creating test/testFlow.sh
+config.status: creating test/testMass.sh
+config.status: creating test/testHepMCIteration.sh
+config.status: creating test/testPolarization.sh
+config.status: creating test/testPrintBug.sh
+config.status: creating test/testStreamIO.sh
+config.status: creating HepMC/defs.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+ Compile HEPMC
+Making all in HepMC
+/Library/Developer/CommandLineTools/usr/bin/make  all-am
+make[2]: Nothing to be done for `all-am'.
+Making all in src
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..   -ansi -pedantic -Wall -g -O2 -MT CompareGenEvent.lo -MD -MP -MF .deps/CompareGenEvent.Tpo -c -o CompareGenEvent.lo CompareGenEvent.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT CompareGenEvent.lo -MD -MP -MF .deps/CompareGenEvent.Tpo -c CompareGenEvent.cc  -fno-common -DPIC -o .libs/CompareGenEvent.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT CompareGenEvent.lo -MD -MP -MF .deps/CompareGenEvent.Tpo -c CompareGenEvent.cc -o CompareGenEvent.o >/dev/null 2>&1
+mv -f .deps/CompareGenEvent.Tpo .deps/CompareGenEvent.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..   -ansi -pedantic -Wall -g -O2 -MT Flow.lo -MD -MP -MF .deps/Flow.Tpo -c -o Flow.lo Flow.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT Flow.lo -MD -MP -MF .deps/Flow.Tpo -c Flow.cc  -fno-common -DPIC -o .libs/Flow.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT Flow.lo -MD -MP -MF .deps/Flow.Tpo -c Flow.cc -o Flow.o >/dev/null 2>&1
+mv -f .deps/Flow.Tpo .deps/Flow.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..   -ansi -pedantic -Wall -g -O2 -MT GenEvent.lo -MD -MP -MF .deps/GenEvent.Tpo -c -o GenEvent.lo GenEvent.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT GenEvent.lo -MD -MP -MF .deps/GenEvent.Tpo -c GenEvent.cc  -fno-common -DPIC -o .libs/GenEvent.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT GenEvent.lo -MD -MP -MF .deps/GenEvent.Tpo -c GenEvent.cc -o GenEvent.o >/dev/null 2>&1
+mv -f .deps/GenEvent.Tpo .deps/GenEvent.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..   -ansi -pedantic -Wall -g -O2 -MT GenEventStreamIO.lo -MD -MP -MF .deps/GenEventStreamIO.Tpo -c -o GenEventStreamIO.lo GenEventStreamIO.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT GenEventStreamIO.lo -MD -MP -MF .deps/GenEventStreamIO.Tpo -c GenEventStreamIO.cc  -fno-common -DPIC -o .libs/GenEventStreamIO.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT GenEventStreamIO.lo -MD -MP -MF .deps/GenEventStreamIO.Tpo -c GenEventStreamIO.cc -o GenEventStreamIO.o >/dev/null 2>&1
+mv -f .deps/GenEventStreamIO.Tpo .deps/GenEventStreamIO.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..   -ansi -pedantic -Wall -g -O2 -MT GenParticle.lo -MD -MP -MF .deps/GenParticle.Tpo -c -o GenParticle.lo GenParticle.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT GenParticle.lo -MD -MP -MF .deps/GenParticle.Tpo -c GenParticle.cc  -fno-common -DPIC -o .libs/GenParticle.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT GenParticle.lo -MD -MP -MF .deps/GenParticle.Tpo -c GenParticle.cc -o GenParticle.o >/dev/null 2>&1
+mv -f .deps/GenParticle.Tpo .deps/GenParticle.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..   -ansi -pedantic -Wall -g -O2 -MT GenCrossSection.lo -MD -MP -MF .deps/GenCrossSection.Tpo -c -o GenCrossSection.lo GenCrossSection.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT GenCrossSection.lo -MD -MP -MF .deps/GenCrossSection.Tpo -c GenCrossSection.cc  -fno-common -DPIC -o .libs/GenCrossSection.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT GenCrossSection.lo -MD -MP -MF .deps/GenCrossSection.Tpo -c GenCrossSection.cc -o GenCrossSection.o >/dev/null 2>&1
+mv -f .deps/GenCrossSection.Tpo .deps/GenCrossSection.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..   -ansi -pedantic -Wall -g -O2 -MT GenVertex.lo -MD -MP -MF .deps/GenVertex.Tpo -c -o GenVertex.lo GenVertex.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT GenVertex.lo -MD -MP -MF .deps/GenVertex.Tpo -c GenVertex.cc  -fno-common -DPIC -o .libs/GenVertex.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT GenVertex.lo -MD -MP -MF .deps/GenVertex.Tpo -c GenVertex.cc -o GenVertex.o >/dev/null 2>&1
+mv -f .deps/GenVertex.Tpo .deps/GenVertex.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..   -ansi -pedantic -Wall -g -O2 -MT GenRanges.lo -MD -MP -MF .deps/GenRanges.Tpo -c -o GenRanges.lo GenRanges.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT GenRanges.lo -MD -MP -MF .deps/GenRanges.Tpo -c GenRanges.cc  -fno-common -DPIC -o .libs/GenRanges.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT GenRanges.lo -MD -MP -MF .deps/GenRanges.Tpo -c GenRanges.cc -o GenRanges.o >/dev/null 2>&1
+mv -f .deps/GenRanges.Tpo .deps/GenRanges.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..   -ansi -pedantic -Wall -g -O2 -MT HeavyIon.lo -MD -MP -MF .deps/HeavyIon.Tpo -c -o HeavyIon.lo HeavyIon.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT HeavyIon.lo -MD -MP -MF .deps/HeavyIon.Tpo -c HeavyIon.cc  -fno-common -DPIC -o .libs/HeavyIon.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT HeavyIon.lo -MD -MP -MF .deps/HeavyIon.Tpo -c HeavyIon.cc -o HeavyIon.o >/dev/null 2>&1
+mv -f .deps/HeavyIon.Tpo .deps/HeavyIon.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..   -ansi -pedantic -Wall -g -O2 -MT IO_AsciiParticles.lo -MD -MP -MF .deps/IO_AsciiParticles.Tpo -c -o IO_AsciiParticles.lo IO_AsciiParticles.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT IO_AsciiParticles.lo -MD -MP -MF .deps/IO_AsciiParticles.Tpo -c IO_AsciiParticles.cc  -fno-common -DPIC -o .libs/IO_AsciiParticles.o
+IO_AsciiParticles.cc:109:9: warning: variable 'nparticles' set but not used [-Wunused-but-set-variable]
+  109 |     int nparticles=0, imoth=0, ip=0, istati;
+      |         ^
+1 warning generated.
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT IO_AsciiParticles.lo -MD -MP -MF .deps/IO_AsciiParticles.Tpo -c IO_AsciiParticles.cc -o IO_AsciiParticles.o >/dev/null 2>&1
+mv -f .deps/IO_AsciiParticles.Tpo .deps/IO_AsciiParticles.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..   -ansi -pedantic -Wall -g -O2 -MT IO_GenEvent.lo -MD -MP -MF .deps/IO_GenEvent.Tpo -c -o IO_GenEvent.lo IO_GenEvent.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT IO_GenEvent.lo -MD -MP -MF .deps/IO_GenEvent.Tpo -c IO_GenEvent.cc  -fno-common -DPIC -o .libs/IO_GenEvent.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT IO_GenEvent.lo -MD -MP -MF .deps/IO_GenEvent.Tpo -c IO_GenEvent.cc -o IO_GenEvent.o >/dev/null 2>&1
+mv -f .deps/IO_GenEvent.Tpo .deps/IO_GenEvent.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..   -ansi -pedantic -Wall -g -O2 -MT PdfInfo.lo -MD -MP -MF .deps/PdfInfo.Tpo -c -o PdfInfo.lo PdfInfo.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT PdfInfo.lo -MD -MP -MF .deps/PdfInfo.Tpo -c PdfInfo.cc  -fno-common -DPIC -o .libs/PdfInfo.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT PdfInfo.lo -MD -MP -MF .deps/PdfInfo.Tpo -c PdfInfo.cc -o PdfInfo.o >/dev/null 2>&1
+mv -f .deps/PdfInfo.Tpo .deps/PdfInfo.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..   -ansi -pedantic -Wall -g -O2 -MT Polarization.lo -MD -MP -MF .deps/Polarization.Tpo -c -o Polarization.lo Polarization.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT Polarization.lo -MD -MP -MF .deps/Polarization.Tpo -c Polarization.cc  -fno-common -DPIC -o .libs/Polarization.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT Polarization.lo -MD -MP -MF .deps/Polarization.Tpo -c Polarization.cc -o Polarization.o >/dev/null 2>&1
+mv -f .deps/Polarization.Tpo .deps/Polarization.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..   -ansi -pedantic -Wall -g -O2 -MT SearchVector.lo -MD -MP -MF .deps/SearchVector.Tpo -c -o SearchVector.lo SearchVector.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT SearchVector.lo -MD -MP -MF .deps/SearchVector.Tpo -c SearchVector.cc  -fno-common -DPIC -o .libs/SearchVector.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT SearchVector.lo -MD -MP -MF .deps/SearchVector.Tpo -c SearchVector.cc -o SearchVector.o >/dev/null 2>&1
+mv -f .deps/SearchVector.Tpo .deps/SearchVector.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..   -ansi -pedantic -Wall -g -O2 -MT StreamHelpers.lo -MD -MP -MF .deps/StreamHelpers.Tpo -c -o StreamHelpers.lo StreamHelpers.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT StreamHelpers.lo -MD -MP -MF .deps/StreamHelpers.Tpo -c StreamHelpers.cc  -fno-common -DPIC -o .libs/StreamHelpers.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT StreamHelpers.lo -MD -MP -MF .deps/StreamHelpers.Tpo -c StreamHelpers.cc -o StreamHelpers.o >/dev/null 2>&1
+mv -f .deps/StreamHelpers.Tpo .deps/StreamHelpers.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..   -ansi -pedantic -Wall -g -O2 -MT StreamInfo.lo -MD -MP -MF .deps/StreamInfo.Tpo -c -o StreamInfo.lo StreamInfo.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT StreamInfo.lo -MD -MP -MF .deps/StreamInfo.Tpo -c StreamInfo.cc  -fno-common -DPIC -o .libs/StreamInfo.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT StreamInfo.lo -MD -MP -MF .deps/StreamInfo.Tpo -c StreamInfo.cc -o StreamInfo.o >/dev/null 2>&1
+mv -f .deps/StreamInfo.Tpo .deps/StreamInfo.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..   -ansi -pedantic -Wall -g -O2 -MT Units.lo -MD -MP -MF .deps/Units.Tpo -c -o Units.lo Units.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT Units.lo -MD -MP -MF .deps/Units.Tpo -c Units.cc  -fno-common -DPIC -o .libs/Units.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT Units.lo -MD -MP -MF .deps/Units.Tpo -c Units.cc -o Units.o >/dev/null 2>&1
+mv -f .deps/Units.Tpo .deps/Units.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..   -ansi -pedantic -Wall -g -O2 -MT WeightContainer.lo -MD -MP -MF .deps/WeightContainer.Tpo -c -o WeightContainer.lo WeightContainer.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT WeightContainer.lo -MD -MP -MF .deps/WeightContainer.Tpo -c WeightContainer.cc  -fno-common -DPIC -o .libs/WeightContainer.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT WeightContainer.lo -MD -MP -MF .deps/WeightContainer.Tpo -c WeightContainer.cc -o WeightContainer.o >/dev/null 2>&1
+mv -f .deps/WeightContainer.Tpo .deps/WeightContainer.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++ -ansi -pedantic -Wall -g -O2 -version-info 4:0:0  -o libHepMC.la -rpath /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib CompareGenEvent.lo Flow.lo GenEvent.lo GenEventStreamIO.lo GenParticle.lo GenCrossSection.lo GenVertex.lo GenRanges.lo HeavyIon.lo IO_AsciiParticles.lo IO_GenEvent.lo PdfInfo.lo Polarization.lo SearchVector.lo StreamHelpers.lo StreamInfo.lo Units.lo WeightContainer.lo  
+libtool: link: g++ -r -keep_private_externs -nostdlib -o .libs/libHepMC.4.dylib-master.o  .libs/CompareGenEvent.o .libs/Flow.o .libs/GenEvent.o .libs/GenEventStreamIO.o .libs/GenParticle.o .libs/GenCrossSection.o .libs/GenVertex.o .libs/GenRanges.o .libs/HeavyIon.o .libs/IO_AsciiParticles.o .libs/IO_GenEvent.o .libs/PdfInfo.o .libs/Polarization.o .libs/SearchVector.o .libs/StreamHelpers.o .libs/StreamInfo.o .libs/Units.o .libs/WeightContainer.o 
+libtool: link: g++ -dynamiclib -Wl,-flat_namespace -Wl,-undefined -Wl,suppress -o .libs/libHepMC.4.dylib .libs/libHepMC.4.dylib-master.o     -install_name  /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib/libHepMC.4.dylib -compatibility_version 5 -current_version 5.0
+ld: warning: -undefined suppress is deprecated
+libtool: link: dsymutil .libs/libHepMC.4.dylib || :
+libtool: link: (cd ".libs" && rm -f "libHepMC.dylib" && ln -s "libHepMC.4.dylib" "libHepMC.dylib")
+libtool: link: ar cru .libs/libHepMC.a  CompareGenEvent.o Flow.o GenEvent.o GenEventStreamIO.o GenParticle.o GenCrossSection.o GenVertex.o GenRanges.o HeavyIon.o IO_AsciiParticles.o IO_GenEvent.o PdfInfo.o Polarization.o SearchVector.o StreamHelpers.o StreamInfo.o Units.o WeightContainer.o
+libtool: link: ranlib .libs/libHepMC.a
+libtool: link: ( cd ".libs" && rm -f "libHepMC.la" && ln -s "../libHepMC.la" "libHepMC.la" )
+Making all in fio
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..    -ansi -pedantic -Wall -g -O2 -MT HEPEVT_Wrapper.lo -MD -MP -MF .deps/HEPEVT_Wrapper.Tpo -c -o HEPEVT_Wrapper.lo HEPEVT_Wrapper.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT HEPEVT_Wrapper.lo -MD -MP -MF .deps/HEPEVT_Wrapper.Tpo -c HEPEVT_Wrapper.cc  -fno-common -DPIC -o .libs/HEPEVT_Wrapper.o
+HEPEVT_Wrapper.cc:58:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+   58 |         sprintf( outline,"%4s %4s %4s %5s   %10s, %9s, %9s, %9s, %10s",
+      |         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+  218 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+HEPEVT_Wrapper.cc:62:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+   62 |         sprintf( outline,"%9s %4s %4s    %10s, %9s, %9s, %9s) %9s",
+      |         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+  218 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+HEPEVT_Wrapper.cc:75:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+   75 |         sprintf( outline,
+      |         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+  218 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+HEPEVT_Wrapper.cc:80:2: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+   80 |         sprintf( outline,"%+9d %4d %4d    (%9.3g, %9.3g, %9.3g, %9.3g)",
+      |         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+  218 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+HEPEVT_Wrapper.cc:94:9: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+   94 |         sprintf( header,
+      |         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:218:48: note: expanded from macro '__deprecated_msg'
+  218 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+5 warnings generated.
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT HEPEVT_Wrapper.lo -MD -MP -MF .deps/HEPEVT_Wrapper.Tpo -c HEPEVT_Wrapper.cc -o HEPEVT_Wrapper.o >/dev/null 2>&1
+mv -f .deps/HEPEVT_Wrapper.Tpo .deps/HEPEVT_Wrapper.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..    -ansi -pedantic -Wall -g -O2 -MT IO_HEPEVT.lo -MD -MP -MF .deps/IO_HEPEVT.Tpo -c -o IO_HEPEVT.lo IO_HEPEVT.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT IO_HEPEVT.lo -MD -MP -MF .deps/IO_HEPEVT.Tpo -c IO_HEPEVT.cc  -fno-common -DPIC -o .libs/IO_HEPEVT.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT IO_HEPEVT.lo -MD -MP -MF .deps/IO_HEPEVT.Tpo -c IO_HEPEVT.cc -o IO_HEPEVT.o >/dev/null 2>&1
+mv -f .deps/IO_HEPEVT.Tpo .deps/IO_HEPEVT.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..    -ansi -pedantic -Wall -g -O2 -MT IO_HERWIG.lo -MD -MP -MF .deps/IO_HERWIG.Tpo -c -o IO_HERWIG.lo IO_HERWIG.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT IO_HERWIG.lo -MD -MP -MF .deps/IO_HERWIG.Tpo -c IO_HERWIG.cc  -fno-common -DPIC -o .libs/IO_HERWIG.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT IO_HERWIG.lo -MD -MP -MF .deps/IO_HERWIG.Tpo -c IO_HERWIG.cc -o IO_HERWIG.o >/dev/null 2>&1
+mv -f .deps/IO_HERWIG.Tpo .deps/IO_HERWIG.Plo
+/bin/sh ../libtool --tag=CXX   --mode=compile g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I..    -ansi -pedantic -Wall -g -O2 -MT HerwigWrapper.lo -MD -MP -MF .deps/HerwigWrapper.Tpo -c -o HerwigWrapper.lo HerwigWrapper.cc
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT HerwigWrapper.lo -MD -MP -MF .deps/HerwigWrapper.Tpo -c HerwigWrapper.cc  -fno-common -DPIC -o .libs/HerwigWrapper.o
+libtool: compile:  g++ -DHAVE_CONFIG_H -I. -I../HepMC -I.. -I.. -ansi -pedantic -Wall -g -O2 -MT HerwigWrapper.lo -MD -MP -MF .deps/HerwigWrapper.Tpo -c HerwigWrapper.cc -o HerwigWrapper.o >/dev/null 2>&1
+mv -f .deps/HerwigWrapper.Tpo .deps/HerwigWrapper.Plo
+/bin/sh ../libtool --tag=CXX   --mode=link g++ -ansi -pedantic -Wall -g -O2 -version-info 4:0:0  -o libHepMCfio.la -rpath /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib HEPEVT_Wrapper.lo IO_HEPEVT.lo IO_HERWIG.lo HerwigWrapper.lo  
+libtool: link: g++ -r -keep_private_externs -nostdlib -o .libs/libHepMCfio.4.dylib-master.o  .libs/HEPEVT_Wrapper.o .libs/IO_HEPEVT.o .libs/IO_HERWIG.o .libs/HerwigWrapper.o 
+libtool: link: g++ -dynamiclib -Wl,-flat_namespace -Wl,-undefined -Wl,suppress -o .libs/libHepMCfio.4.dylib .libs/libHepMCfio.4.dylib-master.o     -install_name  /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib/libHepMCfio.4.dylib -compatibility_version 5 -current_version 5.0
+ld: warning: -undefined suppress is deprecated
+libtool: link: dsymutil .libs/libHepMCfio.4.dylib || :
+libtool: link: (cd ".libs" && rm -f "libHepMCfio.dylib" && ln -s "libHepMCfio.4.dylib" "libHepMCfio.dylib")
+libtool: link: ar cru .libs/libHepMCfio.a  HEPEVT_Wrapper.o IO_HEPEVT.o IO_HERWIG.o HerwigWrapper.o
+libtool: link: ranlib .libs/libHepMCfio.a
+libtool: link: ( cd ".libs" && rm -f "libHepMCfio.la" && ln -s "../libHepMCfio.la" "libHepMCfio.la" )
+Making all in test
+make[1]: Nothing to be done for `all'.
+Making all in examples
+make[1]: Nothing to be done for `all'.
+Making all in examples/fio
+make[1]: Nothing to be done for `all'.
+Making all in examples/pythia8
+make[1]: Nothing to be done for `all'.
+Making all in doc
+make[1]: Nothing to be done for `all'.
+make[1]: Nothing to be done for `all-am'.
+ Install HEPMC
+Making install in HepMC
+make[2]: Nothing to be done for `install-exec-am'.
+test -z "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/include/HepMC" || .././install-sh -c -d "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/include/HepMC"
+ /usr/bin/install -c -m 644 CompareGenEvent.h Flow.h GenEvent.h GenParticle.h GenVertex.h GenCrossSection.h GenRanges.h HeavyIon.h HEPEVT_Wrapper.h HerwigWrapper.h IO_AsciiParticles.h IO_BaseClass.h IO_Exception.h IO_GenEvent.h IO_HEPEVT.h IO_HERWIG.h IteratorRange.h PdfInfo.h Polarization.h PythiaWrapper6_4.h PythiaWrapper6_4_WIN32.h PythiaWrapper.h WeightContainer.h SearchVector.h SimpleVector.h SimpleVector.icc StreamHelpers.h StreamInfo.h enable_if.h is_arithmetic.h TempParticleMap.h Units.h Version.h HepMCDefs.h '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/include/HepMC'
+Making install in src
+test -z "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib" || .././install-sh -c -d "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libHepMC.la '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib'
+libtool: install: /usr/bin/install -c .libs/libHepMC.4.dylib /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib/libHepMC.4.dylib
+libtool: install: (cd /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib && { ln -s -f libHepMC.4.dylib libHepMC.dylib || { rm -f libHepMC.dylib && ln -s libHepMC.4.dylib libHepMC.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libHepMC.lai /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib/libHepMC.la
+libtool: install: /usr/bin/install -c .libs/libHepMC.a /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib/libHepMC.a
+libtool: install: chmod 644 /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib/libHepMC.a
+libtool: install: ranlib /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib/libHepMC.a
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `DYLD_LIBRARY_PATH' environment variable
+     during execution
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[2]: Nothing to be done for `install-data-am'.
+Making install in fio
+test -z "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib" || .././install-sh -c -d "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib"
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libHepMCfio.la '/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib'
+libtool: install: /usr/bin/install -c .libs/libHepMCfio.4.dylib /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib/libHepMCfio.4.dylib
+libtool: install: (cd /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib && { ln -s -f libHepMCfio.4.dylib libHepMCfio.dylib || { rm -f libHepMCfio.dylib && ln -s libHepMCfio.4.dylib libHepMCfio.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libHepMCfio.lai /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib/libHepMCfio.la
+libtool: install: /usr/bin/install -c .libs/libHepMCfio.a /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib/libHepMCfio.a
+libtool: install: chmod 644 /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib/libHepMCfio.a
+libtool: install: ranlib /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib/libHepMCfio.a
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `DYLD_LIBRARY_PATH' environment variable
+     during execution
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+make[2]: Nothing to be done for `install-data-am'.
+Making install in test
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+Making install in examples
+make[2]: Nothing to be done for `install-exec-am'.
+/bin/sh /private/var/folders/jl/024dtmhn4j32r4bw7hz8z_vc0000gn/T/tmpscrbflp2/hepmc2.06.09/install-sh -d /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/share/HepMC/examples
+/usr/bin/install -c -m 644 GNUmakefile.example /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/share/HepMC/examples/GNUmakefile
+for file in example_BuildEventFromScratch.cc example_EventSelection.cc example_UsingIterators.cc example_VectorConversion.cc VectorConversion.h example_UsingIterators.txt; do \
+	  /usr/bin/install -c -m 644 ./$file /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/share/HepMC/examples/$file; done
+Making install in examples/fio
+make[2]: Nothing to be done for `install-exec-am'.
+/bin/sh /private/var/folders/jl/024dtmhn4j32r4bw7hz8z_vc0000gn/T/tmpscrbflp2/hepmc2.06.09/install-sh -d /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/share/HepMC/examples/fio
+/usr/bin/install -c -m 644 GNUmakefile.example /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/share/HepMC/examples/fio/GNUmakefile
+for file in example_MyHerwig.cc example_MyPythia.cc example_MyPythiaOnlyToHepMC.cc example_PythiaStreamIO.cc testHerwigCopies.cc testPythiaCopies.cc initPythia.cc initpydata.f PythiaHelper.h; do \
+	  /usr/bin/install -c -m 644 ./$file /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/share/HepMC/examples/fio/$file; done
+Making install in examples/pythia8
+make[2]: Nothing to be done for `install-exec-am'.
+/bin/sh /private/var/folders/jl/024dtmhn4j32r4bw7hz8z_vc0000gn/T/tmpscrbflp2/hepmc2.06.09/install-sh -d /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/share/HepMC/examples/pythia8
+/usr/bin/install -c -m 644 GNUmakefile.example /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/share/HepMC/examples/pythia8/GNUmakefile
+/usr/bin/install -c -m 644 config.csh /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/share/HepMC/examples/pythia8/config.csh
+/usr/bin/install -c -m 644 config.sh /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/share/HepMC/examples/pythia8/config.sh
+for file in main31.cc main32.cc main32.cmnd README; do \
+	  /usr/bin/install -c -m 644 ./$file /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/share/HepMC/examples/pythia8/$file; done
+Making install in doc
+make[2]: Nothing to be done for `install-exec-am'.
+/bin/sh /private/var/folders/jl/024dtmhn4j32r4bw7hz8z_vc0000gn/T/tmpscrbflp2/hepmc2.06.09/install-sh -d /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/share/HepMC/doc
+list='HepMC2_user_manual.pdf HepMC2_reference_manual.pdf'; for file in $list; do \
+	if test -f ../doc/$file; then  \
+	(/usr/bin/install -c -m 644 ../doc/$file /Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/hepmc/share/HepMC/doc/$file); \
+	fi; done
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+ Finished HEPMC installation
+test passed

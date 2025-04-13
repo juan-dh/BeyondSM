@@ -1,0 +1,79 @@
+#This file has been generated automatically by FeynRules 2.3.49    Date: 9. 4. 2025,    0:20
+
+# Interactions associated with HiggsPortal
+w-   w+   a MGVX10   QED
+g   g   g MGVX14   QCD
+w-   w+   z MGVX42   QED
+w+   a   w-   a MGVX67   DUM0   QED QED n
+w+   a   w-   z MGVX68   DUM0   QED QED n
+g   g   T1 MGVX69   QCD PRIVATE`a
+w+   w-   w+   w- MGVX75   DUM0   QED QED n
+w+   z   w-   z MGVX76   DUM0   QED QED n
+e-   e-   a MGVX4   QED
+mu-   mu-   a MGVX4   QED
+ta-   ta-   a MGVX4   QED
+e-   e-   h MGVX21   QED
+mu-   mu-   h MGVX23   QED
+ta-   ta-   h MGVX25   QED
+e-   ve   w- MGVX39   QED
+mu-   vm   w- MGVX39   QED
+ta-   vt   w- MGVX39   QED
+ve   e-   w+ MGVX39   QED
+vm   mu-   w+ MGVX39   QED
+vt   ta-   w+ MGVX39   QED
+e-   e-   z MGVX58   QED
+mu-   mu-   z MGVX58   QED
+ta-   ta-   z MGVX58   QED
+ve   ve   z MGVX64   QED
+vm   vm   z MGVX64   QED
+vt   vt   z MGVX64   QED
+b   b   a MGVX1   QED
+c   c   a MGVX2   QED
+d   d   a MGVX1   QED
+s   s   a MGVX1   QED
+t   t   a MGVX2   QED
+u   u   a MGVX2   QED
+b   b   h MGVX18   QED
+c   c   h MGVX19   QED
+d   d   h MGVX20   QED
+s   s   h MGVX24   QED
+t   t   h MGVX26   QED
+u   u   h MGVX27   QED
+b   c   w- MGVX30   QED
+d   c   w- MGVX31   QED
+s   c   w- MGVX32   QED
+b   t   w- MGVX33   QED
+d   t   w- MGVX34   QED
+s   t   w- MGVX35   QED
+b   u   w- MGVX36   QED
+d   u   w- MGVX37   QED
+s   u   w- MGVX38   QED
+c   b   w+ MGVX43   QED
+t   b   w+ MGVX44   QED
+u   b   w+ MGVX45   QED
+c   d   w+ MGVX46   QED
+t   d   w+ MGVX47   QED
+u   d   w+ MGVX48   QED
+c   s   w+ MGVX51   QED
+t   s   w+ MGVX52   QED
+u   s   w+ MGVX53   QED
+b   b   z MGVX55   QED
+c   c   z MGVX56   QED
+d   d   z MGVX55   QED
+s   s   z MGVX55   QED
+t   t   z MGVX56   QED
+u   u   z MGVX56   QED
+b   b   g GG   QCD
+c   c   g GG   QCD
+d   d   g GG   QCD
+s   s   g GG   QCD
+t   t   g GG   QCD
+u   u   g GG   QCD
+h   h   h MGVX22   QED
+h   h   h   h MGVX70   DUM1   QED QED
+PartNameMG[Phi]   hsc   hsc   PartNameMG[Phibar] MGVX73   DUM1   QED QED
+hsc   hsc   hsc   hsc MGVX74  
+w+   w-   h MGVX28   QED
+z   z   h MGVX29   QED
+w+   w-   h   h MGVX71   DUM1   QED QED
+z   z   h   h MGVX72   DUM1   QED QED

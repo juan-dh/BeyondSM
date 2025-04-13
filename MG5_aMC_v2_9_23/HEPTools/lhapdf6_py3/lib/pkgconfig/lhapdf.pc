@@ -1,0 +1,12 @@
+prefix=/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3
+exec_prefix=${prefix}
+libdir=/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//lib
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+
+Name: lhapdf
+Description: LHAPDF parton density library
+URL: https://lhapdf.hepforge.org
+Version: 6.5.4
+Libs: -L/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3//lib -lLHAPDF
+Cflags: -I${prefix}/include

@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 14.2.0 for Mac OS X ARM (64-bit) (December 26, 2024)
-# Date: Sun 13 Apr 2025 15:01:09
+# Date: Sun 13 Apr 2025 16:49:38
 
 
 
@@ -272,14 +272,6 @@ WH = Parameter(name = 'WH',
                texname = '\\text{WH}',
                lhablock = 'DECAY',
                lhacode = [ 25 ])
-
-WSc = Parameter(name = 'WSc',
-                nature = 'external',
-                type = 'real',
-                value = 1,
-                texname = '\\text{WSc}',
-                lhablock = 'DECAY',
-                lhacode = [ 9000005 ])
 
 aEW = Parameter(name = 'aEW',
                 nature = 'internal',
