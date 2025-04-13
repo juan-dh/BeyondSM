@@ -47,4 +47,4 @@ gauge = [0, 1]
 
 __author__ = "Juan Diego Haro"
 __date__ = "2025-04-07"
-__version__= "1."
+__version__= "1.0"

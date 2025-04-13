@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 14.2.0 for Mac OS X ARM (64-bit) (December 26, 2024)
-# Date: Thu 10 Apr 2025 02:08:33
+# Date: Sun 13 Apr 2025 15:01:10
 
 
 from object_library import all_decays, Decay
@@ -37,7 +37,7 @@ Decay_H = Decay(name = 'Decay_H',
                                   (P.e__minus__,P.e__plus__):'((-4*Me**2*ye**2 + MH**2*ye**2)*cmath.sqrt(-4*Me**2*MH**2 + MH**4))/(16.*cmath.pi*abs(MH)**3)',
                                   (P.mu__minus__,P.mu__plus__):'((MH**2*ym**2 - 4*MMU**2*ym**2)*cmath.sqrt(MH**4 - 4*MH**2*MMU**2))/(16.*cmath.pi*abs(MH)**3)',
                                   (P.s,P.s__tilde__):'((3*MH**2*ys**2 - 12*MS**2*ys**2)*cmath.sqrt(MH**4 - 4*MH**2*MS**2))/(16.*cmath.pi*abs(MH)**3)',
-                                  (P.P__tilde__sc,P.P__tilde__sc):'(lamHS**2*vev**2*cmath.sqrt(MH**4 - 4*MH**2*msc**2))/(8.*cmath.pi*abs(MH)**3)',
+                                  (P.Sc,P.Sc):'(lamS**2*vev**2*cmath.sqrt(MH**4 - 4*MH**2*mSc**2))/(32.*cmath.pi*abs(MH)**3)',
                                   (P.t,P.t__tilde__):'((3*MH**2*yt**2 - 12*MT**2*yt**2)*cmath.sqrt(MH**4 - 4*MH**2*MT**2))/(16.*cmath.pi*abs(MH)**3)',
                                   (P.ta__minus__,P.ta__plus__):'((MH**2*ytau**2 - 4*MTA**2*ytau**2)*cmath.sqrt(MH**4 - 4*MH**2*MTA**2))/(16.*cmath.pi*abs(MH)**3)',
                                   (P.u,P.u__tilde__):'((3*MH**2*yup**2 - 12*MU**2*yup**2)*cmath.sqrt(MH**4 - 4*MH**2*MU**2))/(16.*cmath.pi*abs(MH)**3)',

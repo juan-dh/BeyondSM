@@ -1,12 +1,13 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 14.2.0 for Mac OS X ARM (64-bit) (December 26, 2024)
-# Date: Thu 10 Apr 2025 02:08:17
+# Date: Sun 13 Apr 2025 15:00:57
 
 
 # 
 # This is the logfile for the model HiggsPortal
 
 # Authors: Juan Diego Haro
+# Model version: 1.0
 # Checking the Quantum numbers
    * Electric charge defined.
 # Checking the Lagrangians
@@ -22,7 +23,7 @@
    * Assigned PDG number 9000002 to particle ghZ
    * Assigned PDG number 9000003 to particle ghWp
    * Assigned PDG number 9000004 to particle ghWm
-   * Assigned PDG number 9000005 to particle ~sc
+   * Assigned PDG number 9000005 to particle Sc
 
 
 # Compulsory PDG codes:
@@ -39,9 +40,9 @@
 
 # Vertices
    * Calling FeynmanRules for 1 Lagrangians.
-   * Number of classes vertices: 98
-   * Number of flavored vertices: 168
-   * Saved vertices in InterfaceRun[ 4 ].
+   * Number of classes vertices: 96
+   * Number of flavored vertices: 166
+   * Saved vertices in InterfaceRun[ 1 ].
    * Checked QNumber conservation.
       - Quantum number GhostNumber conserved in all vertices.
       - Quantum number LeptonNumber conserved in all vertices.
@@ -53,19 +54,19 @@
 # Vertex definitions
 #
 
-   * 168 vertices written.
+   * 166 vertices written.
    * vertices.py written.
 #
 # Lorentz structure definitions
 #
 
-   * 18 lorentz structures written.
+   * 20 lorentz structures written.
    * lorentz.py written.
 #
 # Coupling definitions
 #
 
-   * 145 couplings written.
+   * 146 couplings written.
    * couplings.py written.
 #
 # Coupling order definitions

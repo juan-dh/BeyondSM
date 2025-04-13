@@ -6,7 +6,7 @@ M$ModelName = "HiggsPortal";
 M$Information = {
 Authors        -> {"Juan Diego Haro"},
   Date         -> "2025-04-07",
-  Version      -> 1.0,
+  Version      -> "1.0",
   Institutions -> {"Universidad San Francisco de Quito"},
   Description        -> "Modelo de portal de Higgs con un escalar real S como materia oscura."
 };
@@ -14,11 +14,12 @@ Authors        -> {"Juan Diego Haro"},
 
 M$Parameters = {
 
-  msc =={ 
+  mSc =={ 
     ParameterType     -> External,
     ComplexParameter  -> False,
     Value             -> 1.0,
-    Description       -> "Mass squared of the scalar field"
+    BlockName         -> INVSCALAR,
+    Description       -> "Masa del campo escalar Sc"
   },
 
   lamS == {
@@ -26,15 +27,17 @@ M$Parameters = {
     ComplexParameter  -> False,
     InteractionOrder   -> {QED,2},
     Value             -> 0.1,
-    Description       -> "Acoplamiento de S S"
+    BlockName         -> INVSCALAR,
+    Description       -> "Acoplamiento para interacciones S^2"
   },
 
-  lamHS == {
+  lam4 == {
     ParameterType     -> External,
     ComplexParameter  -> False,
     InteractionOrder  -> {QED,2},
     Value             -> 0.1,
-    Description       -> "Acoplamiento portal S^2 H^dager H"
+    BlockName         -> INVSCALAR,
+    Description       -> "Acoplamiento para interacción S^4"
   }
 
 };
@@ -44,8 +47,8 @@ M$ClassesDescription = {
   S[5] == {
     ClassName       -> Sc,
     SelfConjugate   -> True,
-    Mass            -> {msc,External},
-    ParticleName    -> "~sc"
+    Mass            -> {mSc,External},
+    ParticleName    -> "Sc"
   }
 };
 
