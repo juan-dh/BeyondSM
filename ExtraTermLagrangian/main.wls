@@ -8,7 +8,7 @@ $FeynRulesPath =
 
 FR$Parallel = False;
 
-SetDirectory[Directory[]]
+ResetDirectory[];
 
 LoadModel["SM/SM.fr", "HiggsPortal.fr"]
 
