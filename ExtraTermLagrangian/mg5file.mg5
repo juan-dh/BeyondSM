@@ -1,0 +1,8 @@
+import model ../../ExtraTermLagrangian/HiggsPortal_UFO
+generate p p > h > sc sc
+output ../../ExtraTermLagrangian/Higgspp
+launch
+set ebeam1 4000
+set ebeam2 4000
+set msc 30
+

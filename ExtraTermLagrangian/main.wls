@@ -1,27 +1,28 @@
 #!/usr/bin/env wolframscript
 
 $FeynRulesPath = 
-  SetDirectory["~/Documents/ProyectoAE/feynrules-current/"];
+  SetDirectory[Directory[] <>
+  "/../feynrules-current/"];
 
 << FeynRules`;
 
 FR$Parallel = False;
 
-SetDirectory["~/Documents/ProyectoAE/code/ExtraTermLagrangian/"]
+SetDirectory[Directory[]]
 
 LoadModel["SM/SM.fr", "HiggsPortal.fr"]
 
 (* LoadRestriction["SM/DiagonalCKM.rst","SM/Massless.rst"]*)
 
-LNew = 1/2 del[Sc, mu] del[Sc, mu] - 1/2 (msc2^2 + lamHS v^2) Sc^2 + 
-  lamS/4! Sc^4 - lamHS Sc^2 HC[Phi] . Phi
+(*ExpandIndices[(Phi[1] HC[Phi][1]+Phi[2] HC[Phi][2])]*)
 
-CheckHermiticity[LNew]
+LNew = 1/2 del[Sc, mu] del[Sc, mu] - 1/2 (mSc^2) Sc^2 - 
+  1/2 lamS vev  H Sc^2 - 1/4 lamS H^2 Sc^2 - 1/4 lam4 Sc^4
+
+CheckHermiticity[LNew];
 
 vertices = FeynmanRules[LNew];
 
-WriteUFO[LSM+LNew];
+vertices
 
-(*FeynmanGauge = False;
-WriteMGOutput[LGauge, LFermions, LHiggs, LYukawa, LNew];
-*)
+WriteUFO[LSM + LNew];
