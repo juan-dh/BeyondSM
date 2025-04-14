@@ -1,4 +1,0 @@
-P1_uux_scsc
-P1_ccx_scsc
-P1_ddx_scsc
-P1_ssx_scsc

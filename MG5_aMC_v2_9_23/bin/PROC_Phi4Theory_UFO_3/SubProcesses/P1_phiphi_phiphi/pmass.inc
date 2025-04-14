@@ -1,4 +1,0 @@
-      PMASS(1)=ABS(MDL_MPHI)
-      PMASS(2)=ABS(MDL_MPHI)
-      PMASS(3)=ABS(MDL_MPHI)
-      PMASS(4)=ABS(MDL_MPHI)

@@ -31,76 +31,48 @@ set max_npoint_for_channel 0
 set default_unset_couplings 99
 set max_t_for_channel 99
 set zerowidth_tchannel True
-import model sm
+import model /Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/ExtraTermLagrangian/HiggsPortal_UFO
 define p = g u c d s u~ c~ d~ s~
 define j = g u c d s u~ c~ d~ s~
 define l+ = e+ mu+
 define l- = e- mu-
 define vl = ve vm vt
 define vl~ = ve~ vm~ vt~
-import model model ../../code/ExtraTermLagrangian/HiggsPortal_UFO/
-import model model ../../code/ExtraTermLagrangian/HiggsPortal_UFO/
-import model model ../../code/ExtraTermLagrangian/HiggsPortal_UFO/
+generate p p > h > sc sc
+output ../../ExtraTermLagrangian/Higgspp
 Traceback (most recent call last):
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/models/__init__.py", line 100, in load_model
-    __import__(path_split[-1])
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/bin/../../code/ExtraTermLagrangian/HiggsPortal_UFO/__init__.py", line 6, in <module>
-    import vertices
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/bin/../../code/ExtraTermLagrangian/HiggsPortal_UFO/vertices.py", line 223
-    particles = [ P.<>CreateObjectParticleName[PartNameMG[Phibar]], P.<>CreateObjectParticleName[PartNameMG[Phi]], P.P__tilde__sc, P.P__tilde__sc ],
-                    ^^
-SyntaxError: invalid syntax
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/madgraph/interface/madgraph_interface.py", line 5514, in do_import
-    self._curr_model = import_ufo.import_model(args[1], prefix=prefix,
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/models/import_ufo.py", line 251, in import_model
-    model = import_full_model(model_path, decay, prefix)
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/models/import_ufo.py", line 407, in import_full_model
-    ufo_model = ufomodels.load_model(model_path, decay)
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/models/__init__.py", line 102, in load_model
-    raise UFOError(str(error))
-models.UFOError: invalid syntax (vertices.py, line 223)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/madgraph/interface/madgraph_interface.py", line 5528, in do_import
-    self.exec_cmd('import %s' % line, errorhandling=False, printcmd=True, precmd=False, postcmd=False)
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/madgraph/interface/extended_cmd.py", line 1570, in exec_cmd
-    stop = Cmd.onecmd_orig(current_interface, line, **opt)
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/madgraph/interface/extended_cmd.py", line 1490, in onecmd_orig
-    return func(arg, **opt)
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/madgraph/interface/master_interface.py", line 281, in do_import
-    self.cmd.do_import(self, *args, **opts)
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/madgraph/interface/madgraph_interface.py", line 5532, in do_import
-    raise self.InvalidCmd('UFO model not python3 compatible. You can convert it via the command \nconvert model %s\nYou can also type \"set auto_convert_model T\" to automatically convert all python2 module to be python3 compatible in the future.' % model_path)
-madgraph.InvalidCmd: UFO model not python3 compatible. You can convert it via the command 
-convert model ../../code/ExtraTermLagrangian/HiggsPortal_UFO/
-You can also type "set auto_convert_model T" to automatically convert all python2 module to be python3 compatible in the future.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/madgraph/interface/extended_cmd.py", line 1541, in onecmd
+  File "/Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/MG5_aMC_v2_9_23/madgraph/interface/extended_cmd.py", line 1541, in onecmd
     return self.onecmd_orig(line, **opt)
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/madgraph/interface/extended_cmd.py", line 1490, in onecmd_orig
+  File "/Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/MG5_aMC_v2_9_23/madgraph/interface/extended_cmd.py", line 1490, in onecmd_orig
     return func(arg, **opt)
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/madgraph/interface/master_interface.py", line 281, in do_import
+  File "/Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/MG5_aMC_v2_9_23/madgraph/interface/master_interface.py", line 281, in do_import
     self.cmd.do_import(self, *args, **opts)
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/madgraph/interface/madgraph_interface.py", line 5530, in do_import
-    raise err
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/madgraph/interface/madgraph_interface.py", line 5514, in do_import
-    self._curr_model = import_ufo.import_model(args[1], prefix=prefix,
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/models/import_ufo.py", line 251, in import_model
-    model = import_full_model(model_path, decay, prefix)
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/models/import_ufo.py", line 407, in import_full_model
-    ufo_model = ufomodels.load_model(model_path, decay)
-  File "/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/models/__init__.py", line 102, in load_model
-    raise UFOError(str(error))
-models.UFOError: invalid syntax (vertices.py, line 223)
+  File "/Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/MG5_aMC_v2_9_23/madgraph/interface/madgraph_interface.py", line 5588, in do_import
+    self.import_command_file(args[1])
+  File "/Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/MG5_aMC_v2_9_23/madgraph/interface/extended_cmd.py", line 1689, in import_command_file
+    self.exec_cmd(line, precmd=True)
+  File "/Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/MG5_aMC_v2_9_23/madgraph/interface/extended_cmd.py", line 1570, in exec_cmd
+    stop = Cmd.onecmd_orig(current_interface, line, **opt)
+  File "/Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/MG5_aMC_v2_9_23/madgraph/interface/extended_cmd.py", line 1490, in onecmd_orig
+    return func(arg, **opt)
+  File "/Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/MG5_aMC_v2_9_23/madgraph/interface/master_interface.py", line 299, in do_output
+    self.cmd.do_output(self, line, *args, **opts)
+  File "/Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/MG5_aMC_v2_9_23/madgraph/interface/madgraph_interface.py", line 8060, in do_output
+    self._curr_exporter.copy_template(self._curr_model)
+  File "/Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/MG5_aMC_v2_9_23/madgraph/iolibs/export_v4.py", line 3768, in copy_template
+    super(ProcessExporterFortranME, self).copy_template(model)
+  File "/Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/MG5_aMC_v2_9_23/madgraph/iolibs/export_v4.py", line 259, in copy_template
+    misc.copytree(pjoin(self.mgme_dir, 'Template/LO'),
+  File "/Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/MG5_aMC_v2_9_23/madgraph/various/misc.py", line 1027, in copytree
+    copytree(s, d, symlinks, ignore)
+  File "/Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/MG5_aMC_v2_9_23/madgraph/various/misc.py", line 1029, in copytree
+    shutil.copy2(s, d)
+  File "/Users/juandiegoharo/miniconda3/lib/python3.10/shutil.py", line 434, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/Users/juandiegoharo/miniconda3/lib/python3.10/shutil.py", line 256, in copyfile
+    with open(dst, 'wb') as fdst:
+OSError: [Errno 28] No space left on device: '/Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/ExtraTermLagrangian/Higgspp/SubProcesses/unwgt.f'
+Related File: /Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/ExtraTermLagrangian/Higgspp/SubProcesses/unwgt.f
                           MadGraph5_aMC@NLO Options    
                           ----------------    
         complex_mass_scheme 	:	False
@@ -152,7 +124,7 @@ models.UFOError: invalid syntax (vertices.py, line 223)
                       golem 	:	None (user set)
                  hepmc_path 	:	None (user set)
                   hwpp_path 	:	None (user set)
-                     lhapdf 	:	/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/bin/lhapdf-config (user set)
+                     lhapdf 	:	lhapdf-config
                  lhapdf_py2 	:	None
                  lhapdf_py3 	:	/Users/juandiegoharo/Documents/ProyectoAE/MG5_aMC_v2_9_23/HEPTools/lhapdf6_py3/bin/lhapdf-config (user set)
           madanalysis5_path 	:	None (user set)

@@ -1,9 +1,0 @@
-ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-c      written by the UFO converter
-ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-
-frblock 1 mdl_m2
-
-frblock 2 mdl_lam
-
-mass 9000001 mdl_Mphi

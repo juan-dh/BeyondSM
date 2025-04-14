@@ -1,1 +1,0 @@
-../SubProcesses/P1_ssx_scsc/maxamps.inc
