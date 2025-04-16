@@ -1,0 +1,7 @@
+import model ../../DarkMatter/HiggsPortal_UFO
+generate p p > h > sc sc
+output ../../DarkMatter/Higgspp
+launch
+set ebeam1 6500
+set ebeam2 6500
+set msc 30
