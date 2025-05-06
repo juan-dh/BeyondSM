@@ -1,6 +1,6 @@
 # This file was automatically created by FeynRules 2.3.49
 # Mathematica version: 14.2.0 for Mac OS X ARM (64-bit) (December 26, 2024)
-# Date: Tue 15 Apr 2025 22:35:20
+# Date: Wed 16 Apr 2025 02:26:19
 
 
 from object_library import all_vertices, Vertex

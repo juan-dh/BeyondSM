@@ -1,7 +1,5 @@
-(* ::Package:: *)
-
 (******************************************************************************
- * 1) Model Information
+ * 1) Cabecera
  ******************************************************************************)
 
 M$ModelName = "Phi4Theory";
@@ -11,11 +9,11 @@ M$Information = {
    Version       -> "1.0",
    Date          -> "April 2025",
    Institutions  -> {"Universidad San Francisco de Quito"},
-   Description   -> "A simple real scalar phi^4 theory"
+   Description   -> "Lagrangiano de la teoria Phi^4"
 };
 
 (******************************************************************************
- * 2) Declaration of parameters
+ * 2) Parámetros
  ******************************************************************************)
 
 M$Parameters = {
@@ -25,7 +23,7 @@ M$Parameters = {
     Value             -> 1.0,
     BlockName         -> MASS,
     OrderBlock        -> 1,
-    Description       -> "Mass squared of the scalar field"
+    Description       -> "Masa al cuadrado del campo escalar"
   },
 
   lam == {
@@ -34,13 +32,13 @@ M$Parameters = {
     BlockName         -> FRBlock,
     OrderBlock        -> 2,
     InteractionOrder  -> {PHI4,1},
-    Description       -> "Quartic coupling lambda"
+    Description       -> "Acoplamiento de phi^4"
   }
 
 };
 
 (******************************************************************************
- * 3) Declaration of the scalar field
+ * 3) Campos
  ******************************************************************************)
 
 M$ClassesDescription = {
@@ -49,7 +47,7 @@ M$ClassesDescription = {
     ClassName       -> phi,
     SelfConjugate   -> True,
     Mass            -> {m2},
-    Width           -> 0     (* Set to zero for a stable or non-decaying scalar *)
+    Width           -> 0     (*Campo escalar que no decae*)
   }
 
 };
