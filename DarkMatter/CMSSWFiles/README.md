@@ -8,7 +8,7 @@ docker run -it --name my_cmssw -v /mnt/c/Users/harod/Projects/ProyectoAltasEnerg
 
 ## Copiar el archivo lhe
 
-cp /mnt/Proyecto_files/BeyondSM/DarkMatter/OutputMadGraph/Events/run_01/unweighted_events.lhe.gz .
+cp /mnt/ArchivosCompartidos/BeyondSM/DarkMatter/OutputMadGraph/Events/run_01/unweighted_events.lhe.gz .
 
 gunzip unweighted_events.lhe.gz
 

@@ -1,1 +1,1 @@
-Guarda en esta carpeta los archivos root creados con CMSSW.
+Guarda en esta carpeta los archivos ROOT creados con CMSSW.
