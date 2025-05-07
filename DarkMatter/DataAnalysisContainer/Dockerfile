@@ -1,5 +1,5 @@
 # Usa una imagen base con Python
-FROM python:3.11-slim-bullseye
+FROM python:3.11-slim
 
 # Establece el directorio de trabajo
 WORKDIR /home/app
