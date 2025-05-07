@@ -12,4 +12,5 @@ ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
       PARAMETER  (ZERO=0D0)
       INCLUDE 'input.inc'
       INCLUDE 'coupl.inc'
+      GC_11 = MDL_COMPLEXI*G
       END

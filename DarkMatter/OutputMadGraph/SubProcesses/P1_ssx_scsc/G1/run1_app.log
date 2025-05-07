@@ -154,7 +154,15 @@
   Couplings of DarkMatter_UFO
   ---------------------------------
   
+        GC_11 =   0.00000E+00   0.12198E+01
+        GC_77 =   0.00000E+00   0.57700E-01
+        GC_78 =  -0.00000E+00  -0.11540E+00
+        GC_79 =   0.00000E+00   0.17310E+00
+        GC_81 =  -0.00000E+00  -0.31265E+00
+        GC_82 =   0.00000E+00   0.25495E+00
+        GC_83 =   0.00000E+00  -0.19725E+00
         GC_92 =  -0.00000E+00  -0.24622E+02
+       GC_104 =   0.00000E+00   0.67543E+02
        GC_109 =  -0.00000E+00  -0.51580E-02
        GC_112 =  -0.00000E+00  -0.20469E-04
        GC_125 =  -0.00000E+00  -0.41020E-03
@@ -193,7 +201,7 @@ Running Configuration Number:    1
   4 dimensions   1000 events  4 invarients  5 iterations  1 config(s),  (0.99)
  Using h-tuple random number sequence.
  Error opening grid
- Using Uniform Grid!          16
+ Using Uniform Grid!          24
  Using uniform alpha   1.0000000000000000     
  Grid defined OK
  Masses: 0.101E+00 0.101E+00 0.100E+01 0.100E+01

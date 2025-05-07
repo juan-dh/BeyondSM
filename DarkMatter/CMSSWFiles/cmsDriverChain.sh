@@ -27,9 +27,9 @@ cmsDriver.py step0 \
 --python_filename LHE_13TeV_cfg.py \
 --no_exec \
 --customise Configuration/DataProcessing/Utils.addMonitoring \
--n $nEvents
+-n "$nEvents"
 
-cmsRun LHE-13TeV.root >> chain.log 2>&1
+cmsRun cmsRun LHE_13TeV_cfg.py >> chain.log 2>&1
 
 # STEP 1
 
@@ -45,13 +45,13 @@ cmsDriver.py Configuration/Generator/python/Hadronizer_TuneCUETP8M1_13TeV_generi
 --conditions 106X_mcRun2_asymptotic_v17 \
 --beamspot Realistic25ns13TeV2016Collision \
 --step GEN,SIM \
---nThreads $nThreads \
+--nThreads "$nThreads" \
 --geometry DB:Extended \
 --era Run2_2016 \
 --python_filename GENSIM_13TeV_cfg.py \
 --no_exec \
 --customise Configuration/DataProcessing/Utils.addMonitoring \
--n $nEvents
+-n "$nEvents"
 
 cmsRun GENSIM_13TeV_cfg.py >> chain.log 2>&1
 
@@ -62,11 +62,11 @@ echo "========= STEP 2 =========" >> chain.log
 
 cmsDriver.py step2 \
 --mc \
---eventcontent=RAWSIM \
---datatier=GEN-SIM-DIGI-RAW \
+--eventcontent RAWSIM \
+--datatier GEN-SIM-DIGI-RAW \
 --conditions 106X_mcRun2_asymptotic_v17 \
---step=DIGI,L1,DIGI2RAW,HLT:@relval2016 \
---nThreads $nThreads \
+--step DIGI,L1,DIGI2RAW,HLT:@relval2016 \
+--nThreads 4 \
 --geometry DB:Extended \
 --era Run2_2016 \
 --python_filename step2_digi_mix_L1_HLT.py \
@@ -74,7 +74,7 @@ cmsDriver.py step2 \
 --filein file:GENSIM-13TeV.root \
 --fileout=digiHLT.root \
 --customise Configuration/DataProcessing/Utils.addMonitoring \
--n $nEvents
+-n 100
 
 cmsRun step2_digi_mix_L1_HLT.py >> chain.log 2>&1
 
@@ -91,14 +91,14 @@ cmsDriver.py \
 --fileout file:reco.root \
 --conditions 106X_mcRun2_asymptotic_v17 \
 --step RAW2DIGI,L1Reco,RECO,RECOSIM \
---nThreads $nThreads \
+--nThreads "$nThreads" \
 --geometry DB:Extended \
 --filein file:digiHLT.root \
 --era Run2_2016 \
 --runUnscheduled \
 --no_exec \
 --mc \
--n $nEvents
+-n "$nEvents"
 
 cmsRun reco.py >> chain.log 2>&1 
 
@@ -116,14 +116,14 @@ cmsDriver.py \
 --conditions 106X_mcRun2_asymptotic_v17 \
 --step PAT \
 --procModifiers run2_miniAOD_UL \
---nThreads $nThreads \
+--nThreads "$nThreads" \
 --geometry DB:Extended \
 --filein file:reco.root \
 --era Run2_2016 \
 --runUnscheduled \
 --no_exec \
 --mc \
--n $nEvents
+-n "$nEvents"
 
 cmsRun pat.py >> chain.log 2>&1
 
@@ -141,12 +141,12 @@ cmsDriver.py \
 --datatier NANOAODSIM \
 --conditions 106X_mcRun2_asymptotic_v17 \
 --step NANO \
---nThreads $nThreads \
+--nThreads "$nThreads" \
 --geometry DB:Extended \
 --era Run2_2016,run2_nanoAOD_94X2016 \
 --python_filename nanoAOD_cfg.py \
 --no_exec \
 --customise_commands 'process.nanoAOD_step *= process.nanoSequenceMC' \
--n $nEvents
+-n "$nEvents"
 
 cmsRun nanoAOD_cfg.py >> chain.log 2>&1

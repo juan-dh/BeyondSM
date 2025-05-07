@@ -33,7 +33,7 @@ cmsDriver.py step0 \
 --customise Configuration/DataProcessing/Utils.addMonitoring \
 -n 100
 
-cmsRun LHE-13TeV.root
+cmsRun LHE_13TeV_cfg.py
 
 ### Step 1 GEN-SIM
 
@@ -60,10 +60,10 @@ cmsRun GENSIM_13TeV_cfg.py
 
 cmsDriver.py step2 \
 --mc \
---eventcontent=RAWSIM \
---datatier=GEN-SIM-DIGI-RAW \
+--eventcontent RAWSIM \
+--datatier GEN-SIM-DIGI-RAW \
 --conditions 106X_mcRun2_asymptotic_v17 \
---step=DIGI,L1,DIGI2RAW,HLT:@relval2016 \
+--step DIGI,L1,DIGI2RAW,HLT:@relval2016 \
 --nThreads 4 \
 --geometry DB:Extended \
 --era Run2_2016 \
@@ -74,7 +74,7 @@ cmsDriver.py step2 \
 --customise Configuration/DataProcessing/Utils.addMonitoring \
 -n 100
 
-cmsRun step2_digi_mix_L1_HLT.py > step2.log 2>&1
+cmsRun step2_digi_mix_L1_HLT.py
 
 ### Step 3 
 
@@ -96,7 +96,7 @@ cmsDriver.py \
 --mc \
 -n 100
 
-cmsRun reco.py > reco.log 2>&1 
+cmsRun reco.py
 
 ### Step 4
 
@@ -118,7 +118,7 @@ cmsDriver.py \
 --mc \
 -n 100
 
-cmsRun pat.py > pat.log 2>&1
+cmsRun pat.py
 
 ### Step 5
 
@@ -138,10 +138,10 @@ cmsDriver.py \
 --customise_commands 'process.nanoAOD_step *= process.nanoSequenceMC' \
 -n 100
 
-cmsRun nanoAOD_cfg.py > nano.log 2>&1
+cmsRun nanoAOD_cfg.py
 
 ## Archivo ROOT
 
 Copia el archivo ROOT del paso NANO al volumen para analizarlo desde el contenedor de Analisis de datos
 
-cp NanoAOD.root /mnt/ArchivosCompartidos/BeyondSM/DarkMatter/ROOTFiles
+cp NanoAOD.root /mnt/ArchivosCompartidos/BeyondSM/DarkMatter/ROOTFiles/

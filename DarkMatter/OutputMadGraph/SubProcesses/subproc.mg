@@ -2,3 +2,15 @@ P1_uux_scsc
 P1_ccx_scsc
 P1_ddx_scsc
 P1_ssx_scsc
+P3_gu_hu_h_scsc
+P3_gc_hc_h_scsc
+P3_gd_hd_h_scsc
+P3_gs_hs_h_scsc
+P3_uux_hg_h_scsc
+P3_ccx_hg_h_scsc
+P3_ddx_hg_h_scsc
+P3_ssx_hg_h_scsc
+P2_uux_zh_z_epem_h_scsc
+P2_ccx_zh_z_epem_h_scsc
+P2_ddx_zh_z_epem_h_scsc
+P2_ssx_zh_z_epem_h_scsc
