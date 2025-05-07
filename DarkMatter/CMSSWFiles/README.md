@@ -1,12 +1,14 @@
+Esta carpeta contiene los archivos y las instrucciones para crear el contenedor de CMSSW 10.6.30. Tambien contiene los pasos del cmsDriver del 0 al 5. Estos se pueden ejecutar *dentro del contenedor* usando el archivo bash cmsDriverChain.sh
+
 # Docker
 
 ## Creación de la imagen
 
-docker run -it --name my_cmssw -v /mnt/c/Users/harod/Projects/ProyectoAltasEnergias/BeyondSM/:/mnt/Proyecto_files 56ef1955c399
+docker run -it --name my_cmssw -v /mnt/c/Users/harod/Projects/ProyectoAltasEnergias/:/mnt/ArchivosCompartidos 56ef1955c399
 
 ## Copiar el archivo lhe
 
-cp /mnt/Proyecto_files/DarkMatter/OutputMadGraph/Events/run_01/unweighted_events.lhe.gz .
+cp /mnt/Proyecto_files/BeyondSM/DarkMatter/OutputMadGraph/Events/run_01/unweighted_events.lhe.gz .
 
 gunzip unweighted_events.lhe.gz
 
@@ -14,8 +16,9 @@ gunzip unweighted_events.lhe.gz
 
 cmsenv
 
+## Pasos de cmsDriver
 
-## Step 0
+### Step 0
 
 cmsDriver.py step0 \
 --filein file:unweighted_events.lhe \
@@ -32,7 +35,7 @@ cmsDriver.py step0 \
 
 cmsRun LHE-13TeV.root
 
-## Step 1 GEN-SIM
+### Step 1 GEN-SIM
 
 cmsDriver.py Configuration/Generator/python/Hadronizer_TuneCUETP8M1_13TeV_generic_LHE_pythia8_cff.py \
 --filein file:LHE-13TeV.root \
@@ -53,27 +56,7 @@ cmsDriver.py Configuration/Generator/python/Hadronizer_TuneCUETP8M1_13TeV_generi
 
 cmsRun GENSIM_13TeV_cfg.py
 
-## Step 2 DIGI-
-
-cmsDriver.py \
---python_filename step2_digi_mix_L1_HLT.py \
---eventcontent PREMIXRAW \
---customise Configuration/DataProcessing/Utils.addMonitoring \
---datatier GEN-SIM-RAW \
---fileout file:BPH-Run3Summer22EEDRPremix-00008.root \
---pileup_input dbs:/Neutrino_E-10_gun/Run3Summer21PrePremix-Summer22_124X_mcRun3_2022_realistic_v11-v2/PREMIX \
---conditions 124X_mcRun3_2022_realistic_postEE_v1 \
---step DIGI,DATAMIX,L1,DIGI2RAW,HLT:2022v14 \
---procModifiers premix_stage2,siPixelQualityRawToDigi \
---nThreads 4 \
---geometry DB:Extended \
---filein file:BPH-Run3Summer22EEGS-00008.root \
---datamix PreMix 
---era Run3 \
---no_exec \
---mc \
--n 100
-
+### Step 2 DIGI-
 
 cmsDriver.py step2 \
 --mc \
@@ -93,7 +76,7 @@ cmsDriver.py step2 \
 
 cmsRun step2_digi_mix_L1_HLT.py > step2.log 2>&1
 
-## Step 3 
+### Step 3 
 
 
 cmsDriver.py \
@@ -115,7 +98,7 @@ cmsDriver.py \
 
 cmsRun reco.py > reco.log 2>&1 
 
-## Step 4
+### Step 4
 
 cmsDriver.py \
 --python_filename pat.py \
@@ -137,7 +120,7 @@ cmsDriver.py \
 
 cmsRun pat.py > pat.log 2>&1
 
-## Step 5
+### Step 5
 
 cmsDriver.py \
 --filein file:pat.root \
@@ -157,3 +140,8 @@ cmsDriver.py \
 
 cmsRun nanoAOD_cfg.py > nano.log 2>&1
 
+## Archivo ROOT
+
+Copia el archivo ROOT del paso NANO al volumen para analizarlo desde el contenedor de Analisis de datos
+
+cp NanoAOD.root /mnt/ArchivosCompartidos/BeyondSM/DarkMatter/ROOTFiles
