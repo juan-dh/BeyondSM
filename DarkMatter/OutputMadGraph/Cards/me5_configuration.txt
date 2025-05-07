@@ -223,7 +223,7 @@
 # amcfast = amcfast-config
 
 
-mg5_path = /Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/MG5_aMC_v2_9_23 
+mg5_path = /Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/Libraries/MG5_aMC_v2_9_23 
 
 # MG5 MAIN DIRECTORY
-mg5_path = /Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/MG5_aMC_v2_9_23
+mg5_path = /Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/Libraries/MG5_aMC_v2_9_23

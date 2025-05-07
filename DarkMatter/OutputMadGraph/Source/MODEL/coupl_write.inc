@@ -2,7 +2,7 @@ ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 c      written by the UFO converter
 ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-      WRITE(*,*)  ' Couplings of HiggsPortal_UFO'
+      WRITE(*,*)  ' Couplings of DarkMatter_UFO'
       WRITE(*,*)  ' ---------------------------------'
       WRITE(*,*)  ' '
       WRITE(*,2) 'GC_92 = ', GC_92

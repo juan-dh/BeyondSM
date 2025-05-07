@@ -2,7 +2,7 @@
 
 $FeynRulesPath = 
   SetDirectory[Directory[] <>
-  "/../feynrules-current/"];
+  "/../Libraries/feynrules-current/"];
 
 << FeynRules`;
 
@@ -10,7 +10,7 @@ FR$Parallel = False;
 
 ResetDirectory[];
 
-LoadModel["SM/SM.fr", "HiggsPortal.fr"]
+LoadModel["SM/SM.fr", "DarkMatter.fr"]
 
 (* LoadRestriction["SM/DiagonalCKM.rst","SM/Massless.rst"]*)
 

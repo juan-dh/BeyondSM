@@ -216,10 +216,10 @@ C     Needed for v4 models
       COMPLEX*16 DUM0,DUM1
       DATA DUM0, DUM1/(0d0, 0d0), (1d0, 0d0)/
 
-      double precision fk_mdl_WH 
       double precision fk_ZERO 
-      save fk_mdl_WH 
+      double precision fk_mdl_WH 
       save fk_ZERO 
+      save fk_mdl_WH 
 
       logical first
       data first /.true./

@@ -68,7 +68,7 @@ set default_unset_couplings 99
 set max_t_for_channel 99
 set zerowidth_tchannel True
 import model /Users/juandiegoharo/Documents/ProyectoAE/BeyondSM/DarkMa\
-tter/HiggsPortal_UFO
+tter/DarkMatter_UFO
 define p = g u c d s u~ c~ d~ s~
 define j = g u c d s u~ c~ d~ s~
 define l+ = e+ mu+
@@ -76,7 +76,7 @@ define l- = e- mu-
 define vl = ve vm vt
 define vl~ = ve~ vm~ vt~
 generate p p > h > sc sc
-output ../../DarkMatter/OutputMadGraph
+output ../../../DarkMatter/OutputMadGraph
 ]]>
 </MG5ProcCard>
 <MGProcCard>
@@ -109,7 +109,7 @@ done               # this tells MG there are no more procs
 # Model information                                                  *
 #*********************************************************************
 # Begin MODEL  # This is TAG. Do not modify this line
-HiggsPortal_UFO
+DarkMatter_UFO
 # End   MODEL  # This is TAG. Do not modify this line
 #*********************************************************************
 # Start multiparticle definitions                                    *
