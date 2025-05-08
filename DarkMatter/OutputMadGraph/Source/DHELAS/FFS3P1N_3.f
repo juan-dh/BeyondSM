@@ -10,11 +10,11 @@ C
       COMPLEX*16 F1(*)
       COMPLEX*16 F2(*)
       COMPLEX*16 S3(3)
-      COMPLEX*16 TMP0
-      COMPLEX*16 TMP1
-      TMP0 = (F2(3)*F1(3)+F2(4)*F1(4))
-      TMP1 = (F2(5)*F1(5)+F2(6)*F1(6))
-      S3(3)= COUP*(-1D0)*(+CI*(TMP0+TMP1))
+      COMPLEX*16 TMP4
+      COMPLEX*16 TMP5
+      TMP4 = (F1(3)*F2(3)+F1(4)*F2(4))
+      TMP5 = (F1(5)*F2(5)+F1(6)*F2(6))
+      S3(3)= COUP*(-1D0)*(+CI*(TMP4+TMP5))
       END
 
 

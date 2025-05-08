@@ -77,6 +77,7 @@ define vl = ve vm vt
 define vl~ = ve~ vm~ vt~
 generate p p > h > sc sc
 add process p p > Z h, Z > e+ e-, h > sc sc
+add process p p > Z h, Z > mu+ mu-, h > sc sc
 add process p p > h j, h > sc sc
 output ../../../DarkMatter/OutputMadGraph
 ]]>
@@ -384,7 +385,7 @@ BLOCK QNUMBERS 9000005 #  sc
 </slha>
 <MGGenerationInfo>
 #  Number of Events        :       10000
-#  Integrated weight (pb)  :       4.675809007380602
+#  Integrated weight (pb)  :       4.879499263904103
 </MGGenerationInfo>
 </header>
 </LesHouchesEvents>

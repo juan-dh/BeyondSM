@@ -1,1 +1,1 @@
-../SubProcesses/P2_ssx_zh_z_epem_h_scsc/maxamps.inc
+../SubProcesses/P3_ssx_zh_z_mupmum_h_scsc/maxamps.inc

@@ -1,4 +1,6 @@
 #!/bin/bash
+exec > >(tee -a chain.log)
+exec 2>&1
 
 echo "Number of events: "
 read nEvents
@@ -9,12 +11,12 @@ read nThreads
 # CMS Environment
 echo "======= Setting up CMS environment ========"
 
-cmsenv
+cd /code/CMSSW_10_6_30/src
+eval `scram runtime -sh`
 
 # STEP 0
 
 echo "========= STEP 0 ========="
-echo "========= STEP 0 =========" > chain.log
 
 cmsDriver.py step0 \
 --filein file:unweighted_events.lhe \
@@ -29,12 +31,11 @@ cmsDriver.py step0 \
 --customise Configuration/DataProcessing/Utils.addMonitoring \
 -n "$nEvents"
 
-cmsRun LHE_13TeV_cfg.py >> chain.log 2>&1
+cmsRun LHE_13TeV_cfg.py
 
 # STEP 1
 
 echo "========= STEP 1 =========" 
-echo "========= STEP 1 =========" >> chain.log
 
 cmsDriver.py Configuration/Generator/python/Hadronizer_TuneCUETP8M1_13TeV_generic_LHE_pythia8_cff.py \
 --filein file:LHE-13TeV.root \
@@ -53,12 +54,11 @@ cmsDriver.py Configuration/Generator/python/Hadronizer_TuneCUETP8M1_13TeV_generi
 --customise Configuration/DataProcessing/Utils.addMonitoring \
 -n "$nEvents"
 
-cmsRun GENSIM_13TeV_cfg.py >> chain.log 2>&1
+cmsRun GENSIM_13TeV_cfg.py
 
 # STEP 2
 
 echo "========= STEP 2 ========="
-echo "========= STEP 2 =========" >> chain.log
 
 cmsDriver.py step2 \
 --mc \
@@ -76,12 +76,11 @@ cmsDriver.py step2 \
 --customise Configuration/DataProcessing/Utils.addMonitoring \
 -n 100
 
-cmsRun step2_digi_mix_L1_HLT.py >> chain.log 2>&1
+cmsRun step2_digi_mix_L1_HLT.py
 
 # STEP 3
 
 echo "========= STEP 3 ========="
-echo "========= STEP 3 =========" >> chain.log
 
 cmsDriver.py \
 --python_filename reco.py \
@@ -100,12 +99,11 @@ cmsDriver.py \
 --mc \
 -n "$nEvents"
 
-cmsRun reco.py >> chain.log 2>&1 
+cmsRun reco.py
 
 # STEP 4
 
 echo "========= STEP 4 =========" 
-echo "========= STEP 4 =========" >> chain.log
 
 cmsDriver.py \
 --python_filename pat.py \
@@ -125,13 +123,11 @@ cmsDriver.py \
 --mc \
 -n "$nEvents"
 
-cmsRun pat.py >> chain.log 2>&1
+cmsRun pat.py
 
 # STEP 5
 
-
 echo "========= STEP 5 ========="
-echo "========= STEP 5 =========" >> chain.log
 
 cmsDriver.py \
 --filein file:pat.root \
@@ -149,7 +145,6 @@ cmsDriver.py \
 --customise_commands 'process.nanoAOD_step *= process.nanoSequenceMC' \
 -n "$nEvents"
 
-cmsRun nanoAOD_cfg.py >> chain.log 2>&1
+cmsRun nanoAOD_cfg.py
 
 echo "========= CHAIN COMPLETED ========="
-echo "========= CHAIN COMPLETED =========" >> chain.log

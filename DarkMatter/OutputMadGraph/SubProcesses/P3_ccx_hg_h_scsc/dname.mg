@@ -1,1 +1,0 @@
-DIRNAME=P3_ccx_hg_h_scsc
