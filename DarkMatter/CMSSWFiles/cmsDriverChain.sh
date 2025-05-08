@@ -29,7 +29,7 @@ cmsDriver.py step0 \
 --customise Configuration/DataProcessing/Utils.addMonitoring \
 -n "$nEvents"
 
-cmsRun cmsRun LHE_13TeV_cfg.py >> chain.log 2>&1
+cmsRun LHE_13TeV_cfg.py >> chain.log 2>&1
 
 # STEP 1
 
