@@ -1,10 +1,15 @@
-Esta carpeta contiene los archivos y las instrucciones para crear el contenedor de CMSSW 10.6.30. Tambien contiene los pasos del cmsDriver del 0 al 5. Estos se pueden ejecutar *dentro del contenedor* usando el archivo bash cmsDriverChain.sh
+Esta carpeta contiene los archivos y las instrucciones para crear el contenedor de CMSSW 10.6.30. Tambien contiene los pasos del cmsDriver del 0 al 5. Estos se pueden ejecutar *dentro del contenedor* usando el archivo bash cmsDriverChain.sh. 
+
+⚠️ Asegurarse de que los contenedores de Docker tengan acceso a mas de 2GB de RAM.
 
 # Docker
 
+
 ## Creación de la imagen
 
-docker run -it --name my_cmssw -v /mnt/c/Users/harod/Projects/ProyectoAltasEnergias/:/mnt/ArchivosCompartidos 56ef1955c399
+DIR_VOLUME = /mnt/c/Users/harod/Projects/ProyectoAltasEnergias/
+DIR_SFILES = /mnt/ArchivosCompartidos
+docker run -it --name my_cmssw -v $DIR_VOLUME:$DIR_SFILES 56ef1955c399
 
 ## Copiar el archivo lhe
 
@@ -19,6 +24,8 @@ cp /mnt/ArchivosCompartidos/BeyondSM/DarkMatter/CMSSWFiles/cmsDriverChain.sh .
 ## Enviroment en CMSSW
 
 cmsenv
+
+Todos los pasos anteriores estan encapsulados en cmsswInitializer.sh. Ejecutar con *source* para tener todo listo.
 
 ## Pasos de cmsDriver
 

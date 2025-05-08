@@ -8,12 +8,6 @@ read nEvents
 echo "Number of threads: "
 read nThreads
 
-# CMS Environment
-echo "======= Setting up CMS environment ========"
-
-cd /code/CMSSW_10_6_30/src
-eval `scram runtime -sh`
-
 # STEP 0
 
 echo "========= STEP 0 ========="
