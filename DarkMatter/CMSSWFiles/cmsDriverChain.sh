@@ -66,7 +66,7 @@ cmsDriver.py step2 \
 --datatier GEN-SIM-DIGI-RAW \
 --conditions 106X_mcRun2_asymptotic_v17 \
 --step DIGI,L1,DIGI2RAW,HLT:@relval2016 \
---nThreads 4 \
+--nThreads "$nThreads" \
 --geometry DB:Extended \
 --era Run2_2016 \
 --python_filename step2_digi_mix_L1_HLT.py \
@@ -74,7 +74,7 @@ cmsDriver.py step2 \
 --filein file:GENSIM-13TeV.root \
 --fileout=digiHLT.root \
 --customise Configuration/DataProcessing/Utils.addMonitoring \
--n 100
+-n "$nEvents"
 
 cmsRun step2_digi_mix_L1_HLT.py
 

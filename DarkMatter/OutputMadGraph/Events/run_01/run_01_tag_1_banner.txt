@@ -148,7 +148,7 @@ DarkMatter_UFO
 # Number of events and rnd seed                                      *
 # Warning: Do not generate more than 1M events in a single run       *
 #*********************************************************************
-  10000	= nevents ! Number of unweighted events requested 
+  50000	= nevents ! Number of unweighted events requested 
  21 = iseed ! rnd seed (0=assigned automatically=default))
 #*********************************************************************
 # Collider type and energy                                           *
@@ -384,8 +384,8 @@ BLOCK QNUMBERS 9000005 #  sc
       4 0 # particle/antiparticle distinction (0=own anti)
 </slha>
 <MGGenerationInfo>
-#  Number of Events        :       10000
-#  Integrated weight (pb)  :       4.879499263904103
+#  Number of Events        :       50000
+#  Integrated weight (pb)  :       4.888648363904101
 </MGGenerationInfo>
 </header>
 </LesHouchesEvents>

@@ -10,12 +10,12 @@ C
       COMPLEX*16 F1(*)
       COMPLEX*16 F2(*)
       COMPLEX*16 S3(*)
-      COMPLEX*16 TMP4
       COMPLEX*16 TMP5
+      COMPLEX*16 TMP6
       COMPLEX*16 VERTEX
-      TMP4 = (F1(3)*F2(3)+F1(4)*F2(4))
-      TMP5 = (F1(5)*F2(5)+F1(6)*F2(6))
-      VERTEX = COUP*(-S3(3)*(+CI*(TMP4+TMP5)))
+      TMP5 = (F1(3)*F2(3)+F1(4)*F2(4))
+      TMP6 = (F1(5)*F2(5)+F1(6)*F2(6))
+      VERTEX = COUP*(-S3(3)*(+CI*(TMP5+TMP6)))
       END
 
 

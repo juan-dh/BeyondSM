@@ -11,3 +11,4 @@ launch
 set ebeam1 6500
 set ebeam2 6500
 set msc 30
+set nevents 50000
