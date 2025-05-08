@@ -14,7 +14,7 @@ cmsenv
 # STEP 0
 
 echo "========= STEP 0 ========="
-echo "========= STEP 0 =========" >> chain.log
+echo "========= STEP 0 =========" > chain.log
 
 cmsDriver.py step0 \
 --filein file:unweighted_events.lhe \
@@ -150,3 +150,6 @@ cmsDriver.py \
 -n "$nEvents"
 
 cmsRun nanoAOD_cfg.py >> chain.log 2>&1
+
+echo "========= CHAIN COMPLETED ========="
+echo "========= CHAIN COMPLETED =========" >> chain.log

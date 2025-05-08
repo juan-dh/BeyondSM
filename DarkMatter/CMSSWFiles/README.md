@@ -12,6 +12,10 @@ cp /mnt/ArchivosCompartidos/BeyondSM/DarkMatter/OutputMadGraph/Events/run_01/unw
 
 gunzip unweighted_events.lhe.gz
 
+## Copiar la cadena de pasos de cmsDriver
+
+cp /mnt/ArchivosCompartidos/BeyondSM/DarkMatter/CMSSWFiles/cmsDriverChain.sh .
+
 ## Enviroment en CMSSW
 
 cmsenv
