@@ -63,68 +63,68 @@ cmsDriver.py step2 \
 --nThreads "$nThreads" \
 --geometry DB:Extended \
 --era Run2_2016 \
---python_filename step2_digi_mix_L1_HLT.py \
+--python_filename DIGI_mix_L1_HLT_13TeV_cfg.py \
 --no_exec \
 --filein file:GENSIM-13TeV.root \
---fileout=digiHLT.root \
+--fileout=DIGI_mix_L1_HLT_13TeV.root \
 --customise Configuration/DataProcessing/Utils.addMonitoring \
 -n "$nEvents"
 
-cmsRun step2_digi_mix_L1_HLT.py
+cmsRun DIGI_mix_L1_HLT_13TeV_cfg.py
 
 # STEP 3
 
 echo "========= STEP 3 ========="
 
 cmsDriver.py \
---python_filename reco.py \
+--python_filename RECO_13TeV_cfg.py \
 --eventcontent AODSIM \
 --customise Configuration/DataProcessing/Utils.addMonitoring \
 --datatier AODSIM \
---fileout file:reco.root \
+--fileout file:RECO_13TeV.root \
 --conditions 106X_mcRun2_asymptotic_v17 \
 --step RAW2DIGI,L1Reco,RECO,RECOSIM \
 --nThreads "$nThreads" \
 --geometry DB:Extended \
---filein file:digiHLT.root \
+--filein file:DIGI_mix_L1_HLT_13TeV.root \
 --era Run2_2016 \
 --runUnscheduled \
 --no_exec \
 --mc \
 -n "$nEvents"
 
-cmsRun reco.py
+cmsRun RECO_13TeV_cfg.py
 
 # STEP 4
 
 echo "========= STEP 4 =========" 
 
 cmsDriver.py \
---python_filename pat.py \
+--python_filename PAT_13TeV_cfg.py \
 --eventcontent MINIAODSIM \
 --customise Configuration/DataProcessing/Utils.addMonitoring \
 --datatier MINIAODSIM \
---fileout file:pat.root \
+--fileout file:PAT_13TeV.root \
 --conditions 106X_mcRun2_asymptotic_v17 \
 --step PAT \
 --procModifiers run2_miniAOD_UL \
 --nThreads "$nThreads" \
 --geometry DB:Extended \
---filein file:reco.root \
+--filein file:RECO_13TeV.root \
 --era Run2_2016 \
 --runUnscheduled \
 --no_exec \
 --mc \
 -n "$nEvents"
 
-cmsRun pat.py
+cmsRun PAT_13TeV_cfg.py
 
 # STEP 5
 
 echo "========= STEP 5 ========="
 
 cmsDriver.py \
---filein file:pat.root \
+--filein file:PAT_13TeV.root \
 --fileout file:NanoAOD.root \
 --mc \
 --eventcontent NANOAODSIM \
@@ -134,11 +134,11 @@ cmsDriver.py \
 --nThreads "$nThreads" \
 --geometry DB:Extended \
 --era Run2_2016,run2_nanoAOD_94X2016 \
---python_filename nanoAOD_cfg.py \
+--python_filename NanoAOD_13TeV_cfg.py \
 --no_exec \
 --customise_commands 'process.nanoAOD_step *= process.nanoSequenceMC' \
 -n "$nEvents"
 
-cmsRun nanoAOD_cfg.py
+cmsRun NanoAOD_13TeV_cfg.py
 
 echo "========= CHAIN COMPLETED ========="

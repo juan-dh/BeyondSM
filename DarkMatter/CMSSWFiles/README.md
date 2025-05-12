@@ -54,7 +54,7 @@ cmsDriver.py step0 \
 --python_filename LHE_13TeV_cfg.py \
 --no_exec \
 --customise Configuration/DataProcessing/Utils.addMonitoring \
--n 100
+-n "$nEvents"
 
 cmsRun LHE_13TeV_cfg.py
 ```
@@ -71,13 +71,13 @@ cmsDriver.py Configuration/Generator/python/Hadronizer_TuneCUETP8M1_13TeV_generi
 --conditions 106X_mcRun2_asymptotic_v17 \
 --beamspot Realistic25ns13TeV2016Collision \
 --step GEN,SIM \
---nThreads 4 \
+--nThreads "$nThreads" \
 --geometry DB:Extended \
 --era Run2_2016 \
 --python_filename GENSIM_13TeV_cfg.py \
 --no_exec \
 --customise Configuration/DataProcessing/Utils.addMonitoring \
--n 100
+-n "$nEvents"
 
 cmsRun GENSIM_13TeV_cfg.py
 ```
@@ -91,86 +91,86 @@ cmsDriver.py step2 \
 --datatier GEN-SIM-DIGI-RAW \
 --conditions 106X_mcRun2_asymptotic_v17 \
 --step DIGI,L1,DIGI2RAW,HLT:@relval2016 \
---nThreads 4 \
+--nThreads "$nThreads" \
 --geometry DB:Extended \
 --era Run2_2016 \
---python_filename step2_digi_mix_L1_HLT.py \
+--python_filename DIGI_mix_L1_HLT_13TeV_cfg.py \
 --no_exec \
 --filein file:GENSIM-13TeV.root \
---fileout=digiHLT.root \
+--fileout=DIGI_mix_L1_HLT_13TeV.root \
 --customise Configuration/DataProcessing/Utils.addMonitoring \
--n 100
+-n "$nEvents"
 
-cmsRun step2_digi_mix_L1_HLT.py
+cmsRun DIGI_mix_L1_HLT_13TeV_cfg.py
 ```
 
 ### Step 3 
 
 ```
 cmsDriver.py \
---python_filename reco.py \
+--python_filename RECO_13TeV_cfg.py \
 --eventcontent AODSIM \
 --customise Configuration/DataProcessing/Utils.addMonitoring \
 --datatier AODSIM \
---fileout file:reco.root \
+--fileout file:RECO_13TeV.root \
 --conditions 106X_mcRun2_asymptotic_v17 \
 --step RAW2DIGI,L1Reco,RECO,RECOSIM \
---nThreads 4 \
+--nThreads "$nThreads" \
 --geometry DB:Extended \
---filein file:digiHLT.root \
+--filein file:DIGI_mix_L1_HLT_13TeV.root \
 --era Run2_2016 \
 --runUnscheduled \
 --no_exec \
 --mc \
--n 100
+-n "$nEvents"
 
-cmsRun reco.py
+cmsRun RECO_13TeV_cfg.py
 ```
 
 ### Step 4
 
 ```
 cmsDriver.py \
---python_filename pat.py \
+--python_filename PAT_13TeV_cfg.py \
 --eventcontent MINIAODSIM \
 --customise Configuration/DataProcessing/Utils.addMonitoring \
 --datatier MINIAODSIM \
---fileout file:pat.root \
+--fileout file:PAT_13TeV.root \
 --conditions 106X_mcRun2_asymptotic_v17 \
 --step PAT \
 --procModifiers run2_miniAOD_UL \
---nThreads 4 \
+--nThreads "$nThreads" \
 --geometry DB:Extended \
---filein file:reco.root \
+--filein file:RECO_13TeV.root \
 --era Run2_2016 \
 --runUnscheduled \
 --no_exec \
 --mc \
--n 100
+-n "$nEvents"
 
-cmsRun pat.py
+cmsRun PAT_13TeV_cfg.py
 ```
 
 ### Step 5
 
 ```
 cmsDriver.py \
---filein file:pat.root \
+--filein file:PAT_13TeV.root \
 --fileout file:NanoAOD.root \
 --mc \
 --eventcontent NANOAODSIM \
 --datatier NANOAODSIM \
 --conditions 106X_mcRun2_asymptotic_v17 \
 --step NANO \
---nThreads 4 \
+--nThreads "$nThreads" \
 --geometry DB:Extended \
 --era Run2_2016,run2_nanoAOD_94X2016 \
---python_filename nanoAOD_cfg.py \
+--python_filename NanoAOD_13TeV_cfg.py \
 --no_exec \
 --customise_commands 'process.nanoAOD_step *= process.nanoSequenceMC' \
--n 100
+-n "$nEvents"
 
-cmsRun nanoAOD_cfg.py
+cmsRun NanoAOD_13TeV_cfg.py
 ```
 
 ## Archivos `.root`
