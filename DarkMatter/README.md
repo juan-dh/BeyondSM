@@ -2,6 +2,13 @@
 
 Campo escalar añadido al Lagrangiano del modelo estandard.
 
+## El modelo
+
+El modelo de materia oscura usado se puede encontrar en "Reopening the Higgs Portal for Singlet Scalar Dark
+Matter"
+
+https://arxiv.org/pdf/1701.08134
+
 ## Creación de un campo escalar
 
 En `DarkMatter.fr` definimos el campo escalar y sus parametros
